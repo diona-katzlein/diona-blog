@@ -11,11 +11,11 @@ const sitemapFile = path.join(rootDir, 'sitemap.xml');
 const rssFile = path.join(rootDir, 'rss.xml');
 
 function parseFrontmatter(content){
-  const match = content.match(/^---\n([\s\S]*?)\n---\n?/);
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   const data = {};
   if(!match) return { data, body: content };
   const raw = match[1];
-  raw.split('\n').forEach(line => {
+  raw.split(/\r?\n/).forEach(line => {
     const idx = line.indexOf(':');
     if(idx === -1) return;
     const key = line.slice(0, idx).trim();

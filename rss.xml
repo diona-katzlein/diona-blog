@@ -12,7 +12,7 @@
     <guid>https://username.github.io/blog/article.html?slug=tutorial-github-pages</guid>
     <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
     <category>Tutorial</category>
-    <description>Panduan singkat deploy blog statis ini ke GitHub Pages.</description>
+    <description>Panduan lengkap mendeploy blog statis berbasis Markdown ke layanan hosting gratis GitHub Pages.</description>
   </item>
 
   <item>
@@ -30,7 +30,7 @@
     <guid>https://username.github.io/blog/article.html?slug=seo-static-blog</guid>
     <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
     <category>SEO</category>
-    <description>Cara meningkatkan SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed.</description>
+    <description>Cara meningkatkan peringkat SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed.</description>
   </item>
 </channel>
 </rss>

@@ -3,32 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta id="metaDescription" name="description" content="Artikel Isekai Blog." />
-  <meta id="ogTitle" property="og:title" content="Isekai Blog" />
-  <meta id="ogDescription" property="og:description" content="Artikel Isekai Blog." />
-  <meta property="og:type" content="article" />
+  
+  <!-- SEO Meta Tags (Dynamic fallback) -->
   <title>Article - Isekai Blog</title>
+  <meta id="metaDescription" name="description" content="Artikel teknis menarik mengenai static site generator, Markdown, dan web statis di Isekai Blog." />
+  <meta name="keywords" content="markdown, blog statis, tutorial, github pages" />
+  
+  <!-- Geo-Targeting (GEO Friendly) -->
+  <meta name="geo.region" content="ID-JK" />
+  <meta name="geo.placename" content="Jakarta, Indonesia" />
+  <meta name="geo.position" content="-6.20876;106.845599" />
+  <meta name="ICBM" content="-6.20876, 106.845599" />
+
+  <!-- Open Graph / Facebook (Dynamic fallback) -->
+  <meta id="ogType" property="og:type" content="article" />
+  <meta id="ogUrl" property="og:url" content="https://diona-katzlein.github.io/diona-blog/blog/article.html" />
+  <meta id="ogTitle" property="og:title" content="Article - Isekai Blog" />
+  <meta id="ogDescription" property="og:description" content="Artikel teknis menarik mengenai static site generator, Markdown, dan web statis." />
+  <meta id="ogImage" property="og:image" content="https://diona-katzlein.github.io/diona-blog/assets/css/og-image.png" />
+
+  <!-- Twitter (Dynamic fallback) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta id="twitterTitle" property="twitter:title" content="Article - Isekai Blog" />
+  <meta id="twitterDescription" property="twitter:description" content="Artikel teknis menarik mengenai static site generator, Markdown, dan web statis." />
+  <meta id="twitterImage" property="twitter:image" content="https://diona-katzlein.github.io/diona-blog/assets/css/og-image.png" />
+
+  <!-- Canonical URL (Dynamic fallback) -->
+  <link id="canonicalLink" rel="canonical" href="https://diona-katzlein.github.io/diona-blog/blog/article.html" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <!-- Dynamic highlight.js stylesheet container -->
+  <link id="highlightTheme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data Container (Injected via article.js) -->
+  <script id="structuredData" type="application/ld+json"></script>
 </head>
 <body>
-<header class="site-header"><div class="container nav"><a class="brand" href="../">Isekai Blog</a><nav class="nav-links"><a href="../">Home</a><a href="./">Blog</a><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button></nav></div></header>
-<main class="container article">
-  <a class="back-link" href="./"><i class="fa-solid fa-arrow-left"></i> Kembali ke Blog</a>
-  <article>
-    <header class="article-header">
-      <div id="articleTags" class="tags"></div>
-      <h1 id="articleTitle">Loading...</h1>
-      <p id="articleMeta" class="meta"></p>
-    </header>
-    <section id="content" class="article-body">Loading...</section>
-  </article>
-</main>
-<footer class="footer"><div class="container">&copy; 2026 Isekai Blog. All Rights Reserved.</div></footer>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="../assets/js/theme.js"></script>
-<script src="../assets/js/article.js"></script>
+  <!-- Reading Progress Bar -->
+  <div class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+  <!-- Background Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../">Isekai Blog</a>
+      <nav class="nav-links">
+        <a href="../">Home</a>
+        <a class="active" href="./">Blog</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container article-container">
+    <!-- Sidebar (Back link & Table of Contents) -->
+    <aside class="article-sidebar">
+      <a class="back-link" href="./"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+      
+      <div id="tocCard" class="toc-card" style="display: none;">
+        <h3>Daftar Isi</h3>
+        <ul id="tocList" class="toc-list"></ul>
+      </div>
+    </aside>
+
+    <!-- Main Article Content Area -->
+    <section class="article-content">
+      <article>
+        <header class="article-header">
+          <div id="articleTags" class="tags"></div>
+          <h1 id="articleTitle">Memuat artikel...</h1>
+          <p id="articleMeta" class="meta"></p>
+        </header>
+        
+        <!-- Markdown Body -->
+        <section id="content" class="article-body">
+          Memuat isi artikel...
+        </section>
+      </article>
+
+      <!-- Author Bio Box (GEO / SEO E-E-A-T Signal) -->
+      <div class="author-card">
+        <div class="author-avatar">I</div>
+        <div class="author-info">
+          <h4>Ditulis oleh Isekai ID</h4>
+          <p>Pengembang web dan penulis konten teknologi yang senang membagikan seputar pengembangan web statis, automasi git, optimasi performa, dan integrasi GitHub Pages.</p>
+          <div class="author-socials">
+            <a href="https://github.com/diona-katzlein" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Isekai Blog. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: var(--primary);"></i> in Indonesia.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/article.js"></script>
 </body>
 </html>

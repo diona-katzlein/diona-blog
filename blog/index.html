@@ -3,30 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daftar artikel Isekai Blog berbasis Markdown." />
-  <meta property="og:title" content="Blog - Isekai Blog" />
-  <meta property="og:description" content="Artikel terbaru dari Isekai Blog." />
+  
+  <!-- Primary Meta Tags -->
+  <title>Blog - Isekai Blog | Artikel & Tutorial Markdown</title>
+  <meta name="title" content="Blog - Isekai Blog | Artikel & Tutorial Markdown" />
+  <meta name="description" content="Kumpulan artikel, catatan, dan tutorial seputar pengembangan web, markdown, dan sistem statis di Isekai Blog." />
+  <meta name="keywords" content="artikel blog, tutorial markdown, static website, git, github pages, dev blog" />
+  
+  <!-- Geo-Targeting (GEO Friendly) -->
+  <meta name="geo.region" content="ID-JK" />
+  <meta name="geo.placename" content="Jakarta, Indonesia" />
+  <meta name="geo.position" content="-6.20876;106.845599" />
+  <meta name="ICBM" content="-6.20876, 106.845599" />
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <title>Blog - Isekai Blog</title>
+  <meta property="og:url" content="https://diona-katzlein.github.io/diona-blog/blog/" />
+  <meta property="og:title" content="Blog - Isekai Blog | Artikel & Tutorial Markdown" />
+  <meta property="og:description" content="Kumpulan artikel, catatan, dan tutorial seputar pengembangan web, markdown, dan sistem statis." />
+  <meta property="og:image" content="https://diona-katzlein.github.io/diona-blog/assets/css/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://diona-katzlein.github.io/diona-blog/blog/" />
+  <meta property="twitter:title" content="Blog - Isekai Blog | Artikel & Tutorial Markdown" />
+  <meta property="twitter:description" content="Kumpulan artikel, catatan, dan tutorial seputar pengembangan web, markdown, dan sistem statis." />
+  <meta property="twitter:image" content="https://diona-katzlein.github.io/diona-blog/assets/css/og-image.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://diona-katzlein.github.io/diona-blog/blog/" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="Isekai Blog RSS" href="../rss.xml" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- Breadcrumbs Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://diona-katzlein.github.io/diona-blog/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://diona-katzlein.github.io/diona-blog/blog/"
+    }]
+  }
+  </script>
 </head>
 <body>
-<header class="site-header"><div class="container nav"><a class="brand" href="../">Isekai Blog</a><nav class="nav-links"><a href="../">Home</a><a href="./">Blog</a><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button></nav></div></header>
-<main class="container blog-shell">
-  <div class="blog-top"><div><h1>Blog</h1><p class="meta">Artikel otomatis dari file Markdown.</p></div></div>
-  <section class="controls">
-    <input id="searchInput" type="search" placeholder="Cari artikel..." />
-    <select id="categoryFilter"><option value="">Semua Kategori</option></select>
-    <select id="tagFilter"><option value="">Semua Tag</option></select>
-  </section>
-  <section id="postGrid" class="post-grid"></section>
-  <div id="emptyState" class="empty" hidden>Artikel tidak ditemukan.</div>
-  <nav id="pagination" class="pagination" aria-label="Pagination"></nav>
-</main>
-<footer class="footer"><div class="container">&copy; 2026 Isekai Blog. All Rights Reserved.</div></footer>
-<script src="../assets/js/theme.js"></script>
-<script src="../assets/js/blog.js"></script>
+  <!-- Background Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../">Isekai Blog</a>
+      <nav class="nav-links">
+        <a href="../">Home</a>
+        <a class="active" href="./">Blog</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container blog-shell">
+    <div class="blog-top">
+      <div>
+        <h1>Artikel Terbaru</h1>
+        <p class="meta">Catatan teknis dan artikel yang dimuat dari file Markdown.</p>
+      </div>
+    </div>
+
+    <!-- Search and Filters Section -->
+    <section class="controls">
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchInput" type="search" placeholder="Cari artikel berdasarkan judul, ringkasan, atau tag..." />
+      </div>
+      <select id="categoryFilter" aria-label="Filter berdasarkan Kategori">
+        <option value="">Semua Kategori</option>
+      </select>
+      <select id="tagFilter" aria-label="Filter berdasarkan Tag">
+        <option value="">Semua Tag</option>
+      </select>
+    </section>
+
+    <!-- Post Grid -->
+    <section id="postGrid" class="post-grid"></section>
+    
+    <!-- Empty State -->
+    <div id="emptyState" class="empty" hidden>
+      <i class="fa-solid fa-magnifying-glass-minus"></i>
+      <p>Artikel tidak ditemukan. Silakan gunakan kata kunci pencarian yang lain.</p>
+    </div>
+
+    <!-- Pagination -->
+    <nav id="pagination" class="pagination" aria-label="Navigasi Halaman"></nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Isekai Blog. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: var(--primary);"></i> in Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/blog.js"></script>
 </body>
 </html>

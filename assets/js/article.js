@@ -1,30 +1,209 @@
 const params = new URLSearchParams(window.location.search);
 const slug = params.get('slug');
-const content = document.getElementById('content');
+const contentContainer = document.getElementById('content');
+const progressBar = document.getElementById('progressBar');
 
+// Fetch blog index to find the post matching the slug
 fetch('./posts.json')
   .then(res => res.json())
   .then(posts => {
     const post = posts.find(item => item.slug === slug) || posts[0];
     if(!post) throw new Error('Post tidak ditemukan.');
+    
+    // Set all SEO and GEO meta tags
     setMeta(post);
+    
+    // Fetch and render the actual Markdown file
     return fetch(`./posts/${post.file}`).then(res => res.text()).then(md => ({post, md}));
   })
   .then(({post, md}) => {
     document.getElementById('articleTitle').textContent = post.title;
-    document.getElementById('articleMeta').textContent = `${formatDate(post.date)} · ${post.category || 'General'} · ${post.readingTime || '1 min read'}`;
-    document.getElementById('articleTags').innerHTML = (post.tags || []).map(tag => `<span class="tag">#${escapeHtml(tag)}</span>`).join('');
-    content.innerHTML = marked.parse(stripFrontmatter(md));
+    document.getElementById('articleMeta').innerHTML = `
+      <i class="fa-regular fa-calendar-days"></i> ${formatDate(post.date)} &nbsp;·&nbsp;
+      <i class="fa-solid fa-folder-open"></i> ${post.category || 'General'} &nbsp;·&nbsp;
+      <i class="fa-regular fa-clock"></i> ${post.readingTime || '1 min read'}
+    `;
+    
+    document.getElementById('articleTags').innerHTML = (post.tags || [])
+      .map(tag => `<span class="tag">#${escapeHtml(tag)}</span>`)
+      .join('');
+      
+    // Render Markdown to HTML using marked.js
+    contentContainer.innerHTML = marked.parse(stripFrontmatter(md));
+    
+    // Trigger syntax highlighting
     document.querySelectorAll('pre code').forEach(block => hljs.highlightElement(block));
+    
+    // Setup interactive features
+    setupCodeCopyButtons();
+    generateTocAndAddHeaderIds();
+    setupReadingProgressBar();
   })
-  .catch(err => { content.innerHTML = `<p class="empty">${escapeHtml(err.message)}</p>`; });
+  .catch(err => { 
+    contentContainer.innerHTML = `<p class="empty"><i class="fa-solid fa-triangle-exclamation"></i> Gagal memuat artikel: ${escapeHtml(err.message)}</p>`; 
+  });
 
+// Setup dynamic SEO & GEO Meta tags
 function setMeta(post){
-  document.title = `${post.title} - Isekai Blog`;
-  document.getElementById('metaDescription').setAttribute('content', post.excerpt || post.title);
-  document.getElementById('ogTitle').setAttribute('content', post.title);
-  document.getElementById('ogDescription').setAttribute('content', post.excerpt || post.title);
+  const pageTitle = `${post.title} - Isekai Blog`;
+  const postUrl = `https://diona-katzlein.github.io/diona-blog/blog/article.html?slug=${encodeURIComponent(post.slug)}`;
+  const description = post.excerpt || post.title;
+
+  document.title = pageTitle;
+  
+  // Basic metadata
+  document.getElementById('metaDescription')?.setAttribute('content', description);
+  
+  // Canonical Link
+  document.getElementById('canonicalLink')?.setAttribute('href', postUrl);
+  
+  // Open Graph
+  document.getElementById('ogTitle')?.setAttribute('content', pageTitle);
+  document.getElementById('ogDescription')?.setAttribute('content', description);
+  document.getElementById('ogUrl')?.setAttribute('content', postUrl);
+  
+  // Twitter Cards
+  document.getElementById('twitterTitle')?.setAttribute('content', pageTitle);
+  document.getElementById('twitterDescription')?.setAttribute('content', description);
+  
+  // Inject JSON-LD Schema.org Structured Data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": description,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Isekai ID"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Isekai ID",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://diona-katzlein.github.io/diona-blog/assets/css/logo-sq.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": postUrl
+    }
+  };
+  
+  const structuredDataEl = document.getElementById('structuredData');
+  if (structuredDataEl) {
+    structuredDataEl.textContent = JSON.stringify(jsonLd, null, 2);
+  }
 }
+
+// Table of Contents generator
+function generateTocAndAddHeaderIds() {
+  const headers = contentContainer.querySelectorAll('h2, h3');
+  const tocCard = document.getElementById('tocCard');
+  const tocList = document.getElementById('tocList');
+  
+  if (!tocList || headers.length === 0) {
+    if (tocCard) tocCard.style.display = 'none';
+    return;
+  }
+  
+  tocList.innerHTML = '';
+  if (tocCard) tocCard.style.display = 'block';
+  
+  headers.forEach((header, index) => {
+    const id = 'heading-' + index;
+    header.id = id;
+    
+    const li = document.createElement('li');
+    li.className = header.tagName.toLowerCase() === 'h3' ? 'depth-3' : 'depth-2';
+    
+    const a = document.createElement('a');
+    a.href = '#' + id;
+    a.textContent = header.textContent;
+    
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Account for sticky header offset of 80px + extra 20px padding
+      const offsetTop = header.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+      history.pushState(null, null, '#' + id);
+    });
+    
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+  
+  // Highlight TOC item on scroll
+  window.addEventListener('scroll', () => {
+    let activeId = '';
+    headers.forEach(header => {
+      const top = header.getBoundingClientRect().top;
+      if (top < 150) {
+        activeId = header.id;
+      }
+    });
+    
+    const tocLinks = tocList.querySelectorAll('a');
+    tocLinks.forEach(link => {
+      if (link.getAttribute('href') === '#' + activeId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  });
+}
+
+// Code Copy button setup
+function setupCodeCopyButtons() {
+  const preBlocks = contentContainer.querySelectorAll('pre');
+  preBlocks.forEach(pre => {
+    const code = pre.querySelector('code');
+    if (!code) return;
+    
+    const button = document.createElement('button');
+    button.className = 'code-copy-btn';
+    button.innerHTML = '<i class="fa-regular fa-copy"></i> Salin';
+    
+    button.addEventListener('click', () => {
+      const textToCopy = code.innerText;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        button.classList.add('copied');
+        button.innerHTML = '<i class="fa-solid fa-check"></i> Tersalin!';
+        
+        setTimeout(() => {
+          button.classList.remove('copied');
+          button.innerHTML = '<i class="fa-regular fa-copy"></i> Salin';
+        }, 2000);
+      }).catch(err => {
+        console.error('Gagal menyalin kode: ', err);
+      });
+    });
+    
+    pre.appendChild(button);
+  });
+}
+
+// Reading Progress Bar listener
+function setupReadingProgressBar() {
+  if (!progressBar) return;
+  
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    
+    const totalScroll = scrollHeight - clientHeight;
+    const scrollPercentage = totalScroll > 0 ? (scrollTop / totalScroll) * 100 : 0;
+    
+    progressBar.style.width = scrollPercentage + '%';
+  });
+}
+
 function stripFrontmatter(md){ return md.replace(/^---[\s\S]*?---\s*/, ''); }
 function formatDate(date){ return new Intl.DateTimeFormat('id-ID', { dateStyle:'medium' }).format(new Date(date)); }
 function escapeHtml(value){ return String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
