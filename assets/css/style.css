@@ -2,8 +2,8 @@
 
 html, :root {
   /* Colors - Light Theme */
-  --bg: #f8fafc;
-  --bg-grid: rgba(99, 102, 241, 0.03);
+  --theme-bg: #f8fafc;
+  --theme-bg-grid: rgba(99, 102, 241, 0.03);
   --surface: #ffffff;
   --card: #ffffff;
   --border: rgba(226, 232, 240, 0.8);
@@ -45,8 +45,8 @@ html, :root {
 
 html[data-theme="dark"], [data-theme="dark"] {
   /* Colors - Dark Theme */
-  --bg: #030712;
-  --bg-grid: rgba(99, 102, 241, 0.05);
+  --theme-bg: #030712;
+  --theme-bg-grid: rgba(99, 102, 241, 0.05);
   --surface: #0b0f19;
   --card: #0f172a;
   --border: rgba(30, 41, 59, 0.7);
@@ -90,14 +90,14 @@ html[data-theme="dark"], [data-theme="dark"] {
 }
 
 html {
-  background-color: var(--bg);
+  background-color: var(--theme-bg);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg);
+  background-color: var(--theme-bg);
   color: var(--text-primary);
   line-height: 1.7;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -111,8 +111,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: 
-    linear-gradient(var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+    linear-gradient(var(--theme-bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--theme-bg-grid) 1px, transparent 1px);
   background-size: 50px 50px;
   z-index: -1;
   pointer-events: none;
@@ -355,7 +355,7 @@ a {
 }
 
 .btn.ghost:hover {
-  background: var(--bg);
+  background: var(--theme-bg);
   border-color: var(--text-muted);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -575,7 +575,7 @@ a {
   letter-spacing: 0.05em;
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--bg);
+  background: var(--theme-bg);
   border: 1px solid var(--border);
   color: var(--text-secondary);
   transition: all 0.2s;
