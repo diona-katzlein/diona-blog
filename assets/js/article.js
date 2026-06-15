@@ -14,7 +14,12 @@ fetch('./posts.json')
     setMeta(post);
     
     // Fetch and render the actual Markdown file
-    return fetch(`./posts/${post.file}`).then(res => res.text()).then(md => ({post, md}));
+    return fetch(`./posts/${post.file}`)
+      .then(res => {
+        if (!res.ok) throw new Error(`Gagal memuat berkas artikel (HTTP ${res.status})`);
+        return res.text();
+      })
+      .then(md => ({post, md}));
   })
   .then(({post, md}) => {
     document.getElementById('articleTitle').textContent = post.title;
