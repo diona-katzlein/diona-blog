@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://baca.readme.id/</loc></url>
-  <url><loc>https://baca.readme.id/blog/</loc></url>
-  <url><loc>https://baca.readme.id/blog/article.html?slug=tutorial-github-pages</loc></url>
-  <url><loc>https://baca.readme.id/blog/article.html?slug=selamat-datang</loc></url>
-  <url><loc>https://baca.readme.id/blog/article.html?slug=seo-static-blog</loc></url>
+  <url><loc>https://diona-katzlein.github.io/diona-blog/</loc></url>
+  <url><loc>https://diona-katzlein.github.io/diona-blog/blog/</loc></url>
+  <url><loc>https://diona-katzlein.github.io/diona-blog/blog/article.html?slug=tutorial-github-pages</loc></url>
+  <url><loc>https://diona-katzlein.github.io/diona-blog/blog/article.html?slug=selamat-datang</loc></url>
+  <url><loc>https://diona-katzlein.github.io/diona-blog/blog/article.html?slug=seo-static-blog</loc></url>
 </urlset>
