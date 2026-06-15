@@ -1,5 +1,12 @@
 const params = new URLSearchParams(window.location.search);
-const slug = params.get('slug');
+let slug = params.get('slug');
+if (!slug) {
+  const pathParts = window.location.pathname.split('/');
+  const lastPart = pathParts[pathParts.length - 1];
+  if (lastPart.endsWith('.html') && lastPart !== 'article.html' && lastPart !== 'index.html') {
+    slug = lastPart.replace('.html', '');
+  }
+}
 const contentContainer = document.getElementById('content');
 const progressBar = document.getElementById('progressBar');
 
@@ -32,6 +39,18 @@ fetch('./posts.json')
     document.getElementById('articleTags').innerHTML = (post.tags || [])
       .map(tag => `<span class="tag">#${escapeHtml(tag)}</span>`)
       .join('');
+      
+    // Set article cover image
+    const coverImg = document.getElementById('articleCover');
+    if (coverImg) {
+      if (post.image) {
+        coverImg.src = post.image.startsWith('/') ? `..${post.image}` : post.image;
+        coverImg.alt = post.title;
+        coverImg.style.display = 'block';
+      } else {
+        coverImg.style.display = 'none';
+      }
+    }
       
     // Render Markdown to HTML using marked.js
     contentContainer.innerHTML = marked.parse(stripFrontmatter(md));

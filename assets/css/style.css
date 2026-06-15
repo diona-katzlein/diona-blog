@@ -801,6 +801,17 @@ a {
   font-weight: 500;
 }
 
+.article-cover {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  display: none;
+}
+
 /* Article Body Markdown Rendering */
 .article-body {
   font-size: 1.125rem;

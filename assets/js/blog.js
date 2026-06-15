@@ -81,7 +81,7 @@ function render(){
           </span>
           ${tagsHtml}
         </div>
-        <h2><a href="article.html?slug=${encodeURIComponent(post.slug)}">${escapeHtml(post.title)}</a></h2>
+        <h2><a href="${post.slug}.html">${escapeHtml(post.title)}</a></h2>
         <p>${escapeHtml(post.excerpt || '')}</p>
         <div class="meta">
           <span><i class="fa-regular fa-calendar"></i> ${formatDate(post.date)}</span>
