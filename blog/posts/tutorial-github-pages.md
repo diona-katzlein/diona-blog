@@ -1,10 +1,12 @@
 ---
 title: "Tutorial Deploy ke GitHub Pages"
-slug: "tutorial-github-pages"
+description: "Panduan lengkap mendeploy blog statis berbasis Markdown ke layanan hosting gratis GitHub Pages dengan GitHub Actions."
+image: "/assets/images/github.jpg"
+author: "Diona Katzlein"
 date: "2026-06-15"
 category: "Tutorial"
 tags: ["github", "deployment", "static-site"]
-excerpt: "Panduan lengkap mendeploy blog statis berbasis Markdown ke layanan hosting gratis GitHub Pages."
+slug: "tutorial-github-pages"
 ---
 
 # Tutorial Deploy ke GitHub Pages

@@ -1,10 +1,12 @@
 ---
 title: "SEO untuk Static Blog"
-slug: "seo-static-blog"
+description: "Panduan meningkatkan peringkat SEO dan peringkat pencarian lokal (GEO) pada blog statis menggunakan meta tag, JSON-LD, sitemap, dan RSS feed."
+image: "/assets/images/seo.jpg"
+author: "Diona Katzlein"
 date: "2026-06-14"
 category: "SEO"
 tags: ["seo", "sitemap", "rss"]
-excerpt: "Cara meningkatkan peringkat SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed."
+slug: "seo-static-blog"
 ---
 
 # SEO untuk Static Blog

@@ -1,10 +1,12 @@
 ---
 title: "Selamat Datang di Isekai Blog"
-slug: "selamat-datang"
+description: "Artikel pembuka seputar perkenalan Isekai Blog, jurnal digital personal penulisan teknologi berbasis Markdown."
+image: "/assets/images/welcome.jpg"
+author: "Diona Katzlein"
 date: "2026-06-15"
 category: "Announcement"
 tags: ["github-pages", "markdown", "blog"]
-excerpt: "Artikel pembuka untuk static Markdown blog yang berjalan di GitHub Pages."
+slug: "selamat-datang"
 ---
 
 # Selamat Datang di Isekai Blog

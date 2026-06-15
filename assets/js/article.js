@@ -46,8 +46,13 @@ fetch('./posts.json')
 // Setup dynamic SEO & GEO Meta tags
 function setMeta(post){
   const pageTitle = `${post.title} - Isekai Blog`;
-  const postUrl = `https://diona-katzlein.github.io/diona-blog/blog/article.html?slug=${encodeURIComponent(post.slug)}`;
-  const description = post.excerpt || post.title;
+  const postUrl = `https://baca.readme.id/blog/article.html?slug=${encodeURIComponent(post.slug)}`;
+  const description = post.description || post.excerpt || post.title;
+  
+  // Format absolute image URL for Facebook, WhatsApp, Telegram shares
+  const imageUrl = post.image.startsWith('http') 
+    ? post.image 
+    : `https://baca.readme.id${post.image.startsWith('/') ? '' : '/'}${post.image}`;
 
   document.title = pageTitle;
   
@@ -57,32 +62,37 @@ function setMeta(post){
   // Canonical Link
   document.getElementById('canonicalLink')?.setAttribute('href', postUrl);
   
-  // Open Graph
+  // Open Graph (Facebook, WhatsApp, Telegram)
   document.getElementById('ogTitle')?.setAttribute('content', pageTitle);
   document.getElementById('ogDescription')?.setAttribute('content', description);
   document.getElementById('ogUrl')?.setAttribute('content', postUrl);
+  document.getElementById('ogImage')?.setAttribute('content', imageUrl);
   
   // Twitter Cards
   document.getElementById('twitterTitle')?.setAttribute('content', pageTitle);
   document.getElementById('twitterDescription')?.setAttribute('content', description);
+  document.getElementById('twitterImage')?.setAttribute('content', imageUrl);
   
-  // Inject JSON-LD Schema.org Structured Data
+  // Inject JSON-LD Schema.org Structured Data for Google/Bing
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
     "description": description,
+    "image": imageUrl,
     "datePublished": post.date,
+    "articleSection": post.category,
+    "keywords": (post.tags || []).join(', '),
     "author": {
-      "@type": "Organization",
-      "name": "Isekai ID"
+      "@type": "Person",
+      "name": post.author
     },
     "publisher": {
       "@type": "Organization",
       "name": "Isekai ID",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://diona-katzlein.github.io/diona-blog/assets/css/logo-sq.png"
+        "url": "https://baca.readme.id/assets/css/logo-sq.png"
       }
     },
     "mainEntityOfPage": {

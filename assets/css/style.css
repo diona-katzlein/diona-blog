@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Fira+Code:wght@400;500&display=swap');
 
-:root {
+html, :root {
   /* Colors - Light Theme */
   --bg: #f8fafc;
   --bg-grid: rgba(99, 102, 241, 0.03);
@@ -43,7 +43,7 @@
   --font-mono: 'Fira Code', Consolas, Monaco, monospace;
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"], [data-theme="dark"] {
   /* Colors - Dark Theme */
   --bg: #030712;
   --bg-grid: rgba(99, 102, 241, 0.05);
@@ -89,6 +89,12 @@
   padding: 0;
 }
 
+html {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg);
@@ -108,7 +114,7 @@ body::before {
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
   background-size: 50px 50px;
-  z-index: -2;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -137,7 +143,7 @@ body::before {
   left: -200px;
 }
 
-[data-theme="dark"] .bg-blob {
+html[data-theme="dark"] .bg-blob, [data-theme="dark"] .bg-blob {
   opacity: 0.1;
 }
 
