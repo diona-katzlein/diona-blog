@@ -1028,6 +1028,97 @@ a {
   transform: translateY(-2px);
 }
 
+/* Share Buttons Section */
+.share-container {
+  margin-top: 50px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.share-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.share-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.share-btn.facebook {
+  background: rgba(24, 119, 242, 0.08);
+  color: #1877f2;
+  border-color: rgba(24, 119, 242, 0.15);
+}
+.share-btn.facebook:hover {
+  background: #1877f2;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);
+}
+
+.share-btn.whatsapp {
+  background: rgba(37, 211, 102, 0.08);
+  color: #25d366;
+  border-color: rgba(37, 211, 102, 0.15);
+}
+.share-btn.whatsapp:hover {
+  background: #25d366;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+
+.share-btn.telegram {
+  background: rgba(0, 136, 204, 0.08);
+  color: #0088cc;
+  border-color: rgba(0, 136, 204, 0.15);
+}
+.share-btn.telegram:hover {
+  background: #0088cc;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.2);
+}
+
+.share-btn.copy {
+  background: var(--surface);
+  color: var(--text-secondary);
+  border-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.share-btn.copy:hover {
+  background: var(--theme-bg);
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
+}
+.share-btn.copy.copied {
+  background: var(--success);
+  color: #ffffff;
+  border-color: var(--success);
+}
+
 /* Footer */
 .footer {
   padding: 40px 0;

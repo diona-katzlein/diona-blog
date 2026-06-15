@@ -43,6 +43,7 @@ fetch('./posts.json')
     setupCodeCopyButtons();
     generateTocAndAddHeaderIds();
     setupReadingProgressBar();
+    setupShareButtons(post);
   })
   .catch(err => { 
     contentContainer.innerHTML = `<p class="empty"><i class="fa-solid fa-triangle-exclamation"></i> Gagal memuat artikel: ${escapeHtml(err.message)}</p>`; 
@@ -217,6 +218,37 @@ function setupReadingProgressBar() {
     
     progressBar.style.width = scrollPercentage + '%';
   });
+}
+
+// Social Sharing Setup
+function setupShareButtons(post) {
+  const url = encodeURIComponent(window.location.href);
+  const text = encodeURIComponent(`Baca artikel menarik: "${post.title}"`);
+  
+  const fbBtn = document.getElementById('shareFB');
+  const waBtn = document.getElementById('shareWA');
+  const tgBtn = document.getElementById('shareTG');
+  const copyBtn = document.getElementById('shareCopy');
+  
+  if (fbBtn) fbBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+  if (waBtn) waBtn.href = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+  if (tgBtn) tgBtn.href = `https://t.me/share/url?url=${url}&text=${text}`;
+  
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        copyBtn.classList.add('copied');
+        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Tersalin!';
+        
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Salin Link';
+        }, 2000);
+      }).catch(err => {
+        console.error('Gagal menyalin link: ', err);
+      });
+    });
+  }
 }
 
 function stripFrontmatter(md){ return md.replace(/^---[\s\S]*?---\s*/, ''); }
