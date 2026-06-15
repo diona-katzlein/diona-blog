@@ -10,8 +10,11 @@
       "deployment",
       "static-site"
     ],
-    "excerpt": "Panduan singkat deploy blog statis ini ke GitHub Pages.",
-    "readingTime": "1 min read"
+    "excerpt": "Panduan lengkap mendeploy blog statis berbasis Markdown ke layanan hosting gratis GitHub Pages dengan GitHub Actions.",
+    "description": "Panduan lengkap mendeploy blog statis berbasis Markdown ke layanan hosting gratis GitHub Pages dengan GitHub Actions.",
+    "image": "/assets/images/github.jpg",
+    "author": "Diona Katzlein",
+    "readingTime": "2 min read"
   },
   {
     "title": "Selamat Datang di Isekai Blog",
@@ -24,8 +27,11 @@
       "markdown",
       "blog"
     ],
-    "excerpt": "Artikel pembuka untuk static Markdown blog yang berjalan di GitHub Pages.",
-    "readingTime": "1 min read"
+    "excerpt": "Artikel pembuka seputar perkenalan Isekai Blog, jurnal digital personal penulisan teknologi berbasis Markdown.",
+    "description": "Artikel pembuka seputar perkenalan Isekai Blog, jurnal digital personal penulisan teknologi berbasis Markdown.",
+    "image": "/assets/images/welcome.jpg",
+    "author": "Diona Katzlein",
+    "readingTime": "2 min read"
   },
   {
     "title": "SEO untuk Static Blog",
@@ -38,7 +44,10 @@
       "sitemap",
       "rss"
     ],
-    "excerpt": "Cara meningkatkan SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed.",
-    "readingTime": "1 min read"
+    "excerpt": "Panduan meningkatkan peringkat SEO dan peringkat pencarian lokal (GEO) pada blog statis menggunakan meta tag, JSON-LD, sitemap, dan RSS feed.",
+    "description": "Panduan meningkatkan peringkat SEO dan peringkat pencarian lokal (GEO) pada blog statis menggunakan meta tag, JSON-LD, sitemap, dan RSS feed.",
+    "image": "/assets/images/seo.jpg",
+    "author": "Diona Katzlein",
+    "readingTime": "2 min read"
   }
 ]

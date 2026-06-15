@@ -3,25 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Static Markdown Blog untuk GitHub Pages dengan dark mode, SEO, RSS, sitemap, search, pagination, tag dan category." />
-  <meta name="keywords" content="blog, markdown, github pages, static site, isekai" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Isekai Blog - Landing Page & Static Markdown Blog</title>
+  <meta name="title" content="Isekai Blog - Landing Page & Static Markdown Blog" />
+  <meta name="description" content="Landing page & blog statis berbasis Markdown untuk GitHub Pages. Ringan, modern, SEO + GEO friendly dengan fitur dark mode, RSS, sitemap, pencarian, dan kategori." />
+  <meta name="keywords" content="blog, markdown, github pages, static blog, seo, geotagging, blog indonesia, web statis" />
   <meta name="author" content="Isekai ID" />
-  <meta property="og:title" content="Isekai Blog - Static Markdown Blog" />
-  <meta property="og:description" content="Landing page dan blog statis berbasis Markdown untuk GitHub Pages." />
+  
+  <!-- Geo-Targeting (GEO Friendly) -->
+  <meta name="geo.region" content="ID-JK" />
+  <meta name="geo.placename" content="Jakarta, Indonesia" />
+  <meta name="geo.position" content="-6.20876;106.845599" />
+  <meta name="ICBM" content="-6.20876, 106.845599" />
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://username.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>Isekai Blog - Static Markdown Blog</title>
+  <meta property="og:url" content="https://baca.readme.id/" />
+  <meta property="og:title" content="Isekai Blog - Landing Page & Static Markdown Blog" />
+  <meta property="og:description" content="Landing page & blog statis berbasis Markdown untuk GitHub Pages. Ringan, modern, SEO + GEO friendly." />
+  <meta property="og:image" content="https://baca.readme.id/assets/css/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://baca.readme.id/" />
+  <meta property="twitter:title" content="Isekai Blog - Landing Page & Static Markdown Blog" />
+  <meta property="twitter:description" content="Landing page & blog statis berbasis Markdown untuk GitHub Pages. Ringan, modern, SEO + GEO friendly." />
+  <meta property="twitter:image" content="https://baca.readme.id/assets/css/og-image.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://baca.readme.id/" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data (SEO friendly) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Isekai Blog",
+    "url": "https://baca.readme.id/",
+    "description": "Landing page & blog statis berbasis Markdown untuk GitHub Pages. Ringan, modern, SEO + GEO friendly.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Isekai ID",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://baca.readme.id/assets/css/logo-sq.png"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
+  <!-- Background Blobs for Visual Aesthetics -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="./">Isekai Blog</a>
       <nav class="nav-links">
-        <a href="./">Home</a>
+        <a class="active" href="./">Home</a>
         <a href="./blog/">Blog</a>
         <a href="#features">Features</a>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -34,12 +80,14 @@
   <main>
     <section class="hero">
       <div class="container hero-content">
-        <span class="badge">GitHub Pages Ready</span>
-        <h1>Static Markdown Blog yang ringan, modern, dan gampang dikelola.</h1>
-        <p>Landing page + blog statis dengan artikel format <strong>.md</strong>, auto generate JSON, sitemap, RSS, search, pagination, dark mode, dan syntax highlight.</p>
+        <span class="badge"><i class="fa-solid fa-sparkles"></i> Diona Katzlein | Isekai.ID</span>
+        <h1>Eksplorasi Teknologi, Kode, dan Ide Kreatif Bersama Diona.</h1>
+        <p>Selamat datang di jurnal digital saya. Di sini saya membagikan catatan teknis, tutorial pemrograman, dan wawasan seputar dunia pengembangan web statis yang ditulis dengan hati, disajikan dengan performa ultra cepat, dan dioptimalkan untuk keterbacaan yang sempurna.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="./blog/"><i class="fa-solid fa-book-open"></i> Baca Blog</a>
-          <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">Deploy ke GitHub</a>
+          <a class="btn primary" href="./blog/"><i class="fa-solid fa-book-open"></i> Baca Artikel Blog</a>
+          <a class="btn ghost" href="https://github.com/diona-katzlein/diona-blog" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub Repository
+          </a>
         </div>
       </div>
     </section>
@@ -47,21 +95,42 @@
     <section id="features" class="section">
       <div class="container">
         <div class="section-title">
-          <h2>Fitur Utama</h2>
-          <p>Sudah disiapkan untuk workflow konten sederhana tanpa backend.</p>
+          <h2>Kenapa Memilih Isekai Blog?</h2>
+          <p>Didesain khusus untuk kecepatan, kesederhanaan, dan pengindeksan mesin pencari tanpa butuh server database.</p>
         </div>
         <div class="feature-grid">
-          <article class="feature-card"><i class="fa-solid fa-moon"></i><h3>Dark Mode</h3><p>Mode terang/gelap tersimpan otomatis di browser.</p></article>
-          <article class="feature-card"><i class="fa-solid fa-file-code"></i><h3>Markdown</h3><p>Artikel cukup dibuat sebagai file Markdown di folder posts.</p></article>
-          <article class="feature-card"><i class="fa-solid fa-sitemap"></i><h3>SEO Ready</h3><p>Meta tag, sitemap.xml, RSS feed, dan URL artikel bersih.</p></article>
-          <article class="feature-card"><i class="fa-solid fa-magnifying-glass"></i><h3>Search</h3><p>Pencarian artikel berdasarkan judul, ringkasan, tag, dan kategori.</p></article>
+          <article class="feature-card">
+            <i class="fa-solid fa-moon"></i>
+            <h3>Dynamic Dark Mode</h3>
+            <p>Pergantian tema gelap dan terang yang mulus serta menyesuaikan preferensi browser pengguna secara otomatis.</p>
+          </article>
+          
+          <article class="feature-card">
+            <i class="fa-solid fa-file-code"></i>
+            <h3>Markdown Based</h3>
+            <p>Menulis konten semudah membuat file Markdown (.md) baru di folder posts tanpa harus bersentuhan dengan database SQL.</p>
+          </article>
+          
+          <article class="feature-card">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>SEO & GEO Optimized</h3>
+            <p>Dilengkapi schema data terstruktur (JSON-LD), sitemap otomatis, feed RSS, tag penargetan geografis, dan performa akses ultra cepat.</p>
+          </article>
+          
+          <article class="feature-card">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Instant Search & Filter</h3>
+            <p>Pencarian artikel super responsif berdasarkan judul, ringkasan, tag, dan kategori langsung di browser klien.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">&copy; 2026 Isekai Blog. All Rights Reserved.</div>
+    <div class="container">
+      <p>&copy; 2026 Isekai Blog. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: var(--primary);"></i> in Indonesia.</p>
+    </div>
   </footer>
 
   <script src="assets/js/theme.js"></script>

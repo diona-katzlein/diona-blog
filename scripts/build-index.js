@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = process.env.SITE_URL || 'https://username.github.io';
+const SITE_URL = process.env.SITE_URL || 'https://baca.readme.id';
 const SITE_TITLE = 'Isekai Blog';
 const SITE_DESCRIPTION = 'Static Markdown Blog untuk GitHub Pages.';
 const rootDir = path.resolve(__dirname, '..');
@@ -11,11 +11,11 @@ const sitemapFile = path.join(rootDir, 'sitemap.xml');
 const rssFile = path.join(rootDir, 'rss.xml');
 
 function parseFrontmatter(content){
-  const match = content.match(/^---\n([\s\S]*?)\n---\n?/);
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   const data = {};
   if(!match) return { data, body: content };
   const raw = match[1];
-  raw.split('\n').forEach(line => {
+  raw.split(/\r?\n/).forEach(line => {
     const idx = line.indexOf(':');
     if(idx === -1) return;
     const key = line.slice(0, idx).trim();
@@ -54,7 +54,9 @@ const posts = fs.readdirSync(postsDir)
     const fallbackTitle = body.match(/^#\s+(.+)$/m)?.[1] || file.replace(/\.md$/, '');
     const title = data.title || fallbackTitle;
     const slug = data.slug || slugify(title);
-    const excerpt = data.excerpt || plainText(body).slice(0, 160);
+    const description = data.description || data.excerpt || plainText(body).slice(0, 160);
+    const image = data.image || '/assets/css/og-image.png';
+    const author = data.author || 'Isekai ID';
     return {
       title,
       slug,
@@ -62,7 +64,10 @@ const posts = fs.readdirSync(postsDir)
       date: data.date || new Date().toISOString().slice(0, 10),
       category: data.category || 'General',
       tags: Array.isArray(data.tags) ? data.tags : [],
-      excerpt,
+      excerpt: description,
+      description,
+      image,
+      author,
       readingTime: readingTime(body)
     };
   })
