@@ -1,5 +1,24 @@
 [
   {
+    "title": "Mengenal BentoPDF: Solusi Edit & Konversi PDF Privacy-First Tanpa Upload Server",
+    "slug": "bentopdf-keunggulan-pdf-toolkit-lokal",
+    "file": "bentopdf-keunggulan-pdf-toolkit-lokal.md",
+    "date": "2026-06-15",
+    "category": "Software",
+    "tags": [
+      "pdf",
+      "bentopdf",
+      "privacy",
+      "web-tool",
+      "open-source"
+    ],
+    "excerpt": "BentoPDF adalah toolkit PDF privacy-first yang memproses dokumen secara lokal di browser Anda. Pelajari keunggulannya dibanding cloud PDF converter lainnya.",
+    "description": "BentoPDF adalah toolkit PDF privacy-first yang memproses dokumen secara lokal di browser Anda. Pelajari keunggulannya dibanding cloud PDF converter lainnya.",
+    "image": "/assets/images/bentopdf.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "Cara Aktivasi Windows 10 & 11 Menggunakan KMS Server",
     "slug": "how-activation-windows-using-kms-server",
     "file": "how-activation-windows-using-kms-server.md",
@@ -67,5 +86,78 @@
     "image": "/assets/images/seo.jpg",
     "author": "Diona Katzlein",
     "readingTime": "2 min read"
+  },
+  {
+    "title": "Mengenal Info Stealer: Malware Licik yang Diam-Diam Mengincar Password Anda",
+    "slug": "kenalan-info-stealer-virus-pencuri-data",
+    "file": "kenalan-info-stealer-virus-pencuri-data.md",
+    "date": "2026-05-19",
+    "category": "Digital Safety",
+    "tags": [
+      "infostealer",
+      "malware",
+      "virus",
+      "cybersecurity"
+    ],
+    "excerpt": "Info Stealer adalah malware berbahaya yang mencuri kredensial dari browser secara senyap. Pelajari cara kerjanya, gejalanya, dan cara mengamankan perangkat Anda.",
+    "description": "Info Stealer adalah malware berbahaya yang mencuri kredensial dari browser secara senyap. Pelajari cara kerjanya, gejalanya, dan cara mengamankan perangkat Anda.",
+    "image": "/assets/images/infostealer.png",
+    "author": "Diona Katzlein",
+    "readingTime": "5 min read"
+  },
+  {
+    "title": "Hati-Hati Penipuan Chat Shopee Akun Mau Diblokir: Kenali Tanda & Solusinya",
+    "slug": "hati-hati-chat-shopee-diblokir-penipuan",
+    "file": "hati-hati-chat-shopee-diblokir-penipuan.md",
+    "date": "2026-05-12",
+    "category": "Digital Safety",
+    "tags": [
+      "scam",
+      "phishing",
+      "shopee",
+      "soceng"
+    ],
+    "excerpt": "Menerima pesan mendesak bahwa akun Shopee Anda akan diblokir? Waspada scam! Pelajari ciri-ciri chat penipuan dan rumus SAB agar akun Anda aman.",
+    "description": "Menerima pesan mendesak bahwa akun Shopee Anda akan diblokir? Waspada scam! Pelajari ciri-ciri chat penipuan dan rumus SAB agar akun Anda aman.",
+    "image": "/assets/images/shopee-scam.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
+    "title": "Panduan Lengkap Melaporkan Penipuan QRIS ke Bank Indonesia",
+    "slug": "laporan-penipuan-qris-bank-indonesia",
+    "file": "laporan-penipuan-qris-bank-indonesia.md",
+    "date": "2026-05-12",
+    "category": "Digital Safety",
+    "tags": [
+      "qris",
+      "scam",
+      "cybersecurity",
+      "fintech",
+      "fraud"
+    ],
+    "excerpt": "Menjadi korban fraud via QRIS? Pelajari langkah melaporkan penipuan QRIS ke Bank Indonesia (bicara@bi.go.id), WhatsApp, serta cara membekukan rekening penipu.",
+    "description": "Menjadi korban fraud via QRIS? Pelajari langkah melaporkan penipuan QRIS ke Bank Indonesia (bicara@bi.go.id), WhatsApp, serta cara membekukan rekening penipu.",
+    "image": "/assets/images/qris-scam.png",
+    "author": "Diona Katzlein",
+    "readingTime": "3 min read"
+  },
+  {
+    "title": "Waspada Kejahatan Siber: Memahami Perbedaan Scam, Phishing, dan Social Engineering",
+    "slug": "waspada-scam-phishing-social-engineering",
+    "file": "waspada-scam-phishing-social-engineering.md",
+    "date": "2026-05-12",
+    "category": "Digital Safety",
+    "tags": [
+      "scam",
+      "phishing",
+      "soceng",
+      "cybersecurity"
+    ],
+    "excerpt": "Di era digital, penjahat meretas pikiran manusia. Pahami definisi dan perbedaan antara Scam, Phishing, serta Social Engineering untuk melindungi data Anda.",
+    "description": "Di era digital, penjahat meretas pikiran manusia. Pahami definisi dan perbedaan antara Scam, Phishing, serta Social Engineering untuk melindungi data Anda.",
+    "image": "/assets/images/scam-phishing.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
   }
 ]
