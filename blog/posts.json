@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Tutorial Deploy ke GitHub Pages",
+    "slug": "tutorial-github-pages",
+    "file": "tutorial-github-pages.md",
+    "date": "2026-06-15",
+    "category": "Tutorial",
+    "tags": [
+      "github",
+      "deployment",
+      "static-site"
+    ],
+    "excerpt": "Panduan singkat deploy blog statis ini ke GitHub Pages.",
+    "readingTime": "1 min read"
+  },
+  {
+    "title": "Selamat Datang di Isekai Blog",
+    "slug": "selamat-datang",
+    "file": "welcome.md",
+    "date": "2026-06-15",
+    "category": "Announcement",
+    "tags": [
+      "github-pages",
+      "markdown",
+      "blog"
+    ],
+    "excerpt": "Artikel pembuka untuk static Markdown blog yang berjalan di GitHub Pages.",
+    "readingTime": "1 min read"
+  },
+  {
+    "title": "SEO untuk Static Blog",
+    "slug": "seo-static-blog",
+    "file": "static-blog-seo.md",
+    "date": "2026-06-14",
+    "category": "SEO",
+    "tags": [
+      "seo",
+      "sitemap",
+      "rss"
+    ],
+    "excerpt": "Cara meningkatkan SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed.",
+    "readingTime": "1 min read"
+  }
+]

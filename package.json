@@ -1,0 +1,12 @@
+{
+  "name": "static-md-blog-github-pages",
+  "version": "1.0.0",
+  "description": "Static HTML Markdown Blog for GitHub Pages",
+  "scripts": {
+    "build:index": "node scripts/build-index.js",
+    "build": "npm run build:index"
+  },
+  "keywords": ["github-pages", "markdown", "static-blog", "seo", "rss"],
+  "author": "Isekai ID",
+  "license": "MIT"
+}

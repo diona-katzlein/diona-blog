@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Isekai Blog</title>
+  <link>https://username.github.io</link>
+  <description>Static Markdown Blog untuk GitHub Pages.</description>
+  <language>id-ID</language>
+
+  <item>
+    <title>Tutorial Deploy ke GitHub Pages</title>
+    <link>https://username.github.io/blog/article.html?slug=tutorial-github-pages</link>
+    <guid>https://username.github.io/blog/article.html?slug=tutorial-github-pages</guid>
+    <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Panduan singkat deploy blog statis ini ke GitHub Pages.</description>
+  </item>
+
+  <item>
+    <title>Selamat Datang di Isekai Blog</title>
+    <link>https://username.github.io/blog/article.html?slug=selamat-datang</link>
+    <guid>https://username.github.io/blog/article.html?slug=selamat-datang</guid>
+    <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Announcement</category>
+    <description>Artikel pembuka untuk static Markdown blog yang berjalan di GitHub Pages.</description>
+  </item>
+
+  <item>
+    <title>SEO untuk Static Blog</title>
+    <link>https://username.github.io/blog/article.html?slug=seo-static-blog</link>
+    <guid>https://username.github.io/blog/article.html?slug=seo-static-blog</guid>
+    <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>Cara meningkatkan SEO pada blog statis menggunakan meta tag, sitemap, dan RSS feed.</description>
+  </item>
+</channel>
+</rss>
