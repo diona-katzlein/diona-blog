@@ -1,5 +1,23 @@
 [
   {
+    "title": "Cara Aktivasi Windows 10 & 11 Menggunakan KMS Server",
+    "slug": "how-activation-windows-using-kms-server",
+    "file": "how-activation-windows-using-kms-server.md",
+    "date": "2026-06-15",
+    "category": "Tutorial",
+    "tags": [
+      "windows",
+      "kms",
+      "cmd",
+      "sysadmin"
+    ],
+    "excerpt": "Panduan lengkap aktivasi Windows 10 dan Windows 11 secara resmi menggunakan KMS client key (GVLK) dan server KMS lokal via Command Prompt (CMD).",
+    "description": "Panduan lengkap aktivasi Windows 10 dan Windows 11 secara resmi menggunakan KMS client key (GVLK) dan server KMS lokal via Command Prompt (CMD).",
+    "image": "/assets/images/kms-activation.png",
+    "author": "Diona Katzlein",
+    "readingTime": "3 min read"
+  },
+  {
     "title": "Tutorial Deploy ke GitHub Pages",
     "slug": "tutorial-github-pages",
     "file": "tutorial-github-pages.md",
