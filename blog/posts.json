@@ -18,6 +18,24 @@
     "readingTime": "2 min read"
   },
   {
+    "title": "Mengenal Spear Phishing: Ancaman Siber Tertarget dan Cara Menghindarinya",
+    "slug": "mengenal-spear-phishing-cara-menghindari",
+    "file": "mengenal-spear-phishing-cara-menghindari.md",
+    "date": "2026-06-29",
+    "category": "Digital Safety",
+    "tags": [
+      "phishing",
+      "spearphishing",
+      "cybersecurity",
+      "security"
+    ],
+    "excerpt": "Spear phishing adalah serangan siber terarah yang mengincar individu atau instansi tertentu. Pelajari cara kerjanya dan kiat ampuh melindungi data Anda.",
+    "description": "Spear phishing adalah serangan siber terarah yang mengincar individu atau instansi tertentu. Pelajari cara kerjanya dan kiat ampuh melindungi data Anda.",
+    "image": "/assets/images/spear-phishing.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "Mengenal BentoPDF: Solusi Edit & Konversi PDF Privacy-First Tanpa Upload Server",
     "slug": "bentopdf-keunggulan-pdf-toolkit-lokal",
     "file": "bentopdf-keunggulan-pdf-toolkit-lokal.md",
