@@ -1,5 +1,24 @@
 [
   {
+    "title": "Membongkar Kampanye Malware ClickFix: Analisis Teknis dan Cara Mengatasi",
+    "slug": "analisis-malware-clickfix-cloudflare-phishing",
+    "file": "analisis-malware-clickfix-cloudflare-phishing.md",
+    "date": "2026-07-03",
+    "category": "Digital Safety",
+    "tags": [
+      "malware",
+      "clickfix",
+      "phishing",
+      "cybersecurity",
+      "analysis"
+    ],
+    "excerpt": "Analisis mendalam mengenai ancaman ClickFix malware campaign yang menyamar sebagai verifikasi Cloudflare pada domain typosquatting.",
+    "description": "Analisis mendalam mengenai ancaman ClickFix malware campaign yang menyamar sebagai verifikasi Cloudflare pada domain typosquatting.",
+    "image": "/assets/images/clickfix-cloudflare.png",
+    "author": "Diona Katzlein",
+    "readingTime": "5 min read"
+  },
+  {
     "title": "Cara Mengubah Email Google (Gmail) dengan Mudah",
     "slug": "cara-mengubah-email-google-gmail",
     "file": "cara-mengubah-email-google-gmail.md",
