@@ -1,5 +1,24 @@
 [
   {
+    "title": "Panduan Memblokir C2 dan Domain Malware ClickFix di MikroTik",
+    "slug": "cara-blokir-c2-domain-clickfix-mikrotik",
+    "file": "cara-blokir-c2-domain-clickfix-mikrotik.md",
+    "date": "2026-07-04",
+    "category": "Tutorial",
+    "tags": [
+      "mikrotik",
+      "firewall",
+      "routeros",
+      "security",
+      "clickfix"
+    ],
+    "excerpt": "Pelajari cara mengonfigurasi firewall filter, Layer 7 protocols, dan DNS sinkhole pada MikroTik RouterOS untuk memblokir aktivitas malware ClickFix.",
+    "description": "Pelajari cara mengonfigurasi firewall filter, Layer 7 protocols, dan DNS sinkhole pada MikroTik RouterOS untuk memblokir aktivitas malware ClickFix.",
+    "image": "/assets/images/mikrotik-clickfix-block.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "Membongkar Kampanye Malware ClickFix: Analisis Teknis dan Cara Mengatasi",
     "slug": "analisis-malware-clickfix-cloudflare-phishing",
     "file": "analisis-malware-clickfix-cloudflare-phishing.md",

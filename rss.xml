@@ -7,6 +7,15 @@
   <language>id-ID</language>
 
   <item>
+    <title>Panduan Memblokir C2 dan Domain Malware ClickFix di MikroTik</title>
+    <link>https://baca.readme.id/blog/cara-blokir-c2-domain-clickfix-mikrotik.html</link>
+    <guid>https://baca.readme.id/blog/cara-blokir-c2-domain-clickfix-mikrotik.html</guid>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Pelajari cara mengonfigurasi firewall filter, Layer 7 protocols, dan DNS sinkhole pada MikroTik RouterOS untuk memblokir aktivitas malware ClickFix.</description>
+  </item>
+
+  <item>
     <title>Membongkar Kampanye Malware ClickFix: Analisis Teknis dan Cara Mengatasi</title>
     <link>https://baca.readme.id/blog/analisis-malware-clickfix-cloudflare-phishing.html</link>
     <guid>https://baca.readme.id/blog/analisis-malware-clickfix-cloudflare-phishing.html</guid>
