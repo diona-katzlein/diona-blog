@@ -1,5 +1,24 @@
 [
   {
+    "title": "Analisis Keamanan ModHeader: Ekstensi Populer Terindikasi Spyware dan Malware",
+    "slug": "analisis-modheader-terindikasi-spyware-malware",
+    "file": "analisis-modheader-terindikasi-spyware-malware.md",
+    "date": "2026-07-11",
+    "category": "Digital Safety",
+    "tags": [
+      "modheader",
+      "malware",
+      "spyware",
+      "analysis",
+      "security"
+    ],
+    "excerpt": "Investigasi mendalam terhadap ekstensi ModHeader versi 7.0.18 yang terindikasi malware dan spyware karena melakukan domain harvesting secara diam-diam.",
+    "description": "Investigasi mendalam terhadap ekstensi ModHeader versi 7.0.18 yang terindikasi malware dan spyware karena melakukan domain harvesting secara diam-diam.",
+    "image": "/assets/images/modheader-malware-analysis.png",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "Panduan Memblokir C2 dan Domain Malware ClickFix di MikroTik",
     "slug": "cara-blokir-c2-domain-clickfix-mikrotik",
     "file": "cara-blokir-c2-domain-clickfix-mikrotik.md",
