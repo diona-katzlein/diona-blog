@@ -7,6 +7,15 @@
   <language>id-ID</language>
 
   <item>
+    <title>Panduan Lengkap Sharing Printer dari Windows ke Ubuntu Menggunakan Samba</title>
+    <link>https://baca.readme.id/blog/panduan-sharing-printer-windows-ubuntu-samba.html</link>
+    <guid>https://baca.readme.id/blog/panduan-sharing-printer-windows-ubuntu-samba.html</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Cara mudah membagikan printer dari komputer Windows (Host) ke komputer klien Ubuntu Linux melalui protokol Samba dan antarmuka web CUPS.</description>
+  </item>
+
+  <item>
     <title>Analisis Keamanan ModHeader: Ekstensi Populer Terindikasi Spyware dan Malware</title>
     <link>https://baca.readme.id/blog/analisis-modheader-terindikasi-spyware-malware.html</link>
     <guid>https://baca.readme.id/blog/analisis-modheader-terindikasi-spyware-malware.html</guid>

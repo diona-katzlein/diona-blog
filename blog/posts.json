@@ -1,5 +1,24 @@
 [
   {
+    "title": "Panduan Lengkap Sharing Printer dari Windows ke Ubuntu Menggunakan Samba",
+    "slug": "panduan-sharing-printer-windows-ubuntu-samba",
+    "file": "panduan-sharing-printer-windows-ubuntu-samba.md",
+    "date": "2026-07-16",
+    "category": "Tutorial",
+    "tags": [
+      "windows",
+      "ubuntu",
+      "samba",
+      "cups",
+      "printer"
+    ],
+    "excerpt": "Cara mudah membagikan printer dari komputer Windows (Host) ke komputer klien Ubuntu Linux melalui protokol Samba dan antarmuka web CUPS.",
+    "description": "Cara mudah membagikan printer dari komputer Windows (Host) ke komputer klien Ubuntu Linux melalui protokol Samba dan antarmuka web CUPS.",
+    "image": "/assets/images/printer-sharing-samba.png",
+    "author": "Diona Katzlein",
+    "readingTime": "5 min read"
+  },
+  {
     "title": "Analisis Keamanan ModHeader: Ekstensi Populer Terindikasi Spyware dan Malware",
     "slug": "analisis-modheader-terindikasi-spyware-malware",
     "file": "analisis-modheader-terindikasi-spyware-malware.md",
