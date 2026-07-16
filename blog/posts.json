@@ -1,5 +1,24 @@
 [
   {
+    "title": "Panduan Lengkap Menggunakan GitLab Cloud dan Self-Hosted untuk Pemula",
+    "slug": "panduan-menggunakan-gitlab-cloud-self-hosted",
+    "file": "panduan-menggunakan-gitlab-cloud-self-hosted.md",
+    "date": "2026-07-16",
+    "category": "Tutorial",
+    "tags": [
+      "git",
+      "gitlab",
+      "self-hosted",
+      "devops",
+      "tutorial"
+    ],
+    "excerpt": "Pelajari cara setup awal Git, alur kerja harian GitLab Cloud & Self-Hosted, pembuatan Merge Request, hingga cara mengatasi Merge Conflict dengan aman.",
+    "description": "Pelajari cara setup awal Git, alur kerja harian GitLab Cloud & Self-Hosted, pembuatan Merge Request, hingga cara mengatasi Merge Conflict dengan aman.",
+    "image": "/assets/images/gitlab-cloud-selfhosted.png",
+    "author": "Diona Katzlein",
+    "readingTime": "5 min read"
+  },
+  {
     "title": "Panduan Lengkap Sharing Printer dari Windows ke Ubuntu Menggunakan Samba",
     "slug": "panduan-sharing-printer-windows-ubuntu-samba",
     "file": "panduan-sharing-printer-windows-ubuntu-samba.md",
