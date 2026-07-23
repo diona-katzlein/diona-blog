@@ -7,6 +7,15 @@
   <language>id-ID</language>
 
   <item>
+    <title>Kerentanan Baru 7-Zip: Arsip XZ Jahat Dapat Memicu Eksekusi Kode saat Ekstraksi</title>
+    <link>https://baca.readme.id/blog/kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.html</link>
+    <guid>https://baca.readme.id/blog/kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.html</guid>
+    <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Cybersecurity</category>
+    <description>Pelajari celah keamanan heap-based buffer overflow (CVE-2026-14266) pada 7-Zip saat memproses arsip XZ dan cara memitigasinya dengan memperbarui ke versi 26.02.</description>
+  </item>
+
+  <item>
     <title>Panduan Lengkap Menggunakan GitLab Cloud dan Self-Hosted untuk Pemula</title>
     <link>https://baca.readme.id/blog/panduan-menggunakan-gitlab-cloud-self-hosted.html</link>
     <guid>https://baca.readme.id/blog/panduan-menggunakan-gitlab-cloud-self-hosted.html</guid>

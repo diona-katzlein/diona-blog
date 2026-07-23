@@ -1,5 +1,24 @@
 [
   {
+    "title": "Kerentanan Baru 7-Zip: Arsip XZ Jahat Dapat Memicu Eksekusi Kode saat Ekstraksi",
+    "slug": "kerentanan-baru-7-zip-arsip-xz-eksekusi-kode",
+    "file": "kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.md",
+    "date": "2026-07-23",
+    "category": "Cybersecurity",
+    "tags": [
+      "7zip",
+      "vulnerability",
+      "cve-2026-14266",
+      "security",
+      "exploit"
+    ],
+    "excerpt": "Pelajari celah keamanan heap-based buffer overflow (CVE-2026-14266) pada 7-Zip saat memproses arsip XZ dan cara memitigasinya dengan memperbarui ke versi 26.02.",
+    "description": "Pelajari celah keamanan heap-based buffer overflow (CVE-2026-14266) pada 7-Zip saat memproses arsip XZ dan cara memitigasinya dengan memperbarui ke versi 26.02.",
+    "image": "/assets/images/seven-zip-exploit.jpg",
+    "author": "Diona Katzlein",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "Panduan Lengkap Menggunakan GitLab Cloud dan Self-Hosted untuk Pemula",
     "slug": "panduan-menggunakan-gitlab-cloud-self-hosted",
     "file": "panduan-menggunakan-gitlab-cloud-self-hosted.md",
