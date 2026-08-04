@@ -1282,3 +1282,324 @@ a {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Theme Dropdown Styles */
+.theme-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-dropdown-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-dropdown-btn:hover {
+  background: var(--border);
+  transform: scale(1.05);
+}
+
+.theme-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-width: 170px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  overflow: hidden;
+  animation: themeFadeIn 0.2s ease-out;
+}
+
+.theme-dropdown-menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.theme-dropdown-menu button:hover {
+  background-color: var(--border);
+}
+
+.theme-dropdown:hover .theme-dropdown-menu {
+  display: block;
+}
+
+@keyframes themeFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================
+   THEME STYLES OVERRIDES
+   ========================================== */
+
+/* 1. Skeuomorphism Theme */
+:root[data-theme="skeuomorphism"] {
+  --theme-bg: #e0e0e0;
+  --surface: #e0e0e0;
+  --card: #e8e8e8;
+  --border: #b0b0b0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --primary: #1d4ed8;
+  --shadow-sm: 2px 2px 5px rgba(0, 0, 0, 0.15), inset 1px 1px 2px #ffffff;
+  --shadow-md: 4px 4px 10px rgba(0, 0, 0, 0.15), inset 2px 2px 4px #ffffff;
+  --shadow-lg: 8px 8px 20px rgba(0, 0, 0, 0.2), inset 3px 3px 6px #ffffff;
+  --shadow-hover: 12px 12px 28px rgba(0, 0, 0, 0.25), inset 4px 4px 8px #ffffff;
+}
+[data-theme="skeuomorphism"] body {
+  background-color: #d1d5db !important;
+  background-image: linear-gradient(0deg, #d1d5db 25%, #e5e7eb 25%, #e5e7eb 50%, #d1d5db 50%, #d1d5db 75%, #e5e7eb 75%, #e5e7eb 100%);
+  background-size: 8px 8px;
+}
+[data-theme="skeuomorphism"] .post-card,
+[data-theme="skeuomorphism"] .feature-card,
+[data-theme="skeuomorphism"] .author-card,
+[data-theme="skeuomorphism"] .toc-card,
+[data-theme="skeuomorphism"] .share-container {
+  background: linear-gradient(135deg, #f3f4f6, #d1d5db) !important;
+  border: 1px solid #ffffff !important;
+  border-right-color: #9ca3af !important;
+  border-bottom-color: #9ca3af !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), inset 2px 2px 4px #ffffff !important;
+}
+[data-theme="skeuomorphism"] .site-header {
+  background: linear-gradient(180deg, #f3f4f6, #d1d5db) !important;
+  border-bottom: 2px solid #9ca3af !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), inset 0 1px 0 #ffffff !important;
+}
+
+/* 2. Neomorphism Theme */
+:root[data-theme="neomorphism"] {
+  --theme-bg: #e0e0e0;
+  --surface: #e0e0e0;
+  --card: #e0e0e0;
+  --border: transparent;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --primary: #4f46e5;
+  --shadow-sm: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+  --shadow-md: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+  --shadow-lg: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+  --shadow-hover: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+[data-theme="neomorphism"] body {
+  background-color: #e0e0e0 !important;
+}
+[data-theme="neomorphism"] .post-card,
+[data-theme="neomorphism"] .feature-card,
+[data-theme="neomorphism"] .author-card,
+[data-theme="neomorphism"] .toc-card,
+[data-theme="neomorphism"] .share-container {
+  background: #e0e0e0 !important;
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff !important;
+}
+[data-theme="neomorphism"] .site-header {
+  background: #e0e0e0 !important;
+  border: none !important;
+  box-shadow: 0 4px 12px #bebebe, inset 0 -2px 4px rgba(255,255,255,0.5) !important;
+}
+
+/* 3. Glassmorphism Theme */
+:root[data-theme="glassmorphism"] {
+  --theme-bg: #0b0f19;
+  --surface: rgba(15, 23, 42, 0.45);
+  --card: rgba(15, 23, 42, 0.35);
+  --border: rgba(255, 255, 255, 0.08);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --primary: #818cf8;
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px 0 rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 12px 40px 0 rgba(129, 140, 248, 0.15);
+}
+[data-theme="glassmorphism"] body {
+  background: linear-gradient(135deg, #090d16 0%, #111827 50%, #030712 100%) fixed !important;
+}
+[data-theme="glassmorphism"] .post-card,
+[data-theme="glassmorphism"] .feature-card,
+[data-theme="glassmorphism"] .author-card,
+[data-theme="glassmorphism"] .toc-card,
+[data-theme="glassmorphism"] .share-container {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+[data-theme="glassmorphism"] .site-header {
+  background: rgba(11, 15, 25, 0.6) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* 4. Claymorphism Theme */
+:root[data-theme="claymorphism"] {
+  --theme-bg: #f3f4f6;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --border: transparent;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --primary: #f43f5e;
+  --shadow-sm: 0 4px 10px rgba(244, 63, 94, 0.05), inset -2px -2px 4px rgba(0,0,0,0.05), inset 2px 2px 4px #ffffff;
+  --shadow-md: 0 8px 20px rgba(244, 63, 94, 0.08), inset -4px -4px 8px rgba(0,0,0,0.05), inset 4px 4px 8px #ffffff;
+  --shadow-lg: 0 16px 36px rgba(244, 63, 94, 0.1), inset -6px -6px 12px rgba(0,0,0,0.06), inset 6px 6px 12px #ffffff;
+  --shadow-hover: 0 20px 48px rgba(244, 63, 94, 0.15), inset -8px -8px 16px rgba(0,0,0,0.08), inset 8px 8px 16px #ffffff;
+}
+[data-theme="claymorphism"] body {
+  background-color: #f3f4f6 !important;
+}
+[data-theme="claymorphism"] .post-card,
+[data-theme="claymorphism"] .feature-card,
+[data-theme="claymorphism"] .author-card,
+[data-theme="claymorphism"] .toc-card,
+[data-theme="claymorphism"] .share-container {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 24px !important;
+  box-shadow: 0 12px 24px rgba(244, 63, 94, 0.06), inset -6px -6px 12px rgba(244, 63, 94, 0.04), inset 6px 6px 12px #ffffff !important;
+}
+[data-theme="claymorphism"] .site-header {
+  background: #ffffff !important;
+  border-radius: 0 0 24px 24px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03), inset 0 -4px 8px rgba(0,0,0,0.02) !important;
+}
+
+/* 5. Minimalism Theme */
+:root[data-theme="minimalism"] {
+  --theme-bg: #ffffff;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --border: #000000;
+  --text-primary: #000000;
+  --text-secondary: #1a1a1a;
+  --primary: #000000;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-hover: none;
+}
+[data-theme="minimalism"] body {
+  background-color: #ffffff !important;
+  font-family: monospace !important;
+}
+[data-theme="minimalism"] .post-card,
+[data-theme="minimalism"] .feature-card,
+[data-theme="minimalism"] .author-card,
+[data-theme="minimalism"] .toc-card,
+[data-theme="minimalism"] .share-container {
+  border: 1px solid #000000 !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+}
+[data-theme="minimalism"] .site-header {
+  background: #ffffff !important;
+  border-bottom: 2px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+/* 6. Maximalism Theme */
+:root[data-theme="maximalism"] {
+  --theme-bg: #ff007f;
+  --surface: #39ff14;
+  --card: #ffff00;
+  --border: #000000;
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --primary: #00ffff;
+  --shadow-sm: 3px 3px 0px #000000;
+  --shadow-md: 6px 6px 0px #000000;
+  --shadow-lg: 10px 10px 0px #000000;
+  --shadow-hover: 12px 12px 0px #00ffff;
+}
+[data-theme="maximalism"] body {
+  background-color: #ff007f !important;
+  background-image: radial-gradient(#00ffff 20%, transparent 20%), radial-gradient(#39ff14 20%, transparent 20%) !important;
+  background-size: 24px 24px !important;
+  background-position: 0 0, 12px 12px !important;
+}
+[data-theme="maximalism"] .post-card,
+[data-theme="maximalism"] .feature-card,
+[data-theme="maximalism"] .author-card,
+[data-theme="maximalism"] .toc-card,
+[data-theme="maximalism"] .share-container {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border: 3px solid #000000 !important;
+  border-radius: 6px !important;
+  box-shadow: 6px 6px 0px #000000 !important;
+}
+[data-theme="maximalism"] .site-header {
+  background: #39ff14 !important;
+  border-bottom: 4px solid #000000 !important;
+  box-shadow: 0 4px 0px #000000 !important;
+}
+
+/* 7. Liquid Glass Theme */
+:root[data-theme="liquid-glass"] {
+  --theme-bg: #04040d;
+  --surface: rgba(10, 8, 32, 0.75);
+  --card: rgba(10, 8, 32, 0.55);
+  --border: rgba(99, 102, 241, 0.25);
+  --text-primary: #e0e7ff;
+  --text-secondary: #a5b4fc;
+  --primary: #818cf8;
+  --shadow-sm: 0 4px 12px 0 rgba(99, 102, 241, 0.15);
+  --shadow-md: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(99, 102, 241, 0.1);
+  --shadow-lg: 0 16px 48px 0 rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(99, 102, 241, 0.15);
+  --shadow-hover: 0 12px 40px 0 rgba(99, 102, 241, 0.35);
+}
+[data-theme="liquid-glass"] body {
+  background: radial-gradient(circle at 50% 50%, #111029 0%, #03030b 100%) fixed !important;
+}
+[data-theme="liquid-glass"] .post-card,
+[data-theme="liquid-glass"] .feature-card,
+[data-theme="liquid-glass"] .author-card,
+[data-theme="liquid-glass"] .toc-card,
+[data-theme="liquid-glass"] .share-container {
+  background: rgba(20, 18, 54, 0.45) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(99, 102, 241, 0.15) !important;
+}
+[data-theme="liquid-glass"] .site-header {
+  background: rgba(10, 8, 32, 0.7) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+

@@ -78,9 +78,22 @@
             <a href="https://trakteer.id/isekai_id/gift" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i> Trakteer.id</a>
           </div>
         </div>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <i class="fa-solid fa-moon"></i>
-        </button>
+        <div class="theme-dropdown">
+          <button class="theme-dropdown-btn" id="themeDropdownBtn" aria-label="Pilih Tema">
+            <i class="fa-solid fa-palette"></i>
+          </button>
+          <div class="theme-dropdown-menu" id="themeDropdownMenu">
+            <button data-theme-val="light"><i class="fa-solid fa-sun"></i> Light</button>
+            <button data-theme-val="dark"><i class="fa-solid fa-moon"></i> Dark</button>
+            <button data-theme-val="skeuomorphism"><i class="fa-solid fa-gem"></i> Skeuomorphism</button>
+            <button data-theme-val="neomorphism"><i class="fa-solid fa-circle-dot"></i> Neomorphism</button>
+            <button data-theme-val="glassmorphism"><i class="fa-solid fa-border-all"></i> Glassmorphism</button>
+            <button data-theme-val="claymorphism"><i class="fa-solid fa-shapes"></i> Claymorphism</button>
+            <button data-theme-val="minimalism"><i class="fa-solid fa-square-minus"></i> Minimalism</button>
+            <button data-theme-val="maximalism"><i class="fa-solid fa-wand-magic-sparkles"></i> Maximalism</button>
+            <button data-theme-val="liquid-glass"><i class="fa-solid fa-droplet"></i> Liquid Glass</button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>

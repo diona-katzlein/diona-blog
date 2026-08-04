@@ -17,33 +17,47 @@
   }
 
   function initToggle() {
-    const button = document.getElementById('themeToggle');
-    if(button){
-      button.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-      button.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
+    const dropdownMenu = document.getElementById('themeDropdownMenu');
+    if (dropdownMenu) {
+      const buttons = dropdownMenu.querySelectorAll('button[data-theme-val]');
+      
+      // Setup initial styles
+      buttons.forEach(btn => {
+        const btnTheme = btn.getAttribute('data-theme-val');
+        if (btnTheme === theme) {
+          btn.style.fontWeight = '700';
+          btn.style.color = 'var(--primary)';
+        }
         
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        
-        button.innerHTML = next === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-        updateHighlightTheme(next);
+        btn.addEventListener('click', () => {
+          const next = btn.getAttribute('data-theme-val');
+          
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          
+          // Clear active styles and set the new one
+          buttons.forEach(b => {
+            b.style.fontWeight = '500';
+            b.style.color = '';
+          });
+          btn.style.fontWeight = '700';
+          btn.style.color = 'var(--primary)';
+          
+          updateHighlightTheme(next);
+        });
       });
     }
-    
-    // Set theme again just in case DOM loaded after link was parsed
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    updateHighlightTheme(currentTheme);
   }
 
   function updateHighlightTheme(themeMode) {
     const highlightLink = document.getElementById('highlightTheme');
     if (highlightLink) {
-      if (themeMode === 'dark') {
-        highlightLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css';
-      } else {
+      // Light-oriented themes get the light highlight theme
+      if (themeMode === 'light' || themeMode === 'neomorphism' || themeMode === 'claymorphism' || themeMode === 'minimalism') {
         highlightLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+      } else {
+        // Dark, Glassmorphism, Skeuomorphism, Maximalism, Liquid Glass get the dark highlight theme
+        highlightLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css';
       }
     }
   }
