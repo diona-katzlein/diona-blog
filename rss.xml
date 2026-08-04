@@ -7,6 +7,15 @@
   <language>id-ID</language>
 
   <item>
+    <title>Kerentanan Kritis cPanel (CVE-2026-58048): Celah Eskalasi Hak Akses ke Root Database</title>
+    <link>https://baca.readme.id/blog/kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root.html</link>
+    <guid>https://baca.readme.id/blog/kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root.html</guid>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+    <category>Cybersecurity</category>
+    <description>Pelajari kerentanan kritis CVE-2026-58048 dengan skor CVSS 9.4 pada cPanel &amp; WHM yang memungkinkan pengguna hosting biasa mengeksekusi perintah dengan hak akses root database.</description>
+  </item>
+
+  <item>
     <title>Kerentanan Baru 7-Zip: Arsip XZ Jahat Dapat Memicu Eksekusi Kode saat Ekstraksi</title>
     <link>https://baca.readme.id/blog/kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.html</link>
     <guid>https://baca.readme.id/blog/kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.html</guid>

@@ -1,5 +1,24 @@
 [
   {
+    "title": "Kerentanan Kritis cPanel (CVE-2026-58048): Celah Eskalasi Hak Akses ke Root Database",
+    "slug": "kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root",
+    "file": "kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root.md",
+    "date": "2026-08-04",
+    "category": "Cybersecurity",
+    "tags": [
+      "cpanel",
+      "vulnerability",
+      "cve-2026-58048",
+      "database",
+      "exploit"
+    ],
+    "excerpt": "Pelajari kerentanan kritis CVE-2026-58048 dengan skor CVSS 9.4 pada cPanel & WHM yang memungkinkan pengguna hosting biasa mengeksekusi perintah dengan hak akses root database.",
+    "description": "Pelajari kerentanan kritis CVE-2026-58048 dengan skor CVSS 9.4 pada cPanel & WHM yang memungkinkan pengguna hosting biasa mengeksekusi perintah dengan hak akses root database.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Diona Katzlein",
+    "readingTime": "3 min read"
+  },
+  {
     "title": "Kerentanan Baru 7-Zip: Arsip XZ Jahat Dapat Memicu Eksekusi Kode saat Ekstraksi",
     "slug": "kerentanan-baru-7-zip-arsip-xz-eksekusi-kode",
     "file": "kerentanan-baru-7-zip-arsip-xz-eksekusi-kode.md",
