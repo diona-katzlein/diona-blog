@@ -1529,6 +1529,20 @@ a {
   border-bottom: 2px solid #000000 !important;
   box-shadow: none !important;
 }
+[data-theme="minimalism"] .theme-dropdown-menu button:hover,
+[data-theme="minimalism"] .donate-menu a:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+[data-theme="minimalism"] .theme-dropdown-menu button,
+[data-theme="minimalism"] .donate-menu a {
+  border-radius: 0px !important;
+}
+[data-theme="minimalism"] .theme-dropdown-menu,
+[data-theme="minimalism"] .donate-menu {
+  border: 1px solid #000000 !important;
+  border-radius: 0px !important;
+}
 
 /* 6. Maximalism Theme */
 :root[data-theme="maximalism"] {

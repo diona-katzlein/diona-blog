@@ -1,7 +1,7 @@
 (function(){
   const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = saved || (prefersDark ? 'dark' : 'light');
+  // Default to 'minimalism' if no theme is saved in localStorage
+  const theme = saved || 'minimalism';
   
   // Apply theme to HTML tag immediately to avoid Flash of Unstyled Content (FOUC)
   document.documentElement.setAttribute('data-theme', theme);
