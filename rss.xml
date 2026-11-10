@@ -7,6 +7,33 @@
   <language>id-ID</language>
 
   <item>
+    <title>CVE Terbaru 2026-11-10: 50 Kerentanan Kritis CVSS ≥ 9.0 / Latest Critical CVEs</title>
+    <link>https://baca.readme.id/blog/cve-terbaru-2026-11-10.html</link>
+    <guid>https://baca.readme.id/blog/cve-terbaru-2026-11-10.html</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>CVE</category>
+    <description>Daftar CVE terbaru dengan skor CVSS kritis per 2026-11-10, lengkap dengan deskripsi Bahasa Inggris resmi NVD dan ringkasan Bahasa Indonesia. Sumber: NVD &amp; CISA.</description>
+  </item>
+
+  <item>
+    <title>Data Breach Terbaru 2026-11-10: Harvard dan 25 Breach Terkini / Latest Data Breaches</title>
+    <link>https://baca.readme.id/blog/data-breach-terbaru-2026-11-10.html</link>
+    <guid>https://baca.readme.id/blog/data-breach-terbaru-2026-11-10.html</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Data Breach</category>
+    <description>Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-10 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber.</description>
+  </item>
+
+  <item>
+    <title>KEV Terbaru 2026-11-10: Kerentanan yang Terbukti Dieksploitasi Aktif / Latest Known Exploited Vulnerabilities</title>
+    <link>https://baca.readme.id/blog/kev-terbaru-2026-11-10.html</link>
+    <guid>https://baca.readme.id/blog/kev-terbaru-2026-11-10.html</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>KEV</category>
+    <description>Daftar KEV terbaru dari katalog CISA per 2026-11-10: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.</description>
+  </item>
+
+  <item>
     <title>Kerentanan Kritis cPanel (CVE-2026-58048): Celah Eskalasi Hak Akses ke Root Database</title>
     <link>https://baca.readme.id/blog/kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root.html</link>
     <guid>https://baca.readme.id/blog/kerentanan-kritis-cpanel-cve-2026-58048-eskalasi-root.html</guid>
