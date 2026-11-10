@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10 23:29:34 WITA",
+  "generated": "2026-11-11 06:59:30 WITA",
   "total": 1033,
   "items": [
     {
@@ -181,6 +181,11 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
+      "url": "https://databreaches.net/2026/11/10/near-ai-breach-exposes-user-details-and-data-from-18-ai-agents/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Ransomware Attack Puts Vanderbilt University on Lockdown",
       "url": "https://databreaches.net/2026/11/10/ransomware-attack-puts-vanderbilt-university-on-lockdown/"
     },
@@ -206,6 +211,21 @@
     },
     {
       "source": "BleepingComputer",
+      "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+      "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/"
+    },
+    {
+      "source": "BleepingComputer",
       "title": "Ransomware recovery is now a client retention metric",
       "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/"
     },
@@ -218,26 +238,6 @@
       "source": "BleepingComputer",
       "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
       "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
-      "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "York University breach exposed personal information dating to 2007",
-      "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Binance denies data breach after alleged ShinyHunters claims",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
     }
   ]
 }

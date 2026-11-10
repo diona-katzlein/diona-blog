@@ -1,10 +1,75 @@
 {
-  "generated": "2026-11-10 23:54 WITA",
+  "generated": "2026-11-11 07:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-121889",
+      "published": "2026-11-10T22:18:26.180",
+      "lastModified": "2026-11-10T22:18:26.180",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Adobe Connect is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "references": [
+        "https://www.adobe.com/trust/security/products/connect/apsb26-191.html"
+      ],
+      "cve_id": "CVE-2026-121889"
+    },
+    {
+      "id": "CVE-2026-121356",
+      "published": "2026-11-10T22:18:25.637",
+      "lastModified": "2026-11-10T22:18:25.637",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Adobe Connect is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "references": [
+        "https://www.adobe.com/trust/security/products/connect/apsb26-191.html"
+      ],
+      "cve_id": "CVE-2026-121356"
+    },
+    {
+      "id": "CVE-2026-121353",
+      "published": "2026-11-10T22:18:25.217",
+      "lastModified": "2026-11-10T22:18:25.217",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Adobe Connect is affected by an Improper Neutralization of CRLF Sequences ('CRLF Injection') vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "references": [
+        "https://www.adobe.com/trust/security/products/connect/apsb26-191.html"
+      ],
+      "cve_id": "CVE-2026-121353"
+    },
+    {
+      "id": "CVE-2026-121352",
+      "published": "2026-11-10T22:18:25.060",
+      "lastModified": "2026-11-10T22:18:25.060",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Adobe Connect is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could exploit this vulnerability to gain unauthorized access to sensitive resources. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "references": [
+        "https://www.adobe.com/trust/security/products/connect/apsb26-191.html"
+      ],
+      "cve_id": "CVE-2026-121352"
+    },
+    {
+      "id": "CVE-2026-121351",
+      "published": "2026-11-10T22:18:24.910",
+      "lastModified": "2026-11-10T22:18:24.910",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Adobe Connect is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "references": [
+        "https://www.adobe.com/trust/security/products/connect/apsb26-191.html"
+      ],
+      "cve_id": "CVE-2026-121351"
+    },
     {
       "id": "CVE-2026-89126",
       "published": "2026-11-10T01:17:22.420",
-      "lastModified": "2026-11-10T01:17:22.420",
+      "lastModified": "2026-11-10T22:11:23.807",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -18,7 +83,7 @@
     {
       "id": "CVE-2026-89103",
       "published": "2026-11-10T01:17:21.013",
-      "lastModified": "2026-11-10T01:17:21.013",
+      "lastModified": "2026-11-10T22:11:23.807",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -32,7 +97,7 @@
     {
       "id": "CVE-2026-76964",
       "published": "2026-11-10T01:17:20.240",
-      "lastModified": "2026-11-10T01:17:20.240",
+      "lastModified": "2026-11-10T22:11:23.807",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -63,7 +128,7 @@
     {
       "id": "CVE-2026-120017",
       "published": "2026-11-10T01:17:16.803",
-      "lastModified": "2026-11-10T01:17:16.803",
+      "lastModified": "2026-11-10T22:11:23.807",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -77,7 +142,7 @@
     {
       "id": "CVE-2026-115252",
       "published": "2026-11-09T11:17:21.143",
-      "lastModified": "2026-11-09T14:17:06.253",
+      "lastModified": "2026-11-10T16:28:46.510",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -107,7 +172,7 @@
     {
       "id": "CVE-2026-123551",
       "published": "2026-11-08T02:16:46.603",
-      "lastModified": "2026-11-08T02:16:46.603",
+      "lastModified": "2026-11-10T22:13:29.767",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -715,76 +780,6 @@
         "https://www.oracle.com/security-alerts/cpuoct2026.html"
       ],
       "cve_id": "CVE-2026-91299"
-    },
-    {
-      "id": "CVE-2026-91231",
-      "published": "2026-10-20T22:20:23.787",
-      "lastModified": "2026-11-04T14:52:33.990",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1",
-      "references": [
-        "https://www.oracle.com/security-alerts/cpuoct2026.html"
-      ],
-      "cve_id": "CVE-2026-91231"
-    },
-    {
-      "id": "CVE-2026-91221",
-      "published": "2026-10-20T22:20:22.580",
-      "lastModified": "2026-11-04T14:52:40.807",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (",
-      "references": [
-        "https://www.oracle.com/security-alerts/cpuoct2026.html"
-      ],
-      "cve_id": "CVE-2026-91221"
-    },
-    {
-      "id": "CVE-2026-87337",
-      "published": "2026-10-20T22:20:11.347",
-      "lastModified": "2026-11-04T14:22:55.297",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
-      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager acc",
-      "references": [
-        "https://www.oracle.com/security-alerts/cpuoct2026.html"
-      ],
-      "cve_id": "CVE-2026-87337"
-    },
-    {
-      "id": "CVE-2026-97229",
-      "published": "2026-10-13T02:17:00.840",
-      "lastModified": "2026-11-02T13:30:16.800",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "references": [
-        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/",
-        "https://gitlab.com/gitlab-org/gitlab/-/work_items/630686",
-        "https://hackerone.com/reports/4055749",
-        "https://hackerone.com/reports/4058589",
-        "https://github.com/rapid7/metasploit-framework/pull/22017"
-      ],
-      "cve_id": "CVE-2026-97229"
-    },
-    {
-      "id": "CVE-2026-89111",
-      "published": "2026-10-13T01:16:47.890",
-      "lastModified": "2026-11-03T20:18:19.180",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
-      "description": "The SAP Cloud SDK for Python contains an OAuth2 SSRF vulnerability affecting multi-tenant BTP applications. An attacker who controls the tenant_subdomain parameter can redirect OAuth2 token requests to an attacker-controlled server, causing client credentials to be exfiltrated.\n\n\n\nThis vulnerability was originally fixed in 0.45.2. It was reintroduced in 0.53.0 when the HTTP client was refactored into a shared core module, and the tenant subdomain validation was not carried over to the new location. The validation was restored in 0.55.1.",
-      "references": [
-        "https://github.com/SAP/cloud-sdk-python/security/advisories/GHSA-4mv3-jxxm-9cx2",
-        "https://url.sap/sapsecuritypatchday"
-      ],
-      "cve_id": "CVE-2026-89111"
     }
   ]
 }
