@@ -4,6 +4,7 @@ description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2
 author: "Azwar Anas"
 date: "2026-11-10"
 category: "Data Breach"
+image: "/assets/images/infostealer.png"
 tags: ["data-breach", "hibp", "kebocoran-data", "privacy", "cybersecurity"]
 slug: "data-breach-terbaru-2026-11-10"
 ---

@@ -14,7 +14,7 @@
     ],
     "excerpt": "Daftar CVE terbaru dengan skor CVSS kritis per 2026-11-10, lengkap dengan deskripsi Bahasa Inggris resmi NVD dan ringkasan Bahasa Indonesia. Sumber: NVD & CISA.",
     "description": "Daftar CVE terbaru dengan skor CVSS kritis per 2026-11-10, lengkap dengan deskripsi Bahasa Inggris resmi NVD dan ringkasan Bahasa Indonesia. Sumber: NVD & CISA.",
-    "image": "/assets/css/og-image.png",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
     "author": "Azwar Anas",
     "readingTime": "9 min read"
   },
@@ -33,7 +33,7 @@
     ],
     "excerpt": "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-10 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber.",
     "description": "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-10 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber.",
-    "image": "/assets/css/og-image.png",
+    "image": "/assets/images/infostealer.png",
     "author": "Azwar Anas",
     "readingTime": "6 min read"
   },
@@ -52,7 +52,7 @@
     ],
     "excerpt": "Daftar KEV terbaru dari katalog CISA per 2026-11-10: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
     "description": "Daftar KEV terbaru dari katalog CISA per 2026-11-10: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
-    "image": "/assets/css/og-image.png",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
     "author": "Azwar Anas",
     "readingTime": "4 min read"
   },

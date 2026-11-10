@@ -4,6 +4,7 @@ description: "Daftar KEV terbaru dari katalog CISA per 2026-11-10: kerentanan ya
 author: "Azwar Anas"
 date: "2026-11-10"
 category: "KEV"
+image: "/assets/images/cpanel-vulnerability.jpg"
 tags: ["kev", "cisa", "vulnerability", "patch", "cybersecurity"]
 slug: "kev-terbaru-2026-11-10"
 ---

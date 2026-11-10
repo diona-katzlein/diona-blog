@@ -55,7 +55,7 @@ const posts = fs.readdirSync(postsDir)
     const title = data.title || fallbackTitle;
     const slug = data.slug || slugify(title);
     const description = data.description || data.excerpt || plainText(body).slice(0, 160);
-    const image = data.image || '/assets/css/og-image.png';
+    const image = data.image || '/assets/images/cpanel-vulnerability.jpg';
     const author = data.author || 'Isekai ID';
     return {
       title,
@@ -109,7 +109,7 @@ posts.forEach(post => {
       "name": "Isekai ID",
       "logo": {
         "@type": "ImageObject",
-        "url": `${SITE_URL}/assets/css/logo-sq.png`
+        "url": `${SITE_URL}/assets/images/cpanel-vulnerability.jpg`
       }
     },
     "mainEntityOfPage": {
@@ -126,7 +126,7 @@ posts.forEach(post => {
     .replace(/<title>Article - Isekai Blog<\/title>/g, `<title>${escapeXml(post.title)} - Isekai Blog</title>`)
     .replace(/<meta id="metaDescription" name="description" content="[^"]*" \/>/g, `<meta id="metaDescription" name="description" content="${escapeXml(post.description)}" />`)
     .replace(/content="https:\/\/baca\.readme\.id\/blog\/article\.html"/g, `content="${escapeXml(postUrl)}"`)
-    .replace(/content="https:\/\/baca\.readme\.id\/assets\/css\/og-image\.png"/g, `content="${escapeXml(imageUrl)}"`)
+    .replace(/content="https:\/\/baca\.readme\.id\/assets\/images\/cpanel-vulnerability\.jpg"/g, `content="${escapeXml(imageUrl)}"`)
     .replace(/content="Article - Isekai Blog"/g, `content="${escapeXml(post.title)} - Isekai Blog"`)
     .replace(/content="Artikel teknis menarik mengenai static site generator, Markdown, dan web statis\."/g, `content="${escapeXml(post.description)}"`)
     .replace(/href="https:\/\/baca\.readme\.id\/blog\/article\.html"/g, `href="${escapeXml(postUrl)}"`)
@@ -140,15 +140,18 @@ posts.forEach(post => {
   fs.writeFileSync(outputPath, postHtml);
 });
 
-const urls = [
-  `${SITE_URL}/`,
-  `${SITE_URL}/blog/`,
-  `${SITE_URL}/cve/`,
-  `${SITE_URL}/kev/`,
-  `${SITE_URL}/data-breach/`,
-  ...posts.map(post => `${SITE_URL}/blog/${post.slug}.html`)
+const todayIso = new Date().toISOString().slice(0, 10);
+const latestPostDate = posts.length ? posts[0].date : todayIso;
+const staticEntries = [
+  { loc: `${SITE_URL}/`, lastmod: latestPostDate, changefreq: 'daily', priority: '1.0' },
+  { loc: `${SITE_URL}/blog/`, lastmod: latestPostDate, changefreq: 'daily', priority: '0.9' },
+  { loc: `${SITE_URL}/cve/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
+  { loc: `${SITE_URL}/kev/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
+  { loc: `${SITE_URL}/data-breach/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
 ];
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url => `  <url><loc>${escapeXml(url)}</loc></url>`).join('\n')}\n</urlset>\n`;
+const postEntries = posts.map(post => ({ loc: `${SITE_URL}/blog/${post.slug}.html`, lastmod: post.date, changefreq: 'monthly', priority: '0.8' }));
+const allEntries = [...staticEntries, ...postEntries];
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${allEntries.map(e => `  <url><loc>${escapeXml(e.loc)}</loc><lastmod>${e.lastmod}</lastmod><changefreq>${e.changefreq}</changefreq><priority>${e.priority}</priority></url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(sitemapFile, sitemap);
 
 const rssItems = posts.map(post => `
@@ -167,6 +170,8 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
   <link>${escapeXml(SITE_URL)}</link>
   <description>${escapeXml(SITE_DESCRIPTION)}</description>
   <language>id-ID</language>
+  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+  <ttl>720</ttl>
 ${rssItems}
 </channel>
 </rss>
