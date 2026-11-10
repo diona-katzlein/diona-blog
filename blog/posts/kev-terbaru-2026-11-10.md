@@ -1,7 +1,7 @@
 ---
 title: "KEV Terbaru 2026-11-10: Kerentanan yang Terbukti Dieksploitasi Aktif / Latest Known Exploited Vulnerabilities"
 description: "Daftar KEV terbaru dari katalog CISA per 2026-11-10: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia."
-author: "Azwar Anas"
+author: "Alya Nadzira Arta Anas"
 date: "2026-11-10"
 category: "KEV"
 image: "/assets/images/cpanel-vulnerability.jpg"

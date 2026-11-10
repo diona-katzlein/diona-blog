@@ -45,6 +45,14 @@ function readingTime(text){
   return `${Math.max(1, Math.ceil(words / 200))} min read`;
 }
 
+
+// Profil penulis (author bio box per artikel, berdasarkan frontmatter author)
+const AUTHORS = {
+  'Duscha Olya Arta Anas': { initial: 'O', bio: 'Peneliti keamanan siber & spesialis infrastruktur (DevOps). Menulis kolom CVE: riset kerentanan, analisis skor CVSS, dan langkah mitigasi yang praktis.' },
+  'Alya Nadzira Arta Anas': { initial: 'A', bio: 'Spesialis tata kelola keamanan informasi & manajemen risiko (ISO/IEC 27001). Menulis kolom KEV: prioritas patch berdasarkan eksploitasi nyata dan tenggat kepatuhan.' },
+  'Isekai ID': { initial: 'I', bio: 'Editor Isekai Blog. Memantau kebocoran data & threat intelligence, lalu merangkumnya dalam Bahasa Indonesia — selalu dengan credit ke sumber aslinya.' },
+};
+
 const posts = fs.readdirSync(postsDir)
   .filter(file => file.endsWith('.md'))
   .map(file => {
@@ -136,6 +144,12 @@ posts.forEach(post => {
     .replace(/<p id="articleMeta" class="meta"><\/p>/g, `<p id="articleMeta" class="meta">${metaHtml}</p>`)
     .replace(/<div id="articleTags" class="tags"><\/div>/g, `<div id="articleTags" class="tags">${tagsHtml}</div>`);
 
+
+  const authorProfile = AUTHORS[post.author] || { initial: (post.author || 'I').charAt(0).toUpperCase(), bio: 'Penulis konten teknologi di Isekai Blog.' };
+  postHtml = postHtml
+    .replace(/<div class="author-avatar">[^<]*<\/div>/g, `<div class="author-avatar">${authorProfile.initial}</div>`)
+    .replace(/<h4>Ditulis oleh [^<]*<\/h4>/g, `<h4>Ditulis oleh ${escapeXml(post.author)}</h4>`)
+    .replace(/<p>Pengembang web dan penulis konten teknologi[^<]*<\/p>/g, `<p>${authorProfile.bio}</p>`);
   const outputPath = path.join(rootDir, 'blog', `${post.slug}.html`);
   fs.writeFileSync(outputPath, postHtml);
 });

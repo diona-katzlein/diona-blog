@@ -1,7 +1,7 @@
 ---
 title: "Data Breach Terbaru 2026-11-11: Harvard dan 25 Breach Terkini / Latest Data Breaches"
 description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-11 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber."
-author: "Azwar Anas"
+author: "Isekai ID"
 date: "2026-11-11"
 category: "Data Breach"
 image: "/assets/images/infostealer.png"
