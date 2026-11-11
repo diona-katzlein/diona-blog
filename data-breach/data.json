@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11 19:29:29 WITA",
+  "generated": "2026-11-12 05:59:31 WITA",
   "total": 1035,
   "items": [
     {
@@ -181,33 +181,43 @@
   "news": [
     {
       "source": "DataBreaches.net",
-      "title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
-      "url": "https://databreaches.net/2026/11/10/near-ai-breach-exposes-user-details-and-data-from-18-ai-agents/"
+      "title": "Ca: York University Breach Exposes 19 Years of Student Health and Financial Data",
+      "url": "https://databreaches.net/2026/11/11/ca-york-university-breach-exposes-19-years-of-student-health-and-financial-data/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Ransomware Attack Puts Vanderbilt University on Lockdown",
-      "url": "https://databreaches.net/2026/11/10/ransomware-attack-puts-vanderbilt-university-on-lockdown/"
+      "title": "Hotel giant Wyndham exposed customer data after app security lapse",
+      "url": "https://databreaches.net/2026/11/11/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "SG: SPH Media hit by cyberattacks; says no customer financial data or access exposed",
-      "url": "https://databreaches.net/2026/11/10/sg-sph-media-hit-by-cyberattacks-says-no-customer-financial-data-or-access-exposed/"
+      "title": "Grok’s security blind spot exposed users and Musk’s company secrets",
+      "url": "https://databreaches.net/2026/11/11/groks-security-blind-spot-exposed-users-and-musks-company-secrets/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Ca: Data breach at The Children’s Foundation",
-      "url": "https://databreaches.net/2026/11/10/ca-data-breach-at-the-childrens-foundation/"
+      "title": "2013 breach at Russian cybercrime forum resurfaces with millions of victims’ credentials",
+      "url": "https://databreaches.net/2026/11/11/2013-breach-at-russian-cybercrime-forum-resurfaces-with-millions-of-victims-credentials/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Ph: NPC receives data breach reports from 10 agencies",
-      "url": "https://databreaches.net/2026/11/10/ph-npc-receives-data-breach-reports-from-10-agencies/"
+      "title": "SG: Fullerton Health server hit by cyberattack; personal data of migrant workers affected",
+      "url": "https://databreaches.net/2026/11/11/sg-fullerton-health-server-hit-by-cyberattack-personal-data-of-migrant-workers-affected/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Kr: Financial Security Institute reports data leak following hacking incident",
-      "url": "https://databreaches.net/2026/11/10/kr-financial-security-institute-reports-data-leak-following-hacking-incident/"
+      "title": "Hundreds of Dutch sports clubs report cyberattack exposing members’ personal data",
+      "url": "https://databreaches.net/2026/11/11/hundreds-of-dutch-sports-clubs-report-cyberattack-exposing-members-personal-data/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+      "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+      "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
     },
     {
       "source": "BleepingComputer",
@@ -218,16 +228,6 @@
       "source": "BleepingComputer",
       "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Ransomware recovery is now a client retention metric",
-      "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/"
     }
   ]
 }
