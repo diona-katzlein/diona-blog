@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-11 07:29:33 WITA",
-  "total": 1033,
+  "generated": "2026-11-11 19:29:29 WITA",
+  "total": 1035,
   "items": [
+    {
+      "name": "YouHack",
+      "title": "YouHack",
+      "domain": "youhack.ru",
+      "added_date": "2026-11-11",
+      "pwn_count": 7160849
+    },
+    {
+      "name": "SberSpasibo",
+      "title": "СберСпасибо (SberSpasibo)",
+      "domain": "spasibosberbank.ru",
+      "added_date": "2026-11-11",
+      "pwn_count": 3288711
+    },
     {
       "name": "Harvard",
       "title": "Harvard",
@@ -162,20 +176,6 @@
       "domain": "ringcentral.com",
       "added_date": "2026-08-13",
       "pwn_count": 1596490
-    },
-    {
-      "name": "Alcon",
-      "title": "Alcon",
-      "domain": "alcon.com",
-      "added_date": "2026-08-09",
-      "pwn_count": 218395
-    },
-    {
-      "name": "BrinksHome",
-      "title": "Brinks Home",
-      "domain": "brinkshome.com",
-      "added_date": "2026-08-08",
-      "pwn_count": 732162
     }
   ],
   "news": [
@@ -228,16 +228,6 @@
       "source": "BleepingComputer",
       "title": "Ransomware recovery is now a client retention metric",
       "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Fireworks AI discloses new breach after cloud provider hack",
-      "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
-      "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/"
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-title: "Data Breach Terbaru 2026-11-11: Harvard dan 25 Breach Terkini / Latest Data Breaches"
+title: "Data Breach Terbaru 2026-11-11: YouHack dan 25 Breach Terkini / Latest Data Breaches"
 description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-11 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber."
 author: "Isekai ID"
 date: "2026-11-11"
@@ -11,12 +11,14 @@ slug: "data-breach-terbaru-2026-11-11"
 
 # Data Breach Terbaru — 2026-11-11 / Latest Data Breaches
 
-**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.033 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
+**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.035 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
 
 **English summary:** Latest entries added to the Have I Been Pwned catalog, with affected-account counts and data classes translated into Indonesian. All facts are credited to the sources below; this page is a summary, not a copy of source articles.
 
 | Masuk Katalog | Breach | Domain | Akun Terdampak | Jenis Data yang Bocor (ID) | Data Classes (EN, original) |
 |---|---|---|---:|---|---|
+| 2026-11-11 | YouHack | youhack.ru | 7.160.849 | Alamat email, Alamat IP, Kata sandi, Nama pengguna | Email addresses, IP addresses, Passwords, Usernames |
+| 2026-11-11 | СберСпасибо (SberSpasibo) | spasibosberbank.ru | 3.288.711 | Bank card numbers, Tanggal lahir, Alamat email, Loyalty program details, +1 jenis lain | Bank card numbers, Dates of birth, Email addresses, Loyalty program details, +1 jenis lain |
 | 2026-11-03 | Harvard | harvard.edu | 850.537 | Charitable donations, Citizenship statuses, Tanggal lahir, Education levels, +14 jenis lain | Charitable donations, Citizenship statuses, Dates of birth, Education levels, +14 jenis lain |
 | 2026-10-27 | AfD | afd.de | 345.439 | Alamat email, Email messages | Email addresses, Email messages |
 | 2026-10-20 | Assurance Retraite | lassuranceretraite.fr | 70.372 | Tanggal lahir, Alamat email, Family members' names, ID resmi pemerintah, +5 jenis lain | Dates of birth, Email addresses, Family members' names, Government issued IDs, +5 jenis lain |
@@ -40,8 +42,6 @@ slug: "data-breach-terbaru-2026-11-11"
 | 2026-08-19 | Oz Hair and Beauty | ozhairandbeauty.com | 1.988.331 | Alamat email, Lokasi geografis, Nama, Nomor telepon, +1 jenis lain | Email addresses, Geographic locations, Names, Phone numbers, +1 jenis lain |
 | 2026-08-19 | Fanlore | fanlore.org | 144.520 | Alamat email, Nama, Kata sandi, Nama pengguna | Email addresses, Names, Passwords, Usernames |
 | 2026-08-13 | RingCentral | ringcentral.com | 1.596.490 | Alamat email, Nama, Nomor telepon, Alamat fisik | Email addresses, Names, Phone numbers, Physical addresses |
-| 2026-08-09 | Alcon | alcon.com | 218.395 | Alamat email, Nama, Nomor telepon, Alamat fisik | Email addresses, Names, Phone numbers, Physical addresses |
-| 2026-08-08 | Brinks Home | brinkshome.com | 732.162 | Tanggal lahir, Alamat email, Nama, Data kartu kredit parsial, +3 jenis lain | Dates of birth, Email addresses, Names, Partial credit card data, +3 jenis lain |
 
 ## Breach Terkait Indonesia / Indonesia-related Breaches
 
@@ -70,8 +70,6 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **BleepingComputer** — [Hackers exploit trusted AWS access to breach multiple cloud environments](https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/)
 - **BleepingComputer** — [Binance warns of iOS flaw that could leak crypto wallet secrets](https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/)
 - **BleepingComputer** — [Ransomware recovery is now a client retention metric](https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/)
-- **BleepingComputer** — [Fireworks AI discloses new breach after cloud provider hack](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/)
-- **BleepingComputer** — [Vanderbilt University hit in BYOD ransomware attack, data theft claimed](https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/)
 
 ## Sumber & Credit / Sources & Credit
 
