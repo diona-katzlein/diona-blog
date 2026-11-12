@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12 17:59:29 WITA",
+  "generated": "2026-11-13 05:59:34 WITA",
   "total": 1035,
   "items": [
     {
@@ -181,28 +181,33 @@
   "news": [
     {
       "source": "DataBreaches.net",
-      "title": "Ca: York University Breach Exposes 19 Years of Student Health and Financial Data",
-      "url": "https://databreaches.net/2026/11/11/ca-york-university-breach-exposes-19-years-of-student-health-and-financial-data/"
+      "title": "TSMC has reportedly leaked the personal data of 46,000 employees, but emphasized that no evidence of intrusion was found in the system.",
+      "url": "https://databreaches.net/2026/11/12/tsmc-has-reportedly-leaked-the-personal-data-of-46000-employees-but-emphasized-that-no-evidence-of-intrusion-was-found-in-the-system/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Hotel giant Wyndham exposed customer data after app security lapse",
-      "url": "https://databreaches.net/2026/11/11/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/"
+      "title": "Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity",
+      "url": "https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "Grok’s security blind spot exposed users and Musk’s company secrets",
-      "url": "https://databreaches.net/2026/11/11/groks-security-blind-spot-exposed-users-and-musks-company-secrets/"
+      "title": "Hong Kong Sogo data breach puts personal information of 820,000 members at risk",
+      "url": "https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "2013 breach at Russian cybercrime forum resurfaces with millions of victims’ credentials",
-      "url": "https://databreaches.net/2026/11/11/2013-breach-at-russian-cybercrime-forum-resurfaces-with-millions-of-victims-credentials/"
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "url": "https://databreaches.net/2026/11/12/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "SG: Fullerton Health server hit by cyberattack; personal data of migrant workers affected",
-      "url": "https://databreaches.net/2026/11/11/sg-fullerton-health-server-hit-by-cyberattack-personal-data-of-migrant-workers-affected/"
+      "title": "Who Runs the Ransomware Group Qilin?",
+      "url": "https://databreaches.net/2026/11/12/who-runs-the-ransomware-group-qilin/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+      "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/"
     },
     {
       "source": "BleepingComputer",
@@ -223,11 +228,6 @@
       "source": "BleepingComputer",
       "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
       "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Railway breach leads to $740,000 in fraudulent AI charges",
-      "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
     }
   ]
 }

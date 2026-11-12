@@ -1,10 +1,23 @@
 {
-  "generated": "2026-11-12 18:14 WITA",
+  "generated": "2026-11-13 06:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-124815",
+      "published": "2026-11-12T06:17:13.853",
+      "lastModified": "2026-11-12T18:49:18.840",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "The Clockinator Lite WordPress plugin before 1.1.0 does not restrict access to several of its record deletion actions, and uses a user-supplied table name in a SQL query without validating or escaping it, allowing unauthenticated users to perform SQL injection attacks, deleting data from any database table and extracting sensitive information such as password hashes.",
+      "references": [
+        "https://wpscan.com/vulnerability/a7fe2ca1-ddfe-45fa-93e2-e0959ae29256/"
+      ],
+      "cve_id": "CVE-2026-124815"
+    },
     {
       "id": "CVE-2026-78287",
       "published": "2026-11-11T11:17:21.293",
-      "lastModified": "2026-11-11T11:17:21.420",
+      "lastModified": "2026-11-12T16:19:13.973",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -17,7 +30,7 @@
     {
       "id": "CVE-2026-121889",
       "published": "2026-11-10T22:18:26.180",
-      "lastModified": "2026-11-11T11:17:14.803",
+      "lastModified": "2026-11-12T16:56:37.803",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -30,7 +43,7 @@
     {
       "id": "CVE-2026-121356",
       "published": "2026-11-10T22:18:25.637",
-      "lastModified": "2026-11-11T11:17:14.230",
+      "lastModified": "2026-11-12T16:56:37.803",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -43,7 +56,7 @@
     {
       "id": "CVE-2026-121353",
       "published": "2026-11-10T22:18:25.217",
-      "lastModified": "2026-11-11T11:17:13.970",
+      "lastModified": "2026-11-12T16:56:37.803",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -56,7 +69,7 @@
     {
       "id": "CVE-2026-121352",
       "published": "2026-11-10T22:18:25.060",
-      "lastModified": "2026-11-11T11:17:13.857",
+      "lastModified": "2026-11-12T16:56:37.803",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -69,7 +82,7 @@
     {
       "id": "CVE-2026-121351",
       "published": "2026-11-10T22:18:24.910",
-      "lastModified": "2026-11-11T11:17:13.717",
+      "lastModified": "2026-11-12T16:56:37.803",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -168,7 +181,7 @@
     {
       "id": "CVE-2026-124580",
       "published": "2026-11-09T08:17:02.923",
-      "lastModified": "2026-11-09T08:17:03.070",
+      "lastModified": "2026-11-12T20:18:29.310",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -764,22 +777,6 @@
         "https://support.apple.com/en-us/149523"
       ],
       "cve_id": "CVE-2026-112690"
-    },
-    {
-      "id": "CVE-2026-110264",
-      "published": "2026-10-22T01:16:57.603",
-      "lastModified": "2026-11-04T23:10:00.223",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server due to integer overflow when compiling a specially crafted regular expression.",
-      "references": [
-        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-        "https://gitlab.com/gitlab-org/gitlab/-/work_items/633633",
-        "https://hackerone.com/reports/4093475",
-        "https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/"
-      ],
-      "cve_id": "CVE-2026-110264"
     }
   ]
 }
