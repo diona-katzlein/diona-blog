@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12 05:59:31 WITA",
+  "generated": "2026-11-12 17:59:29 WITA",
   "total": 1035,
   "items": [
     {
@@ -205,9 +205,14 @@
       "url": "https://databreaches.net/2026/11/11/sg-fullerton-health-server-hit-by-cyberattack-personal-data-of-migrant-workers-affected/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Hundreds of Dutch sports clubs report cyberattack exposing members’ personal data",
-      "url": "https://databreaches.net/2026/11/11/hundreds-of-dutch-sports-clubs-report-cyberattack-exposing-members-personal-data/"
+      "source": "BleepingComputer",
+      "title": "Baker Tilly notifies clients of data breach at third-party provider",
+      "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
     },
     {
       "source": "BleepingComputer",
@@ -223,11 +228,6 @@
       "source": "BleepingComputer",
       "title": "Railway breach leads to $740,000 in fraudulent AI charges",
       "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/"
     }
   ]
 }

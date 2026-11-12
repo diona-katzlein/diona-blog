@@ -65,11 +65,11 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **DataBreaches.net** — [Grok’s security blind spot exposed users and Musk’s company secrets](https://databreaches.net/2026/11/11/groks-security-blind-spot-exposed-users-and-musks-company-secrets/)
 - **DataBreaches.net** — [2013 breach at Russian cybercrime forum resurfaces with millions of victims’ credentials](https://databreaches.net/2026/11/11/2013-breach-at-russian-cybercrime-forum-resurfaces-with-millions-of-victims-credentials/)
 - **DataBreaches.net** — [SG: Fullerton Health server hit by cyberattack; personal data of migrant workers affected](https://databreaches.net/2026/11/11/sg-fullerton-health-server-hit-by-cyberattack-personal-data-of-migrant-workers-affected/)
-- **DataBreaches.net** — [Hundreds of Dutch sports clubs report cyberattack exposing members’ personal data](https://databreaches.net/2026/11/11/hundreds-of-dutch-sports-clubs-report-cyberattack-exposing-members-personal-data/)
+- **BleepingComputer** — [Baker Tilly notifies clients of data breach at third-party provider](https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/)
+- **BleepingComputer** — [Active ScreenConnect attacks breach MSPs, impact dozens of organizations](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
 - **BleepingComputer** — [Notion says Fireworks breach exposed customer AI chat transcripts](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/)
 - **BleepingComputer** — [Maersk confirms data breach as WhiteArmor ransomware demands $5 million](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
 - **BleepingComputer** — [Railway breach leads to $740,000 in fraudulent AI charges](https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/)
-- **BleepingComputer** — [Hackers exploit trusted AWS access to breach multiple cloud environments](https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/)
 
 ## Sumber & Credit / Sources & Credit
 
