@@ -1,6 +1,40 @@
 {
-  "generated": "2026-11-13 06:14 WITA",
+  "generated": "2026-11-13 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-127277",
+      "published": "2026-11-13T02:18:54.520",
+      "lastModified": "2026-11-13T02:18:54.667",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A security flaw has been discovered in Linksys EA8100 1.0.3.216940. The affected element is an unknown function of the file etc/init.d/service_smbd.sh of the component SMB Service. Performing a manipulation of the argument ANON_ACCESS results in improper initialization. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "references": [
+        "https://github.com/geo-chen/oss/blob/main/Linksys.md#finding-5-smb-anonymous-access-mapped-to-the-admin-account-when-anonymous-access-is-enabled",
+        "https://vuldb.com/cve/CVE-2026-127277",
+        "https://vuldb.com/submit/1040999",
+        "https://vuldb.com/vuln/436432",
+        "https://vuldb.com/vuln/436432/cti"
+      ],
+      "cve_id": "CVE-2026-127277"
+    },
+    {
+      "id": "CVE-2026-127275",
+      "published": "2026-11-13T00:20:14.083",
+      "lastModified": "2026-11-13T00:20:14.263",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was determined in Linksys EA8100 1.0.3.216940. This issue affects the function SetRemoteSetting/SetUnsecuredWiFiWarning of the file ui_server.lua of the component JNAP API. This manipulation of the argument isEnabled/enabled causes missing authentication. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "references": [
+        "https://github.com/geo-chen/oss/blob/main/Linksys.md#finding-3-unauthenticated-write-access-to-remote-management-pairing-state-and-unsecured-wifi-warning-flag",
+        "https://vuldb.com/cve/CVE-2026-127275",
+        "https://vuldb.com/submit/1040997",
+        "https://vuldb.com/vuln/436430",
+        "https://vuldb.com/vuln/436430/cti"
+      ],
+      "cve_id": "CVE-2026-127275"
+    },
     {
       "id": "CVE-2026-124815",
       "published": "2026-11-12T06:17:13.853",
@@ -198,7 +232,7 @@
     {
       "id": "CVE-2026-123551",
       "published": "2026-11-08T02:16:46.603",
-      "lastModified": "2026-11-10T22:13:29.767",
+      "lastModified": "2026-11-13T03:17:29.467",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -242,7 +276,7 @@
     {
       "id": "CVE-2026-71495",
       "published": "2026-11-06T19:17:56.657",
-      "lastModified": "2026-11-09T13:17:08.720",
+      "lastModified": "2026-11-12T22:18:51.470",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:H",
@@ -744,39 +778,6 @@
         "https://vuldb.com/vuln/426406/cti"
       ],
       "cve_id": "CVE-2026-116508"
-    },
-    {
-      "id": "CVE-2026-113897",
-      "published": "2026-10-26T21:18:06.440",
-      "lastModified": "2026-11-03T23:17:29.887",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "This issue was addressed by removing the vulnerable code. This issue is fixed in Safari 27.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS 27.2. A remote attacker may be able to break out of Web Content sandbox.",
-      "references": [
-        "https://support.apple.com/en-us/149230",
-        "https://support.apple.com/en-us/149521",
-        "https://support.apple.com/en-us/149526",
-        "https://support.apple.com/en-us/149527"
-      ],
-      "cve_id": "CVE-2026-113897"
-    },
-    {
-      "id": "CVE-2026-112690",
-      "published": "2026-10-26T21:18:03.507",
-      "lastModified": "2026-11-03T20:18:10.213",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "This issue was addressed with improved input validation. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, visionOS 27.2. A remote attacker may be able to break out of the WebContent sandbox.",
-      "references": [
-        "https://support.apple.com/en-us/149227",
-        "https://support.apple.com/en-us/149230",
-        "https://support.apple.com/en-us/149521",
-        "https://support.apple.com/en-us/149522",
-        "https://support.apple.com/en-us/149523"
-      ],
-      "cve_id": "CVE-2026-112690"
     }
   ]
 }

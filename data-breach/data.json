@@ -1,7 +1,14 @@
 {
-  "generated": "2026-11-13 05:59:34 WITA",
-  "total": 1035,
+  "generated": "2026-11-13 17:59:33 WITA",
+  "total": 1036,
   "items": [
+    {
+      "name": "CastleRAT",
+      "title": "CastleRAT",
+      "domain": "",
+      "added_date": "2026-11-13",
+      "pwn_count": 179745
+    },
     {
       "name": "YouHack",
       "title": "YouHack",
@@ -169,41 +176,9 @@
       "domain": "fanlore.org",
       "added_date": "2026-08-19",
       "pwn_count": 144520
-    },
-    {
-      "name": "RingCentral",
-      "title": "RingCentral",
-      "domain": "ringcentral.com",
-      "added_date": "2026-08-13",
-      "pwn_count": 1596490
     }
   ],
   "news": [
-    {
-      "source": "DataBreaches.net",
-      "title": "TSMC has reportedly leaked the personal data of 46,000 employees, but emphasized that no evidence of intrusion was found in the system.",
-      "url": "https://databreaches.net/2026/11/12/tsmc-has-reportedly-leaked-the-personal-data-of-46000-employees-but-emphasized-that-no-evidence-of-intrusion-was-found-in-the-system/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity",
-      "url": "https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Hong Kong Sogo data breach puts personal information of 820,000 members at risk",
-      "url": "https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
-      "url": "https://databreaches.net/2026/11/12/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Who Runs the Ransomware Group Qilin?",
-      "url": "https://databreaches.net/2026/11/12/who-runs-the-ransomware-group-qilin/"
-    },
     {
       "source": "BleepingComputer",
       "title": "Apify rotates API tokens, prompts 2FA resets after breach",
@@ -213,21 +188,6 @@
       "source": "BleepingComputer",
       "title": "Baker Tilly notifies clients of data breach at third-party provider",
       "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
-      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
-      "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-      "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-title: "Data Breach Terbaru 2026-11-13: YouHack dan 25 Breach Terkini / Latest Data Breaches"
+title: "Data Breach Terbaru 2026-11-13: CastleRAT dan 25 Breach Terkini / Latest Data Breaches"
 description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-13 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber."
 author: "Isekai ID"
 date: "2026-11-13"
@@ -11,12 +11,13 @@ slug: "data-breach-terbaru-2026-11-13"
 
 # Data Breach Terbaru — 2026-11-13 / Latest Data Breaches
 
-**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.035 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
+**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.036 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
 
 **English summary:** Latest entries added to the Have I Been Pwned catalog, with affected-account counts and data classes translated into Indonesian. All facts are credited to the sources below; this page is a summary, not a copy of source articles.
 
 | Masuk Katalog | Breach | Domain | Akun Terdampak | Jenis Data yang Bocor (ID) | Data Classes (EN, original) |
 |---|---|---|---:|---|---|
+| 2026-11-13 | CastleRAT |  | 179.745 | - |  |
 | 2026-11-11 | YouHack | youhack.ru | 7.160.849 | Alamat email, Alamat IP, Kata sandi, Nama pengguna | Email addresses, IP addresses, Passwords, Usernames |
 | 2026-11-11 | СберСпасибо (SberSpasibo) | spasibosberbank.ru | 3.288.711 | Bank card numbers, Tanggal lahir, Alamat email, Loyalty program details, +1 jenis lain | Bank card numbers, Dates of birth, Email addresses, Loyalty program details, +1 jenis lain |
 | 2026-11-03 | Harvard | harvard.edu | 850.537 | Charitable donations, Citizenship statuses, Tanggal lahir, Education levels, +14 jenis lain | Charitable donations, Citizenship statuses, Dates of birth, Education levels, +14 jenis lain |
@@ -41,7 +42,6 @@ slug: "data-breach-terbaru-2026-11-13"
 | 2026-08-22 | Golf Canada | golfcanada.ca | 568.972 | Tanggal lahir, Alamat email, Jenis kelamin, Lokasi geografis, +2 jenis lain | Dates of birth, Email addresses, Genders, Geographic locations, +2 jenis lain |
 | 2026-08-19 | Oz Hair and Beauty | ozhairandbeauty.com | 1.988.331 | Alamat email, Lokasi geografis, Nama, Nomor telepon, +1 jenis lain | Email addresses, Geographic locations, Names, Phone numbers, +1 jenis lain |
 | 2026-08-19 | Fanlore | fanlore.org | 144.520 | Alamat email, Nama, Kata sandi, Nama pengguna | Email addresses, Names, Passwords, Usernames |
-| 2026-08-13 | RingCentral | ringcentral.com | 1.596.490 | Alamat email, Nama, Nomor telepon, Alamat fisik | Email addresses, Names, Phone numbers, Physical addresses |
 
 ## Breach Terkait Indonesia / Indonesia-related Breaches
 
@@ -60,16 +60,8 @@ slug: "data-breach-terbaru-2026-11-13"
 
 Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs penerbit.
 
-- **DataBreaches.net** — [TSMC has reportedly leaked the personal data of 46,000 employees, but emphasized that no evidence of intrusion was found in the system.](https://databreaches.net/2026/11/12/tsmc-has-reportedly-leaked-the-personal-data-of-46000-employees-but-emphasized-that-no-evidence-of-intrusion-was-found-in-the-system/)
-- **DataBreaches.net** — [Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity](https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/)
-- **DataBreaches.net** — [Hong Kong Sogo data breach puts personal information of 820,000 members at risk](https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/)
-- **DataBreaches.net** — [Active ScreenConnect attacks breach MSPs, impact dozens of organizations](https://databreaches.net/2026/11/12/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
-- **DataBreaches.net** — [Who Runs the Ransomware Group Qilin?](https://databreaches.net/2026/11/12/who-runs-the-ransomware-group-qilin/)
 - **BleepingComputer** — [Apify rotates API tokens, prompts 2FA resets after breach](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
 - **BleepingComputer** — [Baker Tilly notifies clients of data breach at third-party provider](https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/)
-- **BleepingComputer** — [Active ScreenConnect attacks breach MSPs, impact dozens of organizations](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
-- **BleepingComputer** — [Notion says Fireworks breach exposed customer AI chat transcripts](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/)
-- **BleepingComputer** — [Maersk confirms data breach as WhiteArmor ransomware demands $5 million](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
 
 ## Sumber & Credit / Sources & Credit
 
