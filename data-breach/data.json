@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14 17:59:35 WITA",
+  "generated": "2026-11-15 05:59:30 WITA",
   "total": 1036,
   "items": [
     {
@@ -181,6 +181,11 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "Uber Data Breach: Driver Licenses Stolen via Fireworks AI",
+      "url": "https://databreaches.net/2026/11/14/uber-data-breach-driver-licenses-stolen-via-fireworks-ai/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Over 144,000 Norwegian and Widerøe passengers affected by data breach",
       "url": "https://databreaches.net/2026/11/13/over-144000-norwegian-and-wideroe-passengers-affected-by-data-breach/"
     },
@@ -190,14 +195,9 @@
       "url": "https://databreaches.net/2026/11/12/tsmc-has-reportedly-leaked-the-personal-data-of-46000-employees-but-emphasized-that-no-evidence-of-intrusion-was-found-in-the-system/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity",
-      "url": "https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Hong Kong Sogo data breach puts personal information of 820,000 members at risk",
-      "url": "https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/"
+      "source": "BleepingComputer",
+      "title": "Cursor confirms security breach led to malicious Claude Code extension",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
     },
     {
       "source": "BleepingComputer",
