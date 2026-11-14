@@ -1,6 +1,19 @@
 {
-  "generated": "2026-11-13 18:14 WITA",
+  "generated": "2026-11-14 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-124822",
+      "published": "2026-11-13T06:16:53.960",
+      "lastModified": "2026-11-13T19:19:22.350",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+      "description": "The Easy DragDrop File Uploader WordPress plugin before 1.1.10 does not validate a user-supplied path before deleting it, allowing unauthenticated users to delete arbitrary files and directories on the server, such as wp-config.php.",
+      "references": [
+        "https://wpscan.com/vulnerability/2c3537df-1312-442a-816d-904285c0e9c1/"
+      ],
+      "cve_id": "CVE-2026-124822"
+    },
     {
       "id": "CVE-2026-127277",
       "published": "2026-11-13T02:18:54.520",
@@ -21,7 +34,7 @@
     {
       "id": "CVE-2026-127275",
       "published": "2026-11-13T00:20:14.083",
-      "lastModified": "2026-11-13T00:20:14.263",
+      "lastModified": "2026-11-13T23:17:17.477",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -171,7 +184,7 @@
     {
       "id": "CVE-2026-125086",
       "published": "2026-11-10T01:17:19.640",
-      "lastModified": "2026-11-10T01:17:19.810",
+      "lastModified": "2026-11-13T15:17:37.987",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -761,23 +774,6 @@
         "https://www.cve.org/CVERecord?id=CVE-2026-65145"
       ],
       "cve_id": "CVE-2026-65145"
-    },
-    {
-      "id": "CVE-2026-116508",
-      "published": "2026-10-26T22:16:54.373",
-      "lastModified": "2026-10-31T02:17:32.410",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Performing a manipulation of the argument CONTENT_LENGTH results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks.",
-      "references": [
-        "https://gist.github.com/H3rmesk1t/ad72def4ccc232757d4cbabf45da72cb",
-        "https://vuldb.com/cve/CVE-2026-116508",
-        "https://vuldb.com/submit/1022557",
-        "https://vuldb.com/vuln/426406",
-        "https://vuldb.com/vuln/426406/cti"
-      ],
-      "cve_id": "CVE-2026-116508"
     }
   ]
 }

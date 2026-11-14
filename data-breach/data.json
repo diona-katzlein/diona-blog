@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13 17:59:33 WITA",
+  "generated": "2026-11-14 17:59:35 WITA",
   "total": 1036,
   "items": [
     {
@@ -180,14 +180,34 @@
   ],
   "news": [
     {
-      "source": "BleepingComputer",
-      "title": "Apify rotates API tokens, prompts 2FA resets after breach",
-      "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/"
+      "source": "DataBreaches.net",
+      "title": "Over 144,000 Norwegian and Widerøe passengers affected by data breach",
+      "url": "https://databreaches.net/2026/11/13/over-144000-norwegian-and-wideroe-passengers-affected-by-data-breach/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "TSMC has reportedly leaked the personal data of 46,000 employees, but emphasized that no evidence of intrusion was found in the system.",
+      "url": "https://databreaches.net/2026/11/12/tsmc-has-reportedly-leaked-the-personal-data-of-46000-employees-but-emphasized-that-no-evidence-of-intrusion-was-found-in-the-system/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity",
+      "url": "https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Hong Kong Sogo data breach puts personal information of 820,000 members at risk",
+      "url": "https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/"
     },
     {
       "source": "BleepingComputer",
-      "title": "Baker Tilly notifies clients of data breach at third-party provider",
-      "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/"
+      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "How one AI agent exposed five critical enterprise security gaps",
+      "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/"
     }
   ]
 }

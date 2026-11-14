@@ -1,5 +1,62 @@
 [
   {
+    "title": "CVE Terbaru 2026-11-14: 50 Kerentanan Kritis CVSS ≥ 9.0 / Latest Critical CVEs",
+    "slug": "cve-terbaru-2026-11-14",
+    "file": "cve-terbaru-2026-11-14.md",
+    "date": "2026-11-14",
+    "category": "CVE",
+    "tags": [
+      "cve",
+      "vulnerability",
+      "nvd",
+      "cvss",
+      "cybersecurity"
+    ],
+    "excerpt": "Daftar CVE terbaru dengan skor CVSS kritis per 2026-11-14, lengkap dengan deskripsi Bahasa Inggris resmi NVD dan ringkasan Bahasa Indonesia. Sumber: NVD & CISA.",
+    "description": "Daftar CVE terbaru dengan skor CVSS kritis per 2026-11-14, lengkap dengan deskripsi Bahasa Inggris resmi NVD dan ringkasan Bahasa Indonesia. Sumber: NVD & CISA.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Duscha Olya Arta Anas",
+    "readingTime": "9 min read"
+  },
+  {
+    "title": "Data Breach Terbaru 2026-11-14: CastleRAT dan 25 Breach Terkini / Latest Data Breaches",
+    "slug": "data-breach-terbaru-2026-11-14",
+    "file": "data-breach-terbaru-2026-11-14.md",
+    "date": "2026-11-14",
+    "category": "Data Breach",
+    "tags": [
+      "data-breach",
+      "hibp",
+      "kebocoran-data",
+      "privacy",
+      "cybersecurity"
+    ],
+    "excerpt": "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-14 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber.",
+    "description": "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-14 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber.",
+    "image": "/assets/images/infostealer.png",
+    "author": "Isekai ID",
+    "readingTime": "6 min read"
+  },
+  {
+    "title": "KEV Terbaru 2026-11-14: Kerentanan yang Terbukti Dieksploitasi Aktif / Latest Known Exploited Vulnerabilities",
+    "slug": "kev-terbaru-2026-11-14",
+    "file": "kev-terbaru-2026-11-14.md",
+    "date": "2026-11-14",
+    "category": "KEV",
+    "tags": [
+      "kev",
+      "cisa",
+      "vulnerability",
+      "patch",
+      "cybersecurity"
+    ],
+    "excerpt": "Daftar KEV terbaru dari katalog CISA per 2026-11-14: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
+    "description": "Daftar KEV terbaru dari katalog CISA per 2026-11-14: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Alya Nadzira Arta Anas",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "CVE Terbaru 2026-11-13: 50 Kerentanan Kritis CVSS ≥ 9.0 / Latest Critical CVEs",
     "slug": "cve-terbaru-2026-11-13",
     "file": "cve-terbaru-2026-11-13.md",
