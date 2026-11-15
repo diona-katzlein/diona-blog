@@ -3,10 +3,37 @@
 <channel>
   <title>Isekai Blog</title>
   <link>https://baca.readme.id</link>
-  <description>Static Markdown Blog untuk GitHub Pages.</description>
+  <description>Blog keamanan siber Indonesia: CVE terbaru, KEV CISA, data breach, tutorial IT — diperbarui dua kali sehari.</description>
   <language>id-ID</language>
-  <lastBuildDate>Sun, 15 Nov 2026 10:32:26 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 15:40:27 GMT</lastBuildDate>
   <ttl>720</ttl>
+
+  <item>
+    <title>Cara Cek Apakah Email Kamu Bocor di Data Breach (Have I Been Pwned)</title>
+    <link>https://baca.readme.id/blog/cara-cek-email-bocor-data-breach-have-i-been-pwned.html</link>
+    <guid>https://baca.readme.id/blog/cara-cek-email-bocor-data-breach-have-i-been-pwned.html</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Panduan cek email bocor di Have I Been Pwned: apa arti hasilnya, data apa saja yang bocor, dan 4 langkah yang harus dilakukan setelah email ketahuan bocor.</description>
+  </item>
+
+  <item>
+    <title>Cara Hardening SSH di Server Linux: Nonaktifkan Login Password, Pakai Kunci Ed25519</title>
+    <link>https://baca.readme.id/blog/cara-hardening-ssh-server-linux-kunci-ed25519.html</link>
+    <guid>https://baca.readme.id/blog/cara-hardening-ssh-server-linux-kunci-ed25519.html</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Panduan hardening SSH di Debian/Ubuntu: login pakai kunci Ed25519, matikan password authentication, batasi user, dan pasang Fail2ban agar brute force langsung diblokir.</description>
+  </item>
+
+  <item>
+    <title>Cara Setting WireGuard di MikroTik untuk Akses Server Lokal dari Mana Saja</title>
+    <link>https://baca.readme.id/blog/cara-setting-wireguard-mikrotik-akses-server-lokal.html</link>
+    <guid>https://baca.readme.id/blog/cara-setting-wireguard-mikrotik-akses-server-lokal.html</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Panduan WireGuard di MikroTik RouterOS v7: buat interface, tukar kunci peer, atur firewall, dan akses server lokal dari HP atau laptop di mana saja dengan aman.</description>
+  </item>
 
   <item>
     <title>CVE Terbaru 2026-11-15: 50 Kerentanan Kritis CVSS ≥ 9.0 / Latest Critical CVEs</title>
@@ -27,12 +54,30 @@
   </item>
 
   <item>
+    <title>ISO/IEC 27001 untuk Pemula: Cara Menyusun Risk Assessment dan Statement of Applicability</title>
+    <link>https://baca.readme.id/blog/iso-27001-untuk-pemula-risk-assessment-dan-soa.html</link>
+    <guid>https://baca.readme.id/blog/iso-27001-untuk-pemula-risk-assessment-dan-soa.html</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Tata Kelola</category>
+    <description>Panduan ISO/IEC 27001:2022 untuk pemula: langkah risk assessment, matriks likelihood x impact, empat opsi treatment, dan cara menyusun Statement of Applicability.</description>
+  </item>
+
+  <item>
     <title>KEV Terbaru 2026-11-15: Kerentanan yang Terbukti Dieksploitasi Aktif / Latest Known Exploited Vulnerabilities</title>
     <link>https://baca.readme.id/blog/kev-terbaru-2026-11-15.html</link>
     <guid>https://baca.readme.id/blog/kev-terbaru-2026-11-15.html</guid>
     <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
     <category>KEV</category>
     <description>Daftar KEV terbaru dari katalog CISA per 2026-11-15: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.</description>
+  </item>
+
+  <item>
+    <title>Power Query Excel: Membersihkan Data Berantakan Tanpa Rumus Rumit</title>
+    <link>https://baca.readme.id/blog/power-query-excel-membersihkan-data-berantakan.html</link>
+    <guid>https://baca.readme.id/blog/power-query-excel-membersihkan-data-berantakan.html</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Tutorial</category>
+    <description>Panduan Power Query di Excel: ubah data berantakan (duplikat, spasi, format tanggal campur) jadi tabel rapi yang bisa di-refresh sekali klik — tanpa rumus bersarang.</description>
   </item>
 
   <item>

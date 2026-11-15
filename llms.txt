@@ -1,0 +1,38 @@
+# Isekai Blog — https://baca.readme.id
+
+> Blog keamanan siber Indonesia: pantauan CVE terbaru (NVD), KEV CISA yang
+> terbukti dieksploitasi, ringkasan data breach berbahasa Indonesia, dan
+> tutorial IT original. Diperbarui dua kali sehari. Penulis: Duscha Olya Arta
+> Anas (kolom CVE), Alya Nadzira Arta Anas (kolom KEV), Isekai ID (Data Breach).
+
+## Halaman Utama
+
+- [Beranda](https://baca.readme.id/): Ringkasan blog dan artikel terbaru.
+- [Tentang](https://baca.readme.id/tentang/): Siapa penulis blog ini dan dari mana datanya.
+- [Kebijakan Privasi](https://baca.readme.id/privasi/): Data yang dikumpulkan dan iklan pihak ketiga.
+- [Kontak](https://baca.readme.id/kontak/): Cara menghubungi penulis.
+- [Blog](https://baca.readme.id/blog/): Semua artikel.
+- [CVE Terbaru](https://baca.readme.id/cve/): Kerentanan kritis CVSS >= 9.0 dari NVD, ringkasan Indonesia + deskripsi resmi Inggris.
+- [KEV](https://baca.readme.id/kev/): Kerentanan yang dikonfirmasi dieksploitasi (CISA KEV) beserta tenggat patch.
+- [Data Breach](https://baca.readme.id/data-breach/): Ringkasan kebocoran data terbaru dalam Bahasa Indonesia.
+- [Sitemap](https://baca.readme.id/sitemap.xml): Daftar lengkap URL blog ini.
+- [RSS](https://baca.readme.id/rss.xml): Feed artikel terbaru.
+
+## Artikel Original (Tutorial & Tata Kelola)
+
+- [Cara Hardening SSH di Server Linux: Nonaktifkan Login Password, Pakai Kunci Ed25519](https://baca.readme.id/blog/cara-hardening-ssh-server-linux-kunci-ed25519.html): Panduan hardening SSH di Debian/Ubuntu — kunci Ed25519, matikan password authentication, batasi user, Fail2ban. Oleh Duscha Olya Arta Anas.
+- [Cara Setting WireGuard di MikroTik untuk Akses Server Lokal dari Mana Saja](https://baca.readme.id/blog/cara-setting-wireguard-mikrotik-akses-server-lokal.html): WireGuard di RouterOS v7 — interface, peer, firewall, dan konfigurasi klien. Oleh Duscha Olya Arta Anas.
+- [ISO/IEC 27001 untuk Pemula: Cara Menyusun Risk Assessment dan Statement of Applicability](https://baca.readme.id/blog/iso-27001-untuk-pemula-risk-assessment-dan-soa.html): Langkah risk assessment, matriks likelihood x impact, empat opsi treatment, dan contoh SoA. Oleh Alya Nadzira Arta Anas.
+- [Power Query Excel: Membersihkan Data Berantakan Tanpa Rumus Rumit](https://baca.readme.id/blog/power-query-excel-membersihkan-data-berantakan.html): Trim, format tanggal, seragamkan nomor HP, hapus duplikat — sekali setting, tinggal refresh. Oleh Alya Nadzira Arta Anas.
+- [Cara Cek Apakah Email Kamu Bocor di Data Breach (Have I Been Pwned)](https://baca.readme.id/blog/cara-cek-email-bocor-data-breach-have-i-been-pwned.html): Cara membaca hasil HIBP dan 4 langkah setelah email ketahuan bocor. Oleh Isekai ID.
+
+## Artikel Harian (Diperbarui 2x Sehari)
+
+- [CVE Terbaru 2026-11-15](https://baca.readme.id/blog/cve-terbaru-2026-11-15.html): 50 kerentanan kritis CVSS >= 9.0, teratas CVE-2026-129444 (CVSS 10.0).
+- [KEV Terbaru 2026-11-15](https://baca.readme.id/blog/kev-terbaru-2026-11-15.html): KEV terbaru CISA.
+- [Data Breach Terbaru 2026-11-15](https://baca.readme.id/blog/data-breach-terbaru-2026-11-15.html): Kebocoran data terbaru, termasuk CastleRAT.
+
+## Optional
+
+- [GitHub repo](https://github.com/diona-katzlein/diona-blog): Source code blog ini (statis, GitHub Pages).
+- [llms-full.txt](https://baca.readme.id/llms-full.txt): Teks lengkap artikel original blog ini untuk perayap AI.

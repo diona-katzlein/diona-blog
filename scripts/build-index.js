@@ -3,7 +3,7 @@ const path = require('path');
 
 const SITE_URL = process.env.SITE_URL || 'https://baca.readme.id';
 const SITE_TITLE = 'Isekai Blog';
-const SITE_DESCRIPTION = 'Static Markdown Blog untuk GitHub Pages.';
+const SITE_DESCRIPTION = 'Blog keamanan siber Indonesia: CVE terbaru, KEV CISA, data breach, tutorial IT — diperbarui dua kali sehari.';
 const rootDir = path.resolve(__dirname, '..');
 const postsDir = path.join(rootDir, 'blog', 'posts');
 const outputJson = path.join(rootDir, 'blog', 'posts.json');
@@ -106,6 +106,8 @@ posts.forEach(post => {
     "description": post.description,
     "image": imageUrl,
     "datePublished": post.date,
+    "dateModified": post.date,
+    "inLanguage": "id-ID",
     "articleSection": post.category,
     "keywords": (post.tags || []).join(', '),
     "author": {
@@ -162,6 +164,9 @@ const staticEntries = [
   { loc: `${SITE_URL}/cve/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
   { loc: `${SITE_URL}/kev/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
   { loc: `${SITE_URL}/data-breach/`, lastmod: todayIso, changefreq: 'daily', priority: '0.9' },
+  { loc: `${SITE_URL}/tentang/`, lastmod: todayIso, changefreq: 'monthly', priority: '0.6' },
+  { loc: `${SITE_URL}/privasi/`, lastmod: todayIso, changefreq: 'yearly', priority: '0.5' },
+  { loc: `${SITE_URL}/kontak/`, lastmod: todayIso, changefreq: 'yearly', priority: '0.5' },
 ];
 const postEntries = posts.map(post => ({ loc: `${SITE_URL}/blog/${post.slug}.html`, lastmod: post.date, changefreq: 'monthly', priority: '0.8' }));
 const allEntries = [...staticEntries, ...postEntries];

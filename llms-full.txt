@@ -1,0 +1,468 @@
+# Isekai Blog — llms-full.txt (teks lengkap artikel original)
+
+> https://baca.readme.id — Artikel original oleh Duscha Olya Arta Anas, Alya Nadzira Arta Anas, dan Isekai ID. Boleh dikutip dengan credit dan tautan ke artikel aslinya.
+
+---
+
+---
+title: "Cara Hardening SSH di Server Linux: Nonaktifkan Login Password, Pakai Kunci Ed25519"
+description: "Panduan hardening SSH di Debian/Ubuntu: login pakai kunci Ed25519, matikan password authentication, batasi user, dan pasang Fail2ban agar brute force langsung diblokir."
+author: "Duscha Olya Arta Anas"
+date: "2026-11-15"
+category: "Tutorial"
+tags: ["ssh", "hardening", "linux", "ed25519", "fail2ban", "server"]
+slug: "cara-hardening-ssh-server-linux-kunci-ed25519"
+---
+
+# Cara Hardening SSH di Server Linux: Nonaktifkan Login Password, Pakai Kunci Ed25519
+
+SSH adalah pintu utama ke server Linux — dan pintu yang paling sering diketuk penyerang. Bot brute force memindai internet 24 jam, mencoba ribuan kombinasi username dan password ke port 22. Kalau server Anda masih mengizinkan login password, itu hanya soal waktu sampai ada yang berhasil menebak, apalagi kalau passwordnya lemah atau dipakai ulang.
+
+Panduan ini merangkum langkah hardening SSH yang kami terapkan di server sendiri: kunci Ed25519, matikan password authentication, batasi user, dan Fail2ban sebagai jaring pengaman terakhir. Semua perintah diuji di Debian dan Ubuntu.
+
+## 1. Buat Kunci Ed25519 di Komputer Anda
+
+Jangan buat kunci di server — buat di laptop/komputer yang Anda pakai sehari-hari:
+
+```bash
+ssh-keygen -t ed25519 -C "nama-anda@laptop"
+```
+
+Saat ditanya passphrase, isi dengan frasa yang kuat. Passphrase ini lapisan kedua: kalaupun file kunci dicuri, penyerang tetap butuh passphrase Anda. Simpan private key (`~/.ssh/id_ed25519`) baik-baik dan **jangan pernah dibagikan ke siapa pun**.
+
+## 2. Salin Kunci Publik ke Server
+
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519.pub user@alamat-server
+```
+
+Perintah ini menambahkan kunci publik Anda ke `~/.ssh/authorized_keys` di server. Uji dulu login dengan kunci — masih dengan password authentication aktif — sebelum melangkah lebih jauh:
+
+```bash
+ssh -i ~/.ssh/id_ed25519 user@alamat-server
+```
+
+Kalau berhasil masuk tanpa diminta password server, kunci sudah bekerja.
+
+## 3. Matikan Login Password di `sshd_config`
+
+Buka `/etc/ssh/sshd_config` dengan sudo, lalu pastikan baris-baris ini:
+
+```
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+PermitRootLogin prohibit-password
+MaxAuthTries 3
+AllowUsers user
+```
+
+Penjelasan singkat:
+
+- `PasswordAuthentication no` — ini inti hardeningnya. Tanpa password, brute force password jadi mustahil.
+- `PermitRootLogin prohibit-password` — root hanya boleh login dengan kunci, bukan password.
+- `MaxAuthTries 3` — setelah 3 kali gagal, koneksi diputus.
+- `AllowUsers user` — hanya user yang disebut yang boleh login via SSH. Ganti `user` dengan username Anda.
+
+**Peringatan penting:** sebelum me-reload, buka satu sesi SSH kedua dan biarkan tetap tersambung. Kalau ada salah ketik di konfigurasi, Anda masih punya jalan masuk untuk memperbaiki. Baru kemudian:
+
+```bash
+sudo sshd -t && sudo systemctl reload sshd
+```
+
+`sshd -t` menguji sintaks konfigurasi. Kalau tidak ada error, reload aman.
+
+## 4. (Opsional) Pindah Port SSH
+
+Mengganti port bawaan 22 ke port lain (misal 2222) tidak membuat server "aman" dengan sendirinya — port scanning tetap menemukannya — tapi sangat mengurangi kebisingan log dari bot yang hanya memindai port 22:
+
+```
+Port 2222
+```
+
+Jangan lupa buka port baru di firewall sebelum reload:
+
+```bash
+sudo ufw allow 2222/tcp
+sudo ufw allow OpenSSH
+```
+
+## 5. Pasang Fail2ban
+
+Fail2ban memantau log dan memblokir IP yang terlalu banyak gagal login:
+
+```bash
+sudo apt install fail2ban -y
+sudo systemctl enable --now fail2ban
+```
+
+Buat `/etc/fail2ban/jail.local`:
+
+```ini
+[sshd]
+enabled = true
+port = 22
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+findtime = 600
+bantime = 3600
+```
+
+Artinya: 3 kali gagal dalam 10 menit → diblokir 1 jam. Cek statusnya dengan `sudo fail2ban-client status sshd`. Di server kami, aturan seperti ini memblokir ratusan percobaan brute force per hari — tanpa kami harus mengawasi log manual.
+
+## 6. Tambahan: Batasi Akses Lewat Firewall
+
+Kalau Anda hanya mengakses server dari jaringan tertentu (misal IP kantor atau VPN), batasi SSH di firewall ke sumber itu saja. Ini jauh lebih kuat daripada sekadar ganti port:
+
+```bash
+sudo ufw allow from 203.0.113.0/24 to any port 22 proto tcp
+```
+
+Ganti `203.0.113.0/24` dengan jaringan Anda sendiri. Untuk akses dari mana saja dengan aman, kombinasikan dengan VPN — kami memakai WireGuard di MikroTik untuk mengakses server lokal dari luar, panduannya ada di artikel [Cara Setting WireGuard di MikroTik](/blog/cara-setting-wireguard-mikrotik-akses-server-lokal.html).
+
+## Checklist Setelah Hardening
+
+1. Login dengan kunci berhasil, login dengan password ditolak.
+2. `sudo sshd -t` bersih, tidak ada error.
+3. Fail2ban aktif dan sudah memblokir percobaan gagal.
+4. Backup `sshd_config` tersimpan sebelum perubahan.
+5. Anda masih punya akses konsol (VNC/panel cloud) sebagai jalan darurat.
+
+SSH yang sudah di-hardening bukan berarti boleh dilupakan — periksa log sesekali, perbarui paket OpenSSH saat ada patch keamanan, dan putar kunci bila laptop Anda hilang. Tapi dengan password authentication dimatikan, serangan paling umum di internet — brute force password — sudah tertutup rapat.
+
+Baca juga: [Kenalan dengan Info Stealer, Virus Pencuri Data](/blog/kenalan-info-stealer-virus-pencuri-data.html) — pencurian kredensial adalah alasan lain kenapa password saja tidak pernah cukup.
+
+---
+
+---
+title: "Cara Setting WireGuard di MikroTik untuk Akses Server Lokal dari Mana Saja"
+description: "Panduan WireGuard di MikroTik RouterOS v7: buat interface, tukar kunci peer, atur firewall, dan akses server lokal dari HP atau laptop di mana saja dengan aman."
+author: "Duscha Olya Arta Anas"
+date: "2026-11-15"
+category: "Tutorial"
+tags: ["mikrotik", "wireguard", "vpn", "routeros", "jaringan"]
+slug: "cara-setting-wireguard-mikrotik-akses-server-lokal"
+---
+
+# Cara Setting WireGuard di MikroTik untuk Akses Server Lokal dari Mana Saja
+
+Punya server di jaringan lokal — Nextcloud, SIMRS, atau sekadar file sharing — tapi sering butuh diakses dari luar? Membuka port manajemen ke internet adalah undangan untuk bot brute force. Cara yang jauh lebih aman: VPN WireGuard di MikroTik. Setelah tersambung, perangkat Anda seolah berada di jaringan lokal yang sama, tanpa satu pun port layanan yang terekspos ke publik.
+
+Panduan ini memakai RouterOS v7 (WireGuard sudah bawaan sejak v7) dan alamat contoh dari rentang dokumentasi — ganti dengan alamat jaringan Anda sendiri. Jangan pernah menaruh IP publik asli Anda di tutorial publik.
+
+## Konsep Singkat: Bagaimana WireGuard Bekerja
+
+WireGuard adalah VPN berbasis kunci publik: tiap ujung (server dan klien) punya pasangan kunci privat/publik. Server hanya menerima paket dari peer yang kunci publiknya sudah didaftarkan, dan hanya untuk alamat IP yang diizinkan (`AllowedIPs`). Tidak ada handshake username/password — kalau kuncinya tidak cocok, paket dibuang diam-diam. Itu sebabnya port WireGuard yang di-scan dari internet tampak "mati": tidak merespons sama sekali.
+
+## Langkah 1: Buat Interface WireGuard di MikroTik
+
+Masuk ke terminal MikroTik (Winbox → New Terminal, atau SSH) dan jalankan:
+
+```
+/interface wireguard
+add name=wg1 listen-port=13231
+print
+```
+
+Saat interface dibuat, RouterOS otomatis membuat pasangan kunci. Lihat kunci publik router dengan:
+
+```
+/interface wireguard print detail
+```
+
+Catat `public-key` router — ini yang akan dimasukkan ke konfigurasi klien. **Private key router jangan pernah dibagikan.**
+
+## Langkah 2: Beri Alamat IP untuk Interface
+
+```
+/ip address
+add address=10.8.0.1/24 interface=wg1
+```
+
+Jaringan `10.8.0.0/24` adalah jaringan VPN kita: router di `10.8.0.1`, klien pertama di `10.8.0.2`, dan seterusnya. Pastikan rentang ini tidak bentrok dengan jaringan LAN Anda.
+
+## Langkah 3: Daftarkan Peer (Klien)
+
+Buat kunci untuk klien dulu. Di HP atau laptop, buka aplikasi WireGuard dan buat tunnel baru — aplikasi akan menampilkan pasangan kunci. Ambil `public-key` klien, lalu daftarkan di router:
+
+```
+/interface wireguard peers
+add interface=wg1 public-key="PUBLIC-KEY-KLIEN-DI-SINI" allowed-address=10.8.0.2/32
+```
+
+`allowed-address` adalah alamat VPN klien tersebut. Satu peer, satu alamat — jangan memberi alamat yang sama ke dua peer.
+
+## Langkah 4: Buka Port WireGuard di Firewall
+
+WireGuard butuh satu port UDP terbuka di firewall:
+
+```
+/ip firewall filter
+add chain=input protocol=udp dst-port=13231 action=accept comment="WireGuard VPN"
+```
+
+Tempatkan aturan ini **di atas** aturan drop di chain input. Kalau aturan drop ada di atasnya, paket VPN tidak akan pernah sampai ke interface.
+
+Untuk keamanan ekstra, batasi juga akses manajemen: jangan biarkan Winbox/WebFig bisa diakses dari sembarang alamat lewat VPN tanpa filter. Aturan yang baik: izinkan akses manajemen hanya dari jaringan VPN (`src-address=10.8.0.0/24`) dan dari LAN, tolak sisanya.
+
+## Langkah 5: Konfigurasi Klien
+
+Contoh konfigurasi di aplikasi WireGuard (HP/laptop). Ganti `203.0.113.10` dengan IP publik atau domain router Anda:
+
+```ini
+[Interface]
+PrivateKey = <private-key-klien>
+Address = 10.8.0.2/32
+DNS = 10.8.0.1
+
+[Peer]
+PublicKey = <public-key-router>
+Endpoint = 203.0.113.10:13231
+AllowedIPs = 10.8.0.0/24
+PersistentKeepalive = 25
+```
+
+`AllowedIPs = 10.8.0.0/24` artinya hanya trafik menuju jaringan VPN yang lewat tunnel — internet klien tetap lewat koneksi biasa (split tunnel). Kalau Anda ingin **semua** trafik lewat VPN, isi `AllowedIPs = 0.0.0.0/0`. `PersistentKeepalive = 25` menjaga tunnel tetap hidup di balik NAT.
+
+## Langkah 6: Uji Koneksi
+
+Aktifkan tunnel di klien, lalu:
+
+- Ping router: `ping 10.8.0.1` — harus membalas.
+- Coba akses layanan lokal, misal buka `http://10.8.0.1` (WebFig) atau alamat server lokal Anda.
+- Di router, periksa `/interface wireguard peers print` — kolom `last-handshake` harus menunjukkan waktu baru.
+
+Kalau handshake tidak pernah terjadi, periksa tiga hal: port UDP 13231 sudah terbuka dan diteruskan dengan benar (kalau router di belakang ISP NAT, pastikan port forwarding-nya), kunci publik tidak tertukar antara router dan klien, dan jam di kedua perangkat tidak selisih jauh.
+
+## Tips Keamanan
+
+1. **Satu peer, satu kunci.** Jangan memakai kunci yang sama di banyak perangkat — kalau satu perangkat hilang, Anda tinggal menghapus peer itu saja.
+2. **Jangan buka port manajemen ke internet.** Winbox, SSH, dan WebFig sebaiknya hanya bisa diakses dari LAN dan jaringan VPN.
+3. **Perbarui RouterOS.** WireGuard terus diperbaiki; jalankan versi long-term terbaru yang stabil untuk perangkat Anda.
+4. **Catat semua peer.** Simpan daftar peer dan alamatnya di dokumentasi, supaya saat ada perangkat hilang Anda tahu persis peer mana yang harus dicabut.
+
+Dengan WireGuard, server lokal Anda tetap lokal — tidak ada port layanan yang menghadap internet — tapi tetap bisa dijangkau dari mana saja, seaman berada di ruangan yang sama. Kombinasikan dengan [hardening SSH](/blog/cara-hardening-ssh-server-linux-kunci-ed25519.html) di servernya, dan akses jarak jauh Anda sudah berlapis dua.
+
+---
+
+---
+title: "ISO/IEC 27001 untuk Pemula: Cara Menyusun Risk Assessment dan Statement of Applicability"
+description: "Panduan ISO/IEC 27001:2022 untuk pemula: langkah risk assessment, matriks likelihood x impact, empat opsi treatment, dan cara menyusun Statement of Applicability."
+author: "Alya Nadzira Arta Anas"
+date: "2026-11-15"
+category: "Tata Kelola"
+tags: ["iso-27001", "risk-assessment", "soa", "isms", "tata-kelola", "kepatuhan"]
+slug: "iso-27001-untuk-pemula-risk-assessment-dan-soa"
+---
+
+# ISO/IEC 27001 untuk Pemula: Cara Menyusun Risk Assessment dan Statement of Applicability
+
+ISO/IEC 27001 adalah standar internasional untuk Sistem Manajemen Keamanan Informasi (ISMS). Bagi organisasi — termasuk rumah sakit yang mengelola data pasien — standar ini menjawab satu pertanyaan mendasar: **bagaimana kita memastikan risiko terhadap informasi sudah dikenali, dinilai, dan ditangani secara sistematis, bukan sekadar tambal sulam?**
+
+Artikel ini menjelaskan dua dokumen yang paling sering membingungkan pemula: **Risk Assessment** (penilaian risiko) dan **Statement of Applicability** (SoA). Keduanya wajib ada kalau organisasi Anda serius menuju sertifikasi — dan keduanya jauh lebih sederhana dari kesan pertamanya.
+
+## Struktur Singkat ISO/IEC 27001:2022
+
+Standar ini punya dua bagian utama:
+
+- **Klausul 4–10** — persyaratan manajemen: konteks organisasi, kepemimpinan, perencanaan, dukungan, operasi, evaluasi kinerja, dan perbaikan berkelanjutan (siklus PDCA).
+- **Annex A** — 93 kontrol keamanan dalam 4 tema: Organisasi (37 kontrol), Orang (8), Fisik (14), dan Teknologi (34).
+
+Klausul 6.1 adalah jantungnya: organisasi **wajib** melakukan risk assessment dan risk treatment. Tanpa keduanya, tidak ada ISMS — hanya tumpukan kebijakan.
+
+## Langkah 1: Inventarisasi Aset Informasi
+
+Risiko tidak bisa dinilai kalau asetnya tidak diketahui. Buat daftar aset informasi Anda: server, database, laptop, aplikasi (misal SIMRS), dokumen, sampai orang yang memegang akses penting. Untuk tiap aset, catat pemiliknya dan nilai **kerahasiaan, integritas, dan ketersediaannya** (CIA triad).
+
+Contoh kecil di rumah sakit: database pasien (kerahasiaan tinggi, ketersediaan tinggi), laptop admin (kerahasiaan sedang), dan printer jaringan (ketersediaan sedang).
+
+## Langkah 2: Identifikasi Ancaman dan Kerentanan
+
+Untuk tiap aset, tanyakan: apa yang bisa terjadi, dan celah apa yang memungkinkannya? Ancaman bisa berupa ransomware, phishing, laptop hilang, banjir di ruang server, sampai vendor yang lalai. Kerentanan adalah kelemahan yang membuat ancaman itu berhasil — misal password lemah, port manajemen terbuka ke internet, atau backup yang tidak pernah diuji.
+
+Di kolom KEV blog ini kami memantau kerentanan yang **terbukti sudah dieksploitasi** di dunia nyata — itu contoh ancaman yang tidak lagi teoritis. Lihat [KEV — Known Exploited Vulnerabilities](/kev/) untuk daftarnya.
+
+## Langkah 3: Nilai Risiko dengan Matriks 5×5
+
+Nilai tiap risiko dari dua sisi, masing-masing skala 1–5:
+
+- **Likelihood** (kemungkinan terjadi): 1 = sangat jarang, 5 = hampir pasti.
+- **Impact** (dampak bila terjadi): 1 = bisa diabaikan, 5 = bencana (misal data pasien bocor massal).
+
+Skor risiko = Likelihood × Impact. Contoh:
+
+| Risiko | Likelihood | Impact | Skor | Level |
+|---|---|---|---|---|
+| Ransomware via phishing ke staf | 4 | 5 | 20 | Kritis |
+| Laptop admin hilang tanpa enkripsi | 3 | 4 | 12 | Tinggi |
+| Gangguan listrik ruang server | 2 | 3 | 6 | Sedang |
+| Karyawan salah kirim email | 3 | 2 | 6 | Sedang |
+
+Tetapkan **risk appetite** — ambang yang masih bisa diterima organisasi. Misal: skor 1–6 diterima, 8–12 butuh rencana penanganan, 15–25 wajib ditangani segera. Ambang ini keputusan manajemen, bukan keputusan tim IT semata.
+
+## Langkah 4: Pilih Risk Treatment
+
+Untuk tiap risiko di atas ambang, pilih satu dari empat opsi:
+
+1. **Mitigasi** — kurangi likelihood atau impact. Contoh: pelatihan anti-phishing + MFA untuk risiko ransomware.
+2. **Transfer** — pindahkan sebagian risiko, misal asuransi siber atau klausul keamanan di kontrak vendor.
+3. **Hindari** — hentikan aktivitas berisikonya. Contoh: tutup akses manajemen dari internet sepenuhnya.
+4. **Terima** — terima risiko secara sadar dan terdokumentasi, dengan persetujuan pemilik risiko. Ini sah — asal bukan karena malas menilai.
+
+Hasilnya dituangkan dalam **Risk Treatment Plan (RTP)**: kontrol apa yang diterapkan, siapa penanggung jawabnya, dan kapan tenggatnya.
+
+## Langkah 5: Susun Statement of Applicability (SoA)
+
+SoA adalah tabel yang memetakan **93 kontrol Annex A** satu per satu: kontrol mana yang diterapkan, mana yang tidak, dan alasannya. Inilah dokumen yang paling sering diminta auditor.
+
+Contoh baris SoA:
+
+| Kontrol | Diterapkan? | Alasan / Bukti |
+|---|---|---|
+| A.5.23 — Keamanan informasi dalam penggunaan layanan cloud | Ya | Kebijakan cloud + review vendor tahunan |
+| A.8.9 — Manajemen konfigurasi | Ya | Baseline konfigurasi server terdokumentasi |
+| A.7.4 — Keamanan fisik (perimeter) | Ya | Akses ruang server dengan kartu + CCTV |
+| A.5.19 — Keamanan informasi dalam hubungan pemasok | Ya | Klausul keamanan di semua kontrak vendor |
+
+Kontrol yang **tidak** diterapkan harus punya alasan tertulis yang masuk akal — misal kontrol tentang pengembangan aman tidak relevan bila organisasi tidak mengembangkan software sendiri. "Tidak tahu" bukan alasan.
+
+## Setelah Dokumen Jadi
+
+Risk assessment bukan dokumen sekali tulis. Standar menuntut peninjauan berkala dan setiap kali ada perubahan besar: sistem baru, vendor baru, insiden keamanan, atau perubahan regulasi — seperti kewajiban pelindungan data pribadi di Indonesia yang kini diperkuat PP 33/2026. Siklusnya: rencanakan (Plan), jalankan (Do), periksa (Check), perbaiki (Act).
+
+Mulailah dari yang kecil: satu unit kerja, satu daftar aset, sepuluh risiko teratas. ISMS yang hidup dari daftar risiko yang jujur jauh lebih berharga daripada binder tebal yang tidak pernah dibaca.
+
+Baca juga: [Mengenal Spear Phishing dan Cara Menghindarinya](/blog/mengenal-spear-phishing-cara-menghindari.html) — phishing adalah ancaman yang hampir selalu muncul di baris teratas risk assessment mana pun.
+
+---
+
+---
+title: "Power Query Excel: Membersihkan Data Berantakan Tanpa Rumus Rumit"
+description: "Panduan Power Query di Excel: ubah data berantakan (duplikat, spasi, format tanggal campur) jadi tabel rapi yang bisa di-refresh sekali klik — tanpa rumus bersarang."
+author: "Alya Nadzira Arta Anas"
+date: "2026-11-15"
+category: "Tutorial"
+tags: ["excel", "power-query", "data", "tutorial", "office"]
+slug: "power-query-excel-membersihkan-data-berantakan"
+---
+
+# Power Query Excel: Membersihkan Data Berantakan Tanpa Rumus Rumit
+
+Siapa pun yang pernah menerima file Excel dari banyak orang pasti kenal masalahnya: nama yang sama ditulis tiga cara berbeda, tanggal campur antara `12/11/2026` dan `12 Nov 2026`, spasi di sana-sini, dan baris duplikat yang entah dari mana. Membersihkannya manual dengan rumus bisa menghabiskan sore — dan minggu depan, saat file baru datang, Anda mengulang semuanya dari nol.
+
+Power Query adalah alat bawaan Excel (sejak Excel 2016) yang menyelesaikan ini secara permanen: Anda merekam langkah pembersihan sekali, lalu setiap ada data baru, tinggal klik **Refresh**. Tidak perlu rumus bersarang, tidak perlu VBA.
+
+## Skenario: Data yang Berantakan
+
+Bayangkan Anda menerima rekap data seperti ini dari beberapa unit kerja:
+
+| Nama | Tanggal Lahir | No. HP |
+|---|---|---|
+|  BUDI SANTOSO | 12/11/1990 | 0812 3456 7890 |
+| Budi Santoso | 12 Nov 1990 | 081234567890 |
+| Siti Aminah | 1990-05-03 | +62 812-3456-7890 |
+| siti aminah | 03/05/1990 | 0812-3456-7890 |
+
+Nama tidak konsisten, tanggal tiga format, nomor HP empat gaya penulisan. Target kita: satu baris per orang, nama dengan huruf kapital yang benar, tanggal dalam satu format, dan nomor HP seragam.
+
+## Langkah 1: Masukkan Data ke Power Query
+
+1. Blok data Anda, lalu klik **Data → From Table/Range**.
+2. Centang **My table has headers** bila baris pertama adalah judul kolom, klik OK.
+3. Power Query Editor terbuka — di sinilah semua pembersihan dilakukan.
+
+## Langkah 2: Bersihkan Nama
+
+- Pilih kolom **Nama**, klik **Transform → Format → Trim** untuk membuang spasi di awal dan akhir.
+- Masih di kolom yang sama, klik **Transform → Format → Capitalize Each Word** agar `BUDI SANTOSO` dan `siti aminah` menjadi `Budi Santoso` dan `Siti Aminah`.
+
+## Langkah 3: Seragamkan Tanggal
+
+Klik ikon di kiri judul kolom **Tanggal Lahir**, pilih **Date**. Power Query akan membaca ketiga format tanggal di atas dan mengubahnya menjadi satu tipe tanggal yang sama. Kalau ada nilai yang gagal dibaca, ia akan ditandai `Error` — perbaiki sumbernya, jangan diakali.
+
+## Langkah 4: Seragamkan Nomor HP
+
+- Pilih kolom **No. HP**, klik **Transform → Replace Values**: ganti `+62` menjadi `0`, lalu ganti `-` dan spasi menjadi kosong.
+- Hasilnya semua nomor berbentuk `081234567890` — siap dicocokkan atau dihubungi.
+
+## Langkah 5: Hapus Duplikat
+
+Setelah nama dan nomor diseragamkan, baris ganda akan terlihat jelas. Pilih kolom **Nama** dan **No. HP** (tahan Ctrl untuk memilih dua kolom), lalu klik **Home → Remove Rows → Remove Duplicates**. Dari empat baris contoh di atas, tersisa dua: Budi Santoso dan Siti Aminah.
+
+## Langkah 6: Muat Hasilnya
+
+Klik **Home → Close & Load**. Tabel bersih muncul di sheet baru. Dan ini bagian terbaiknya: **semua langkah di atas terekam** di panel kanan (Applied Steps). Minggu depan, saat file baru yang sama berantakannya datang, Anda tinggal menaruh data baru di sumber yang sama lalu klik **Data → Refresh All** — pembersihan yang sama berjalan otomatis.
+
+## Tiga Kebiasaan yang Membuat Power Query Semakin Berguna
+
+1. **Jangan mengedit hasil akhir di sheet.** Edit sumbernya, lalu Refresh. Mengedit tabel hasil akan tertimpa saat refresh berikutnya.
+2. **Beri nama langkah yang jelas.** Klik kanan sebuah langkah di Applied Steps → Rename, misal `Hapus spasi nama`. Tiga bulan lagi Anda akan berterima kasih pada diri sendiri.
+3. **Gabungkan data dari banyak file.** Lewat **Data → Get Data → From Folder**, Power Query bisa menggabungkan puluhan file dengan format sama menjadi satu tabel — tanpa copy-paste. Ini penyelamat saat merekap laporan dari banyak unit.
+
+## Kapan Power Query, Kapan Rumus Biasa?
+
+Gunakan Power Query untuk **membersihkan dan menggabungkan data** — pekerjaan yang berulang dan sumbernya berubah-ubah. Gunakan rumus (XLOOKUP, SUMIFS, dan kawan-kawan) untuk **perhitungan dan analisis** di atas data yang sudah bersih. Keduanya saling melengkapi: Power Query menyiapkan meja, rumus memasak di atasnya.
+
+Kalau pekerjaan Anda melibatkan laporan berkala — rekap bulanan, data pasien, atau laporan keuangan — luangkan satu jam mempelajari Power Query. Jam itu akan kembali berkali-kali lipat dalam bentuk sore yang tidak lagi habis untuk bersih-bersih data.
+
+---
+
+---
+title: "Cara Cek Apakah Email Kamu Bocor di Data Breach (Have I Been Pwned)"
+description: "Panduan cek email bocor di Have I Been Pwned: apa arti hasilnya, data apa saja yang bocor, dan 4 langkah yang harus dilakukan setelah email ketahuan bocor."
+author: "Isekai ID"
+date: "2026-11-15"
+category: "Tutorial"
+tags: ["data-breach", "have-i-been-pwned", "hibp", "password", "keamanan"]
+slug: "cara-cek-email-bocor-data-breach-have-i-been-pwned"
+---
+
+# Cara Cek Apakah Email Kamu Bocor di Data Breach (Have I Been Pwned)
+
+Setiap tahun, miliaran alamat email bocor dari layanan yang diretas — media sosial, toko online, forum, sampai layanan pemerintah. Yang bocor bukan cuma alamat email: sering kali ikut serta password (biasanya dalam bentuk hash), nomor HP, tanggal lahir, bahkan alamat rumah. Data itu kemudian diperjualbelikan dan dipakai untuk penipuan, termasuk percobaan login ke akun Anda yang lain.
+
+Kabar baiknya, mengecek apakah email Anda termasuk yang bocor itu gratis dan hanya butuh satu menit, lewat layanan **Have I Been Pwned (HIBP)** di [haveibeenpwned.com](https://haveibeenpwned.com).
+
+## Langkah 1: Cek Email Anda
+
+1. Buka [haveibeenpwned.com](https://haveibeenpwned.com).
+2. Masukkan alamat email Anda di kolom yang tersedia, klik **pwned?**.
+3. Hasilnya ada dua kemungkinan: **"Good news — no pwnage found!"** (email Anda tidak ditemukan di breach yang tercatat) atau **"Oh no — pwned!"** beserta daftar breach-nya.
+
+**Penting:** HIBP hanya meminta alamat email — **jangan pernah memasukkan password Anda** di situs pengecekan apa pun. Situs yang meminta password untuk "mengecek kebocoran" justru patut dicurigai.
+
+## Langkah 2: Baca Hasilnya dengan Benar
+
+Kalau email Anda ketahuan bocor, tiap breach menampilkan:
+
+- **Nama layanan dan tanggal breach** — misal, breach sebuah forum pada 2023.
+- **Data classes** — jenis data yang bocor: alamat email, password hash, nomor HP, tanggal lahir, dan lain-lain.
+- **Deskripsi singkat** — bagaimana breach itu terjadi.
+
+Yang paling penting diperhatikan adalah apakah **password** termasuk data yang bocor. Kalau ya, anggap password itu sudah diketahui publik — meskipun dalam bentuk hash, hash yang lemah bisa dipecahkan dengan cepat.
+
+Satu hal yang sering disalahpahami: hasil "tidak ditemukan" bukan jaminan email Anda 100% aman — hanya berarti tidak ada di katalog HIBP saat ini. Breach baru terus bermunculan; di kolom [Data Breach](/data-breach/) blog ini kami merangkum breach terbaru dua kali sehari.
+
+## Langkah 3: Kalau Bocor, Lakukan 4 Hal Ini
+
+**1. Ganti password di layanan yang bocor — segera.** Jangan menunda. Kalau password yang sama Anda pakai di tempat lain, ganti semuanya. Inilah alasan kenapa satu password untuk semua akun sangat berbahaya: satu breach membobol banyak akun sekaligus.
+
+**2. Aktifkan autentikasi dua faktor (2FA/MFA)** di layanan yang bocor dan di email utama Anda. Dengan 2FA, password yang bocor saja tidak cukup untuk masuk — penyerang masih butuh kode dari HP Anda. Pakai aplikasi authenticator, bukan SMS, bila tersedia.
+
+**3. Pakai password manager.** Password yang kuat adalah yang panjang, acak, dan berbeda untuk tiap layanan — sesuatu yang mustahil dihafal manusia. Password manager mengingatnya untuk Anda; Anda cukup mengingat satu master password yang kuat.
+
+**4. Waspada penipuan yang memanfaatkan data bocor.** Penyerang memakai data breach untuk membuat email phishing yang meyakinkan — mereka tahu nama Anda, layanan yang Anda pakai, bahkan sebagian password lama Anda. Kalau ada email yang meminta Anda klik tautan atau kirim uang dengan dalih "akun Anda bocor", jangan klik — buka layanan itu langsung dari aplikasi atau alamat resminya.
+
+## Langkah 4: Pantau Terus
+
+HIBP menyediakan **Notify Me** — masukkan email Anda sekali, dan Anda akan diberi tahu bila email itu muncul di breach baru di masa depan. Ini gratis dan jauh lebih baik daripada mengecek manual setiap bulan.
+
+Untuk gambaran yang lebih luas tentang kebocoran data yang sedang terjadi, pantau juga kolom [Data Breach Terbaru](/data-breach/) di blog ini — kami merangkum breach dari katalog HIBP dan berita keamanan, diterjemahkan ke Bahasa Indonesia dengan credit ke sumbernya.
+
+## Kenapa Ini Penting
+
+Data breach bukan masalah "nanti saja". Password yang bocor hari ini bisa dipakai untuk membobol akun Anda minggu depan, dan data pribadi yang bocor bisa dipakai untuk penipuan bertahun-tahun kemudian. Satu menit untuk mengecek, dan beberapa menit untuk mengganti password, jauh lebih murah daripada memulihkan akun yang sudah diambil alih.
+
+Baca juga: [Kenalan dengan Info Stealer, Virus Pencuri Data](/blog/kenalan-info-stealer-virus-pencuri-data.html) — malware yang mencuri password langsung dari perangkat Anda adalah sumber kebocoran lain yang tidak terdeteksi HIBP.
+

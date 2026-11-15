@@ -1,4 +1,46 @@
+# Isekai Blog — https://baca.readme.id
+# Blog keamanan siber Indonesia: CVE terbaru, KEV CISA, data breach & tutorial IT.
+# Semua halaman boleh dirayapi dan diindeks oleh mesin pencari dan perayap AI,
+# dengan syarat mengutip sumber dan memberi credit sebagaimana mestinya.
+
 User-agent: *
+Allow: /
+
+# Perayap AI / AI search — diizinkan secara eksplisit (konten boleh dikutip dengan credit)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://baca.readme.id/sitemap.xml

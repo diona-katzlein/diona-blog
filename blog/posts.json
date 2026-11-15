@@ -1,5 +1,63 @@
 [
   {
+    "title": "Cara Cek Apakah Email Kamu Bocor di Data Breach (Have I Been Pwned)",
+    "slug": "cara-cek-email-bocor-data-breach-have-i-been-pwned",
+    "file": "cara-cek-email-bocor-data-breach-have-i-been-pwned.md",
+    "date": "2026-11-15",
+    "category": "Tutorial",
+    "tags": [
+      "data-breach",
+      "have-i-been-pwned",
+      "hibp",
+      "password",
+      "keamanan"
+    ],
+    "excerpt": "Panduan cek email bocor di Have I Been Pwned: apa arti hasilnya, data apa saja yang bocor, dan 4 langkah yang harus dilakukan setelah email ketahuan bocor.",
+    "description": "Panduan cek email bocor di Have I Been Pwned: apa arti hasilnya, data apa saja yang bocor, dan 4 langkah yang harus dilakukan setelah email ketahuan bocor.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Isekai ID",
+    "readingTime": "4 min read"
+  },
+  {
+    "title": "Cara Hardening SSH di Server Linux: Nonaktifkan Login Password, Pakai Kunci Ed25519",
+    "slug": "cara-hardening-ssh-server-linux-kunci-ed25519",
+    "file": "cara-hardening-ssh-server-linux-kunci-ed25519.md",
+    "date": "2026-11-15",
+    "category": "Tutorial",
+    "tags": [
+      "ssh",
+      "hardening",
+      "linux",
+      "ed25519",
+      "fail2ban",
+      "server"
+    ],
+    "excerpt": "Panduan hardening SSH di Debian/Ubuntu: login pakai kunci Ed25519, matikan password authentication, batasi user, dan pasang Fail2ban agar brute force langsung diblokir.",
+    "description": "Panduan hardening SSH di Debian/Ubuntu: login pakai kunci Ed25519, matikan password authentication, batasi user, dan pasang Fail2ban agar brute force langsung diblokir.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Duscha Olya Arta Anas",
+    "readingTime": "3 min read"
+  },
+  {
+    "title": "Cara Setting WireGuard di MikroTik untuk Akses Server Lokal dari Mana Saja",
+    "slug": "cara-setting-wireguard-mikrotik-akses-server-lokal",
+    "file": "cara-setting-wireguard-mikrotik-akses-server-lokal.md",
+    "date": "2026-11-15",
+    "category": "Tutorial",
+    "tags": [
+      "mikrotik",
+      "wireguard",
+      "vpn",
+      "routeros",
+      "jaringan"
+    ],
+    "excerpt": "Panduan WireGuard di MikroTik RouterOS v7: buat interface, tukar kunci peer, atur firewall, dan akses server lokal dari HP atau laptop di mana saja dengan aman.",
+    "description": "Panduan WireGuard di MikroTik RouterOS v7: buat interface, tukar kunci peer, atur firewall, dan akses server lokal dari HP atau laptop di mana saja dengan aman.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Duscha Olya Arta Anas",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "CVE Terbaru 2026-11-15: 50 Kerentanan Kritis CVSS ≥ 9.0 / Latest Critical CVEs",
     "slug": "cve-terbaru-2026-11-15",
     "file": "cve-terbaru-2026-11-15.md",
@@ -38,6 +96,26 @@
     "readingTime": "6 min read"
   },
   {
+    "title": "ISO/IEC 27001 untuk Pemula: Cara Menyusun Risk Assessment dan Statement of Applicability",
+    "slug": "iso-27001-untuk-pemula-risk-assessment-dan-soa",
+    "file": "iso-27001-untuk-pemula-risk-assessment-dan-soa.md",
+    "date": "2026-11-15",
+    "category": "Tata Kelola",
+    "tags": [
+      "iso-27001",
+      "risk-assessment",
+      "soa",
+      "isms",
+      "tata-kelola",
+      "kepatuhan"
+    ],
+    "excerpt": "Panduan ISO/IEC 27001:2022 untuk pemula: langkah risk assessment, matriks likelihood x impact, empat opsi treatment, dan cara menyusun Statement of Applicability.",
+    "description": "Panduan ISO/IEC 27001:2022 untuk pemula: langkah risk assessment, matriks likelihood x impact, empat opsi treatment, dan cara menyusun Statement of Applicability.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Alya Nadzira Arta Anas",
+    "readingTime": "4 min read"
+  },
+  {
     "title": "KEV Terbaru 2026-11-15: Kerentanan yang Terbukti Dieksploitasi Aktif / Latest Known Exploited Vulnerabilities",
     "slug": "kev-terbaru-2026-11-15",
     "file": "kev-terbaru-2026-11-15.md",
@@ -52,6 +130,25 @@
     ],
     "excerpt": "Daftar KEV terbaru dari katalog CISA per 2026-11-15: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
     "description": "Daftar KEV terbaru dari katalog CISA per 2026-11-15: kerentanan yang sudah dipakai penyerang di dunia nyata, lengkap vendor, produk, tenggat CISA, dan ringkasan Bahasa Indonesia.",
+    "image": "/assets/images/cpanel-vulnerability.jpg",
+    "author": "Alya Nadzira Arta Anas",
+    "readingTime": "4 min read"
+  },
+  {
+    "title": "Power Query Excel: Membersihkan Data Berantakan Tanpa Rumus Rumit",
+    "slug": "power-query-excel-membersihkan-data-berantakan",
+    "file": "power-query-excel-membersihkan-data-berantakan.md",
+    "date": "2026-11-15",
+    "category": "Tutorial",
+    "tags": [
+      "excel",
+      "power-query",
+      "data",
+      "tutorial",
+      "office"
+    ],
+    "excerpt": "Panduan Power Query di Excel: ubah data berantakan (duplikat, spasi, format tanggal campur) jadi tabel rapi yang bisa di-refresh sekali klik — tanpa rumus bersarang.",
+    "description": "Panduan Power Query di Excel: ubah data berantakan (duplikat, spasi, format tanggal campur) jadi tabel rapi yang bisa di-refresh sekali klik — tanpa rumus bersarang.",
     "image": "/assets/images/cpanel-vulnerability.jpg",
     "author": "Alya Nadzira Arta Anas",
     "readingTime": "4 min read"
