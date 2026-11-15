@@ -1,6 +1,74 @@
 {
-  "generated": "2026-11-15 06:14 WITA",
+  "generated": "2026-11-15 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-129444",
+      "published": "2026-11-15T09:16:44.570",
+      "lastModified": "2026-11-15T09:16:44.743",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit is publicly available and might be used.",
+      "references": [
+        "https://github.com/XueDugu/dlink-dsl6740c-ftp-default-evidence",
+        "https://vuldb.com/cve/CVE-2026-129444",
+        "https://vuldb.com/submit/1044943",
+        "https://vuldb.com/vuln/437457",
+        "https://vuldb.com/vuln/437457/cti"
+      ],
+      "cve_id": "CVE-2026-129444"
+    },
+    {
+      "id": "CVE-2026-129354",
+      "published": "2026-11-15T01:18:03.043",
+      "lastModified": "2026-11-15T01:18:03.190",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.",
+      "references": [
+        "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/D-Link-DIR-600L-HNAP-SOAPAction.md",
+        "https://vuldb.com/cve/CVE-2026-129354",
+        "https://vuldb.com/submit/1043526",
+        "https://vuldb.com/vuln/437417",
+        "https://vuldb.com/vuln/437417/cti"
+      ],
+      "cve_id": "CVE-2026-129354"
+    },
+    {
+      "id": "CVE-2026-129353",
+      "published": "2026-11-15T00:16:51.120",
+      "lastModified": "2026-11-15T00:16:51.267",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
+      "references": [
+        "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/D-Link-DIR-600L-authentication-cgi.md",
+        "https://vuldb.com/cve/CVE-2026-129353",
+        "https://vuldb.com/submit/1043523",
+        "https://vuldb.com/vuln/437416",
+        "https://vuldb.com/vuln/437416/cti"
+      ],
+      "cve_id": "CVE-2026-129353"
+    },
+    {
+      "id": "CVE-2026-129351",
+      "published": "2026-11-14T23:16:47.753",
+      "lastModified": "2026-11-14T23:16:47.983",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer.",
+      "references": [
+        "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/TRENDnet-TEW-657BRM-mini_httpd.md",
+        "https://vuldb.com/cve/CVE-2026-129351",
+        "https://vuldb.com/submit/1043518",
+        "https://vuldb.com/vuln/437397",
+        "https://vuldb.com/vuln/437397/cti"
+      ],
+      "cve_id": "CVE-2026-129351"
+    },
     {
       "id": "CVE-2026-124822",
       "published": "2026-11-13T06:16:53.960",
@@ -714,66 +782,6 @@
         "https://patchstack.com/database/wordpress/plugin/ajax-load-more-cache/vulnerability/wordpress-ajaxloadmore-cache-plugin-3-1-1-remote-code-execution-rce-vulnerability?_s_id=cve"
       ],
       "cve_id": "CVE-2026-61991"
-    },
-    {
-      "id": "CVE-2026-61567",
-      "published": "2026-10-28T22:17:15.900",
-      "lastModified": "2026-11-03T01:16:54.897",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "AVideo is a video-sharing Platform. Prior to 8.1.0, the live-streaming endpoint `view/videosListToLive.php` accepts an attacker-named streamer in `webSiteRootURL`, calls `Login::run` in `objects/Login.php`, and trusts the returned JSON as session state. An unauthenticated remote attacker who can host an HTTP service reachable by the encoder can self-grant `isLogged` and `canStream` without legitimate credentials. The endpoint requires only nonempty `playlists_id` and `APISecret` values; `APISecret` is forwarded rather than checked against a stored secret. This path never calls `Streamer::isURL",
-      "references": [
-        "https://github.com/WWBN/AVideo-Encoder/commit/99b8ad9b66fe5726cababbe29dce9d9695131caa",
-        "https://github.com/WWBN/AVideo-Encoder/releases/tag/v8.1.0",
-        "https://github.com/WWBN/AVideo-Encoder/security/advisories/GHSA-rf63-6vwm-wv8p",
-        "https://github.com/WWBN/AVideo-Encoder/security/advisories/GHSA-rf63-6vwm-wv8p"
-      ],
-      "cve_id": "CVE-2026-61567"
-    },
-    {
-      "id": "CVE-2026-61564",
-      "published": "2026-10-28T22:17:15.750",
-      "lastModified": "2026-11-03T14:17:36.860",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "AVideo is a video-sharing Platform. Prior to 8.1.0, the unauthenticated installer endpoint `install/checkConfiguration.php` assembles `videos/configuration.php` by interpolating request parameters, including `webSiteRootURL`, into single-quoted PHP string literals without escaping. An attacker can terminate a literal and inject PHP that executes as the web-server user when the generated, directly requestable file is loaded. Exploitation requires `videos/configuration.php` to be absent, as on every fresh deployment or after the file is removed or moved; an existing file blocks this endpoint. Th",
-      "references": [
-        "https://github.com/WWBN/AVideo-Encoder/commit/0faaddebd11c087885d25a7e0513745465cad411",
-        "https://github.com/WWBN/AVideo-Encoder/releases/tag/v8.1.0",
-        "https://github.com/WWBN/AVideo-Encoder/security/advisories/GHSA-xrj3-cqm8-r992",
-        "https://github.com/WWBN/AVideo-Encoder/security/advisories/GHSA-xrj3-cqm8-r992"
-      ],
-      "cve_id": "CVE-2026-61564"
-    },
-    {
-      "id": "CVE-2026-105781",
-      "published": "2026-10-27T17:16:56.430",
-      "lastModified": "2026-11-02T21:17:22.827",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary SQL commands, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "references": [
-        "https://www.adobe.com/trust/security/products/campaign/apsb26-162.html"
-      ],
-      "cve_id": "CVE-2026-105781"
-    },
-    {
-      "id": "CVE-2026-65145",
-      "published": "2026-10-27T13:16:59.860",
-      "lastModified": "2026-11-04T17:17:36.607",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "NVIDIA NeMo Agent Toolkit contains a vulnerability where a attacker could cause a missing authentication issue. This vulnerability might lead to code execution, escalation of privileges, data tampering, denial of service, and information disclosure.",
-      "references": [
-        "https://github.com/NVIDIA/product-security/tree/main/2026/5912",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-65145",
-        "https://www.cve.org/CVERecord?id=CVE-2026-65145"
-      ],
-      "cve_id": "CVE-2026-65145"
     }
   ]
 }
