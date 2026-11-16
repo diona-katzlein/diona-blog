@@ -1,10 +1,39 @@
 {
-  "generated": "2026-11-16 18:14 WITA",
+  "generated": "2026-11-17 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-53998",
+      "published": "2026-11-16T20:19:06.807",
+      "lastModified": "2026-11-16T20:19:06.807",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
+      "description": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format, while DotDict.__getattr__ did not prevent traversal through Python private attributes. A crafted field could traverse object internals such as __class__, __init__, and __globals__ to read process environment variables and internal module state. The endpoint is unauthenticated on default installations, and any account can reach it when authentication is enabled. Exposure of PHOENIX_SECRET can allo",
+      "references": [
+        "https://github.com/Arize-ai/phoenix/commit/e7224a685589f2ffae1fefcc68ff210bd6ad28b8",
+        "https://github.com/Arize-ai/phoenix/pull/13197",
+        "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v15.7.0",
+        "https://github.com/Arize-ai/phoenix/security/advisories/GHSA-gfv3-m769-5xm3"
+      ],
+      "cve_id": "CVE-2026-53998"
+    },
+    {
+      "id": "CVE-2026-93664",
+      "published": "2026-11-16T13:17:23.313",
+      "lastModified": "2026-11-16T15:17:34.640",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A Deserialization of Untrusted Data vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2026x could lead to an unauthenticated remote code execution.",
+      "references": [
+        "https://www.3ds.com/trust-center/security/security-advisories/cve-2026-93664"
+      ],
+      "cve_id": "CVE-2026-93664"
+    },
     {
       "id": "CVE-2026-129444",
       "published": "2026-11-15T09:16:44.570",
-      "lastModified": "2026-11-15T09:16:44.743",
+      "lastModified": "2026-11-16T19:17:41.937",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -38,7 +67,7 @@
     {
       "id": "CVE-2026-129353",
       "published": "2026-11-15T00:16:51.120",
-      "lastModified": "2026-11-15T00:16:51.267",
+      "lastModified": "2026-11-16T19:17:41.020",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -756,32 +785,6 @@
         "https://github.com/socfortress/CoPilot/security/advisories/GHSA-q3g8-3cf7-744f"
       ],
       "cve_id": "CVE-2026-61738"
-    },
-    {
-      "id": "CVE-2026-84295",
-      "published": "2026-10-29T16:19:29.860",
-      "lastModified": "2026-10-30T18:18:13.827",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Improper authentication in Progress Software WS_FTP Server versions prior to 2024.0.6 and 2025.0.3 on Windows could allow an unauthenticated remote attacker to access sensitive information, including administrative credentials.",
-      "references": [
-        "https://progress.lightning.force.com/lightning/r/Knowledge__kav/ka7Pb000001vl86IAA/view"
-      ],
-      "cve_id": "CVE-2026-84295"
-    },
-    {
-      "id": "CVE-2026-61991",
-      "published": "2026-10-29T16:18:11.463",
-      "lastModified": "2026-10-30T19:18:29.310",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Unauthenticated Remote Code Execution (RCE) in AjaxLoadMore Cache <= 3.1.1 versions.",
-      "references": [
-        "https://patchstack.com/database/wordpress/plugin/ajax-load-more-cache/vulnerability/wordpress-ajaxloadmore-cache-plugin-3-1-1-remote-code-execution-rce-vulnerability?_s_id=cve"
-      ],
-      "cve_id": "CVE-2026-61991"
     }
   ]
 }

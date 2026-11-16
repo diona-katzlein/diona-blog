@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16 17:59:35 WITA",
+  "generated": "2026-11-17 05:59:40 WITA",
   "total": 1036,
   "items": [
     {
@@ -181,13 +181,23 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "NV: Douglas County data leak exposes Social Security numbers after public records request",
+      "url": "https://databreaches.net/2026/11/16/nv-douglas-county-data-leak-exposes-social-security-numbers-after-public-records-request/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Five Boston U. alumni sue University over reported data breach",
+      "url": "https://databreaches.net/2026/11/16/five-boston-u-alumni-sue-university-over-reported-data-breach/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Uber Data Breach: Driver Licenses Stolen via Fireworks AI",
       "url": "https://databreaches.net/2026/11/14/uber-data-breach-driver-licenses-stolen-via-fireworks-ai/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Over 144,000 Norwegian and Widerøe passengers affected by data breach",
-      "url": "https://databreaches.net/2026/11/13/over-144000-norwegian-and-wideroe-passengers-affected-by-data-breach/"
+      "source": "BleepingComputer",
+      "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/"
     },
     {
       "source": "BleepingComputer",
@@ -198,16 +208,6 @@
       "source": "BleepingComputer",
       "title": "Cursor confirms security breach led to malicious Claude Code extension",
       "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
-      "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "How one AI agent exposed five critical enterprise security gaps",
-      "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/"
     }
   ]
 }
