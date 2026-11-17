@@ -60,12 +60,13 @@ slug: "data-breach-terbaru-2026-11-17"
 
 Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs penerbit.
 
+- **DataBreaches.net** — [Customer Personal Information Leak at Legoland… Even Annual Pass Barcodes Stolen](https://databreaches.net/2026/11/16/customer-personal-information-leak-at-legoland-even-annual-pass-barcodes-stolen/)
+- **DataBreaches.net** — [Roman Khlynovskiy, Alleged Member of “8-Digits Team” Ransomware Group Extradited for Role in Major Data Extortion Campaign Against U.S. Hospitals, Healthcare Entities, and Schools](https://databreaches.net/2026/11/16/roman-khlynovskiy-alleged-member-of-8-digits-team-ransomware-group-extradited-for-role-in-major-data-extortion-campaign-against-u-s-hospitals-healthcare-entities-and-schools/)
 - **DataBreaches.net** — [NV: Douglas County data leak exposes Social Security numbers after public records request](https://databreaches.net/2026/11/16/nv-douglas-county-data-leak-exposes-social-security-numbers-after-public-records-request/)
 - **DataBreaches.net** — [Five Boston U. alumni sue University over reported data breach](https://databreaches.net/2026/11/16/five-boston-u-alumni-sue-university-over-reported-data-breach/)
-- **DataBreaches.net** — [Uber Data Breach: Driver Licenses Stolen via Fireworks AI](https://databreaches.net/2026/11/14/uber-data-breach-driver-licenses-stolen-via-fireworks-ai/)
+- **BleepingComputer** — [Uber notifies drivers of data breach affecting nearly 150,000 people](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
+- **BleepingComputer** — [Ransomware affiliate suspect extradited to US, faces 27 years in prison](https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/)
 - **BleepingComputer** — [Barracuda links cloud breach to ARTEX AI-powered cyberattack](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
-- **BleepingComputer** — [TSMC employee data breach linked to cloud provider](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
-- **BleepingComputer** — [Cursor confirms security breach led to malicious Claude Code extension](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
 
 ## Sumber & Credit / Sources & Credit
 
