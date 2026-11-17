@@ -1,6 +1,101 @@
 {
-  "generated": "2026-11-17 18:14 WITA",
+  "generated": "2026-11-18 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-91569",
+      "published": "2026-11-17T22:19:24.980",
+      "lastModified": "2026-11-17T22:19:24.980",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  While the vulnerability is in Oracle WebLogic Server, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 10.0 (Confidentiality, I",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-91569"
+    },
+    {
+      "id": "CVE-2026-91510",
+      "published": "2026-11-17T22:19:22.823",
+      "lastModified": "2026-11-17T22:19:22.823",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
+      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager acc",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-91510"
+    },
+    {
+      "id": "CVE-2026-91500",
+      "published": "2026-11-17T22:19:22.467",
+      "lastModified": "2026-11-17T22:19:22.467",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
+      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager acc",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-91500"
+    },
+    {
+      "id": "CVE-2026-114835",
+      "published": "2026-11-17T22:18:11.710",
+      "lastModified": "2026-11-17T22:18:11.710",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts)",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-114835"
+    },
+    {
+      "id": "CVE-2026-114824",
+      "published": "2026-11-17T22:18:10.373",
+      "lastModified": "2026-11-17T22:18:10.373",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Platform Security for Java.  While the vulnerability is in Oracle Platform Security for Java, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Platform Security for Java. CVSS 3.1 Base Sc",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-114824"
+    },
+    {
+      "id": "CVE-2026-114784",
+      "published": "2026-11-17T22:18:05.783",
+      "lastModified": "2026-11-17T22:18:05.783",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  While the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Intelligenc",
+      "references": [
+        "https://www.oracle.com/security-alerts/cspunov2026.html"
+      ],
+      "cve_id": "CVE-2026-114784"
+    },
+    {
+      "id": "CVE-2026-100397",
+      "published": "2026-11-17T20:17:35.207",
+      "lastModified": "2026-11-17T22:17:22.407",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Rucio is a scientific data management framework. From 1.14.0 until 35.9.1, 38.6.1, 40.4.2, and 41.1.1, validate_auth_token in lib/rucio/core/authentication.py does not distinguish short-lived SSH challenge nonces from authentication tokens stored in the same token table. An unauthenticated attacker can request /auth/ssh_challenge_token for an arbitrary account by supplying X-Rucio-Account, then present the returned X-Rucio-SSH-Challenge-Token as X-Rucio-Auth-Token to authenticate to other API endpoints as that account, including an administrative account. This issue is fixed in versions 35.9.1",
+      "references": [
+        "https://github.com/rucio/rucio/commit/4d4a58571ba853f3a55aef16ad9eb0944fce7483",
+        "https://github.com/rucio/rucio/commit/4df924feb539ef789b3e78cbc00712ef8cdf606e",
+        "https://github.com/rucio/rucio/commit/d7a3c2c2f933dce8edbcad07d8d076b9b782da35",
+        "https://github.com/rucio/rucio/commit/f5db3546d9c0de4642dc9aa52e6a6e447911d680",
+        "https://github.com/rucio/rucio/releases/tag/35.9.1"
+      ],
+      "cve_id": "CVE-2026-100397"
+    },
     {
       "id": "CVE-2026-53998",
       "published": "2026-11-16T20:19:06.807",
@@ -114,7 +209,7 @@
     {
       "id": "CVE-2026-127277",
       "published": "2026-11-13T02:18:54.520",
-      "lastModified": "2026-11-13T02:18:54.667",
+      "lastModified": "2026-11-17T20:17:41.230",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -342,7 +437,7 @@
     {
       "id": "CVE-2026-123551",
       "published": "2026-11-08T02:16:46.603",
-      "lastModified": "2026-11-13T03:17:29.467",
+      "lastModified": "2026-11-17T21:14:31.327",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -667,124 +762,6 @@
         "https://vuldb.com/vuln/429621/cti"
       ],
       "cve_id": "CVE-2026-120277"
-    },
-    {
-      "id": "CVE-2026-120276",
-      "published": "2026-11-02T00:18:09.897",
-      "lastModified": "2026-11-05T16:17:43.943",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_openvpn_cli_group_command_injection.md",
-        "https://vuldb.com/cve/CVE-2026-120276",
-        "https://vuldb.com/submit/919502",
-        "https://vuldb.com/vuln/429620",
-        "https://vuldb.com/vuln/429620/cti"
-      ],
-      "cve_id": "CVE-2026-120276"
-    },
-    {
-      "id": "CVE-2026-120338",
-      "published": "2026-11-01T16:18:14.970",
-      "lastModified": "2026-11-02T20:17:40.677",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Prefab UI's Generative UI sandbox runs caller-supplied Python inside Pyodide, Python compiled to WebAssembly, in a Deno subprocess. The feature is documented as isolation for untrusted code, including LLM-written UI. From prefab-ui 0.14.0 through 0.20.2 the launcher starts Deno with unrestricted --allow-read, --allow-write, and --allow-net, and the runner leaves the Deno API on the JavaScript global object. Pyodide's js module proxies that global, so the Python can call Deno.readTextFileSync and Deno.writeTextFileSync. A caller who can supply the code can read and write files as the server OS ",
-      "references": [
-        "https://github.com/PrefectHQ/prefab",
-        "https://github.com/PrefectHQ/prefab/commit/030f074f85e0b1be0dd44b0283185aecb26337a2",
-        "https://github.com/PrefectHQ/prefab/pull/538",
-        "https://github.com/PrefectHQ/prefab/releases/tag/v0.14.0",
-        "https://github.com/PrefectHQ/prefab/releases/tag/v0.20.2"
-      ],
-      "cve_id": "CVE-2026-120338"
-    },
-    {
-      "id": "CVE-2026-120198",
-      "published": "2026-11-01T05:18:57.620",
-      "lastModified": "2026-11-02T16:19:19.997",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability has been found in WAVLINK WL-WN530BE1-A V251117. Affected is the function con_check_read_finish of the file /protocol.csp. Such manipulation of the argument group_name/IP-FROM leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/pipiyyb/cve/blob/main/WN530BE1.md",
-        "https://vuldb.com/cve/CVE-2026-120198",
-        "https://vuldb.com/submit/918551",
-        "https://vuldb.com/vuln/429561",
-        "https://vuldb.com/vuln/429561/cti"
-      ],
-      "cve_id": "CVE-2026-120198"
-    },
-    {
-      "id": "CVE-2026-120195",
-      "published": "2026-11-01T04:18:46.687",
-      "lastModified": "2026-11-05T16:17:41.517",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument wlan_ssid leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/pipiyyb/cve/blob/main/WAVLINK_WN579A3_CVE_wzdgwMesh_wlan_ssid.md",
-        "https://vuldb.com/cve/CVE-2026-120195",
-        "https://vuldb.com/submit/914922",
-        "https://vuldb.com/vuln/429558",
-        "https://vuldb.com/vuln/429558/cti"
-      ],
-      "cve_id": "CVE-2026-120195"
-    },
-    {
-      "id": "CVE-2026-120189",
-      "published": "2026-11-01T01:17:16.877",
-      "lastModified": "2026-11-05T16:17:41.037",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
-      "references": [
-        "https://github.com/Walnut1337/DIR-505_filename_rce/tree/main/poc",
-        "https://vuldb.com/cve/CVE-2026-120189",
-        "https://vuldb.com/submit/1027185",
-        "https://vuldb.com/vuln/429528",
-        "https://vuldb.com/vuln/429528/cti"
-      ],
-      "cve_id": "CVE-2026-120189"
-    },
-    {
-      "id": "CVE-2026-61826",
-      "published": "2026-10-30T17:17:27.497",
-      "lastModified": "2026-11-05T03:17:29.197",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Bazarr is a companion application to Sonarr and Radarr. Prior to 1.5.7-beta.14, the `api_ns_plex` namespace in `bazarr/api/plex/oauth.py` omits `@authenticate` on its Resource handlers, while normal APIs require an API key and no global authentication hook compensates. Anonymous callers can invoke `POST /api/plex/oauth/logout` to clear credentials and disable the integration, or `POST /api/plex/apikey` to persist an attacker-selected key, without a PIN, account or state precondition. `POST /api/plex/oauth/pin` and `GET /api/plex/oauth/pin/<pin_id>/check` additionally allow an attacker who comp",
-      "references": [
-        "https://github.com/morpheus65535/bazarr/commit/4bd29252feebd0803e84cc3ce1bdd24c3a076ed4",
-        "https://github.com/morpheus65535/bazarr/commit/f9a8a9514944be0e7b826e67cde042cebfe9c97e",
-        "https://github.com/morpheus65535/bazarr/security/advisories/GHSA-fvcv-hh55-x3r4",
-        "https://github.com/morpheus65535/bazarr/tree/v1.5.7-beta.14"
-      ],
-      "cve_id": "CVE-2026-61826"
-    },
-    {
-      "id": "CVE-2026-61738",
-      "published": "2026-10-30T15:16:53.507",
-      "lastModified": "2026-11-05T22:18:50.907",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.77, `POST /api/scoutsuite/generate-gcp-report` in `backend/app/integrations/scoutsuite/routes/scoutsuite.py` admits admin and analyst users and validates the uploaded content as `GCPScoutSuiteJSON`, but passes raw `file.filename` from the multipart header to `save_file_to_directory` in `backend/app/integrations/scoutsuite/services/scoutsuite.py`. The writer combines this filename with `scoutsuite-report` using `os.path.join` without sanitization or a resolved-path containment ch",
-      "references": [
-        "https://github.com/socfortress/CoPilot/commit/1881ef8d28bc7f45ffa88d7ba4fcca7302355508",
-        "https://github.com/socfortress/CoPilot/commit/bfa630b65d554670c7462a32ce6fd4e3cbd0254c",
-        "https://github.com/socfortress/CoPilot/pull/940",
-        "https://github.com/socfortress/CoPilot/pull/941",
-        "https://github.com/socfortress/CoPilot/security/advisories/GHSA-q3g8-3cf7-744f"
-      ],
-      "cve_id": "CVE-2026-61738"
     }
   ]
 }
