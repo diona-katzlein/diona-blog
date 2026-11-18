@@ -60,8 +60,8 @@ slug: "data-breach-terbaru-2026-11-18"
 
 Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs penerbit.
 
+- **DataBreaches.net** — [Canada: Highland Shores Children’s Aid Reveals Cybersecurity Breach Involving Personal Information](https://databreaches.net/2026/11/17/canada-highland-shores-childrens-aid-reveals-cybersecurity-breach-involving-personal-information/)
 - **DataBreaches.net** — [IE: Suspected data breach at 43 credit unions could affect hundreds of thousands of members](https://databreaches.net/2026/11/17/ie-suspected-data-breach-at-43-credit-unions-could-affect-hundreds-of-thousands-of-members/)
-- **DataBreaches.net** — [iPhone Users Targeted in Major Website Security Breach](https://databreaches.net/2026/11/17/iphone-users-targeted-in-major-website-security-breach/)
 - **BleepingComputer** — [Cloud keys leaked in Docker Hub images are stolen within seconds](https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/)
 - **BleepingComputer** — [Uber notifies drivers of data breach affecting nearly 150,000 people](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
 - **BleepingComputer** — [Ransomware affiliate suspect extradited to US, faces 27 years in prison](https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/)
