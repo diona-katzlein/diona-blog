@@ -1,10 +1,51 @@
 {
-  "generated": "2026-11-18 18:14 WITA",
+  "generated": "2026-11-19 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-71499",
+      "published": "2026-11-18T19:18:07.890",
+      "lastModified": "2026-11-18T21:18:01.590",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "cf-manager is an all-in-one dashboard for managing multiple Cloudflare accounts and services. Prior to 1.1.2, worker/src/routes/workers.ts uses bare fetch(url) calls to retrieve user-supplied URLs and deploys the returned content as a Worker script using stored Cloudflare credentials. The multipart and JSON branches of POST /api/:accountId/workers and POST /api/batch-deploy accept URLs without protocol, destination, redirect, content-type, or response-size validation. An attacker with deployment API access, or unauthenticated access when API_SECRET is not configured, can make cf-manager access",
+      "references": [
+        "https://github.com/hefy2027/cf-manager/commit/934aecbe614d8a08a8c96f393c0126519c35e3be",
+        "https://github.com/hefy2027/cf-manager/releases/tag/1.1.2",
+        "https://github.com/hefy2027/cf-manager/security/advisories/GHSA-wmx3-qxcc-mh64"
+      ],
+      "cve_id": "CVE-2026-71499"
+    },
+    {
+      "id": "CVE-2026-130778",
+      "published": "2026-11-18T19:17:53.607",
+      "lastModified": "2026-11-18T19:17:53.767",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Incus before 7.6.0 contains an authentication bypass vulnerability that allows remote attackers to authenticate as any trusted certificate by appending its public certificate to their presented TLS client chain. Attackers can append the server's or a cluster member's certificate to gain cluster-level access, bypass authorization, modify trust store entries, and influence scriptlet-based authorization decisions.",
+      "references": [
+        "https://github.com/lxc/incus/security/advisories/GHSA-xg75-xf37-cph9"
+      ],
+      "cve_id": "CVE-2026-130778"
+    },
+    {
+      "id": "CVE-2026-95787",
+      "published": "2026-11-18T14:17:45.533",
+      "lastModified": "2026-11-18T19:18:11.150",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Vulnerabilities in the PAPI protocol of AOS-10 could allow an unauthenticated remote attacker to circumvent existing authentication controls. Successful exploitation could allow an attacker to gain administrative access, modify system configurations, and access or manipulate sensitive data.",
+      "references": [
+        "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbnw05162en_us&docLocale=en_US"
+      ],
+      "cve_id": "CVE-2026-95787"
+    },
     {
       "id": "CVE-2026-91569",
       "published": "2026-11-17T22:19:24.980",
-      "lastModified": "2026-11-17T22:19:24.980",
+      "lastModified": "2026-11-18T18:19:58.477",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -30,7 +71,7 @@
     {
       "id": "CVE-2026-91500",
       "published": "2026-11-17T22:19:22.467",
-      "lastModified": "2026-11-17T22:19:22.467",
+      "lastModified": "2026-11-18T16:18:17.540",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
@@ -43,7 +84,7 @@
     {
       "id": "CVE-2026-114835",
       "published": "2026-11-17T22:18:11.710",
-      "lastModified": "2026-11-17T22:18:11.710",
+      "lastModified": "2026-11-18T18:18:13.350",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -56,7 +97,7 @@
     {
       "id": "CVE-2026-114824",
       "published": "2026-11-17T22:18:10.373",
-      "lastModified": "2026-11-17T22:18:10.373",
+      "lastModified": "2026-11-18T15:17:32.443",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -69,7 +110,7 @@
     {
       "id": "CVE-2026-114784",
       "published": "2026-11-17T22:18:05.783",
-      "lastModified": "2026-11-17T22:18:05.783",
+      "lastModified": "2026-11-18T15:17:32.320",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -82,7 +123,7 @@
     {
       "id": "CVE-2026-100397",
       "published": "2026-11-17T20:17:35.207",
-      "lastModified": "2026-11-17T22:17:22.407",
+      "lastModified": "2026-11-18T17:17:27.063",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -179,7 +220,7 @@
     {
       "id": "CVE-2026-129351",
       "published": "2026-11-14T23:16:47.753",
-      "lastModified": "2026-11-14T23:16:47.983",
+      "lastModified": "2026-11-18T14:17:33.763",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -711,57 +752,6 @@
         "https://vuldb.com/vuln/429625/cti"
       ],
       "cve_id": "CVE-2026-120281"
-    },
-    {
-      "id": "CVE-2026-120280",
-      "published": "2026-11-02T01:17:26.873",
-      "lastModified": "2026-11-05T16:17:44.123",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability has been found in WAVLINK WN536AX6-A V260507. The impacted element is the function wireguard_cli_group handler of the file /protocol.csp of the component WireGuard. The manipulation of the argument group_id/group_name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_group_id.md",
-        "https://vuldb.com/cve/CVE-2026-120280",
-        "https://vuldb.com/submit/919789",
-        "https://vuldb.com/vuln/429624",
-        "https://vuldb.com/vuln/429624/cti"
-      ],
-      "cve_id": "CVE-2026-120280"
-    },
-    {
-      "id": "CVE-2026-120279",
-      "published": "2026-11-02T01:17:26.677",
-      "lastModified": "2026-11-02T16:19:19.997",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A flaw has been found in WAVLINK WN536AX6-A V260507. The affected element is an unknown function of the file /protocol.csp of the component openvpn_cli Handler. Executing a manipulation of the argument file_id can lead to os command injection. The attack can be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_file_id.md",
-        "https://vuldb.com/cve/CVE-2026-120279",
-        "https://vuldb.com/submit/919788",
-        "https://vuldb.com/vuln/429623",
-        "https://vuldb.com/vuln/429623/cti"
-      ],
-      "cve_id": "CVE-2026-120279"
-    },
-    {
-      "id": "CVE-2026-120277",
-      "published": "2026-11-02T00:18:10.810",
-      "lastModified": "2026-11-06T19:17:42.620",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A security vulnerability has been detected in WAVLINK WN536AX6-A V260507_2.0.0. This issue affects the function sub_41a1d8 of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_wireguard_cli_group_command_injection.md",
-        "https://vuldb.com/cve/CVE-2026-120277",
-        "https://vuldb.com/submit/919503",
-        "https://vuldb.com/vuln/429621",
-        "https://vuldb.com/vuln/429621/cti"
-      ],
-      "cve_id": "CVE-2026-120277"
     }
   ]
 }
