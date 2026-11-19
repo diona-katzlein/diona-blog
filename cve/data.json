@@ -1,6 +1,35 @@
 {
-  "generated": "2026-11-19 18:14 WITA",
+  "generated": "2026-11-20 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-77312",
+      "published": "2026-11-19T22:18:44.013",
+      "lastModified": "2026-11-19T22:18:44.013",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+      "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, the earlier CVE-2026-67429 remediation applied validate_path_with_env_config() to only a hand-picked set of file-writing modules, leaving data.csv.write in src/core/modules/atomic/data/csv_write.py, data.json_to_csv in src/core/modules/atomic/data/json_to_csv.py, file.copy in src/core/modules/atomic/file/copy.py, and file.move in src/core/modules/atomic/file/move.py outside the FLYTO_SANDBOX_DIR confinement boundary. The advisory also identifies unguarded modules across the broader data.*, file.*, and re",
+      "references": [
+        "https://github.com/advisories/GHSA-h9f9-h6gm-wc85",
+        "https://github.com/flytohub/flyto-core/commit/bbb6f1cfec22fee1ea0e6ecf1129d7103c85e09f",
+        "https://github.com/flytohub/flyto-core/releases/tag/v2.26.8",
+        "https://github.com/flytohub/flyto-core/security/advisories/GHSA-p34x-fmph-9fjx"
+      ],
+      "cve_id": "CVE-2026-77312"
+    },
+    {
+      "id": "CVE-2026-133323",
+      "published": "2026-11-19T17:18:52.880",
+      "lastModified": "2026-11-19T18:18:13.373",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+      "description": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to conduct a blind command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. This is MTLVULN-1864.",
+      "references": [
+        "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012"
+      ],
+      "cve_id": "CVE-2026-133323"
+    },
     {
       "id": "CVE-2026-71499",
       "published": "2026-11-18T19:18:07.890",
@@ -58,7 +87,7 @@
     {
       "id": "CVE-2026-91510",
       "published": "2026-11-17T22:19:22.823",
-      "lastModified": "2026-11-19T05:18:42.213",
+      "lastModified": "2026-11-19T16:22:06.930",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
@@ -718,40 +747,6 @@
         "https://vuldb.com/vuln/429669/cti"
       ],
       "cve_id": "CVE-2026-120344"
-    },
-    {
-      "id": "CVE-2026-120283",
-      "published": "2026-11-02T01:17:27.500",
-      "lastModified": "2026-11-02T16:19:19.997",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was identified in Linksys E8450 1.2.00.360516. Affected is the function strcpy of the file /www/cgi-bin/portal.cgi. Such manipulation of the argument hidden_timezone leads to stack-based buffer overflow. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://vuldb.com/cve/CVE-2026-120283",
-        "https://vuldb.com/submit/1014924",
-        "https://vuldb.com/vuln/429627",
-        "https://vuldb.com/vuln/429627/cti",
-        "https://www.linksys.com/"
-      ],
-      "cve_id": "CVE-2026-120283"
-    },
-    {
-      "id": "CVE-2026-120281",
-      "published": "2026-11-02T01:17:27.070",
-      "lastModified": "2026-11-06T20:17:15.187",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/F-yyjy/cve/blob/main/WN536AX6-A_openvpn_ip.md",
-        "https://vuldb.com/cve/CVE-2026-120281",
-        "https://vuldb.com/submit/919790",
-        "https://vuldb.com/vuln/429625",
-        "https://vuldb.com/vuln/429625/cti"
-      ],
-      "cve_id": "CVE-2026-120281"
     }
   ]
 }
