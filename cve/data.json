@@ -1,6 +1,23 @@
 {
-  "generated": "2026-11-20 06:24 WITA",
+  "generated": "2026-11-20 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-133493",
+      "published": "2026-11-20T07:17:10.853",
+      "lastModified": "2026-11-20T07:17:14.850",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was identified in D-Link DIR-600L 2.17b02. Affected is the function genacgi_main of the file gena.cgi of the component GENA Handler. Such manipulation leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
+      "references": [
+        "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/related-findings/D-Link-DIR-600L-gena-cgi-command-injection-affected-model.md",
+        "https://vuldb.com/cve/CVE-2026-133493",
+        "https://vuldb.com/submit/1049874",
+        "https://vuldb.com/vuln/440913",
+        "https://vuldb.com/vuln/440913/cti"
+      ],
+      "cve_id": "CVE-2026-133493"
+    },
     {
       "id": "CVE-2026-77312",
       "published": "2026-11-19T22:18:44.013",
@@ -730,23 +747,6 @@
         "https://vuldb.com/vuln/429670/cti"
       ],
       "cve_id": "CVE-2026-120345"
-    },
-    {
-      "id": "CVE-2026-120344",
-      "published": "2026-11-02T05:18:25.450",
-      "lastModified": "2026-11-02T16:19:19.997",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability has been found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This affects the function system of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name leads to os command injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN551X3-A%20Router/WAVLINK_WN551X3-A_wireguard_cli_group_command_injection.md",
-        "https://vuldb.com/cve/CVE-2026-120344",
-        "https://vuldb.com/submit/919551",
-        "https://vuldb.com/vuln/429669",
-        "https://vuldb.com/vuln/429669/cti"
-      ],
-      "cve_id": "CVE-2026-120344"
     }
   ]
 }

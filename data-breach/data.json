@@ -1,7 +1,14 @@
 {
-  "generated": "2026-11-20 05:59:36 WITA",
-  "total": 1036,
+  "generated": "2026-11-20 17:59:32 WITA",
+  "total": 1037,
   "items": [
+    {
+      "name": "Careers360",
+      "title": "Careers360",
+      "domain": "careers360.com",
+      "added_date": "2026-11-20",
+      "pwn_count": 3609421
+    },
     {
       "name": "CastleRAT",
       "title": "CastleRAT",
@@ -169,13 +176,6 @@
       "domain": "ozhairandbeauty.com",
       "added_date": "2026-08-19",
       "pwn_count": 1988331
-    },
-    {
-      "name": "Fanlore",
-      "title": "Fanlore",
-      "domain": "fanlore.org",
-      "added_date": "2026-08-19",
-      "pwn_count": 144520
     }
   ],
   "news": [
@@ -218,11 +218,6 @@
       "source": "BleepingComputer",
       "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
       "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
-      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
     }
   ]
 }

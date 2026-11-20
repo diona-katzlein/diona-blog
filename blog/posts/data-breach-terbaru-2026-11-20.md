@@ -1,5 +1,5 @@
 ---
-title: "Data Breach Terbaru 2026-11-20: CastleRAT dan 25 Breach Terkini / Latest Data Breaches"
+title: "Data Breach Terbaru 2026-11-20: Careers360 dan 25 Breach Terkini / Latest Data Breaches"
 description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-20 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber."
 author: "Isekai ID"
 date: "2026-11-20"
@@ -11,12 +11,13 @@ slug: "data-breach-terbaru-2026-11-20"
 
 # Data Breach Terbaru — 2026-11-20 / Latest Data Breaches
 
-**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.036 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
+**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.037 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
 
 **English summary:** Latest entries added to the Have I Been Pwned catalog, with affected-account counts and data classes translated into Indonesian. All facts are credited to the sources below; this page is a summary, not a copy of source articles.
 
 | Masuk Katalog | Breach | Domain | Akun Terdampak | Jenis Data yang Bocor (ID) | Data Classes (EN, original) |
 |---|---|---|---:|---|---|
+| 2026-11-20 | Careers360 | careers360.com | 3.609.421 | Academic records, Castes, Alamat email, Jenis kelamin, +2 jenis lain | Academic records, Castes, Email addresses, Genders, +2 jenis lain |
 | 2026-11-13 | CastleRAT |  | 179.745 | - |  |
 | 2026-11-11 | YouHack | youhack.ru | 7.160.849 | Alamat email, Alamat IP, Kata sandi, Nama pengguna | Email addresses, IP addresses, Passwords, Usernames |
 | 2026-11-11 | СберСпасибо (SberSpasibo) | spasibosberbank.ru | 3.288.711 | Bank card numbers, Tanggal lahir, Alamat email, Loyalty program details, +1 jenis lain | Bank card numbers, Dates of birth, Email addresses, Loyalty program details, +1 jenis lain |
@@ -41,7 +42,6 @@ slug: "data-breach-terbaru-2026-11-20"
 | 2026-08-23 | NIUS | nius.de | 6.090 | Nomor rekening bank, Alamat email, Nama, Data kartu kredit parsial, +2 jenis lain | Bank account numbers, Email addresses, Names, Partial credit card data, +2 jenis lain |
 | 2026-08-22 | Golf Canada | golfcanada.ca | 568.972 | Tanggal lahir, Alamat email, Jenis kelamin, Lokasi geografis, +2 jenis lain | Dates of birth, Email addresses, Genders, Geographic locations, +2 jenis lain |
 | 2026-08-19 | Oz Hair and Beauty | ozhairandbeauty.com | 1.988.331 | Alamat email, Lokasi geografis, Nama, Nomor telepon, +1 jenis lain | Email addresses, Geographic locations, Names, Phone numbers, +1 jenis lain |
-| 2026-08-19 | Fanlore | fanlore.org | 144.520 | Alamat email, Nama, Kata sandi, Nama pengguna | Email addresses, Names, Passwords, Usernames |
 
 ## Breach Terkait Indonesia / Indonesia-related Breaches
 
@@ -68,7 +68,6 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **BleepingComputer** — [NVIDIA investigating Gentlemen ransomware breach claims](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
 - **BleepingComputer** — [Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms](https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/)
 - **BleepingComputer** — [Data breach impacts 40 Irish credit unions in reported IT provider hack](https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/)
-- **BleepingComputer** — [Microsoft’s Agent Framework PyPI package compromised to steal credentials](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
 
 ## Sumber & Credit / Sources & Credit
 
