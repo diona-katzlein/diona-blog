@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21 05:59:31 WITA",
+  "generated": "2026-11-21 17:59:29 WITA",
   "total": 1038,
   "items": [
     {
@@ -179,6 +179,11 @@
     }
   ],
   "news": [
+    {
+      "source": "DataBreaches.net",
+      "title": "Ransomware: What we know about the arrests of Chaos affiliates",
+      "url": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/"
+    },
     {
       "source": "DataBreaches.net",
       "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",

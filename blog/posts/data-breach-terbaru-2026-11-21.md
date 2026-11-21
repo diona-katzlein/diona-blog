@@ -60,6 +60,7 @@ slug: "data-breach-terbaru-2026-11-21"
 
 Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs penerbit.
 
+- **DataBreaches.net** — [Ransomware: What we know about the arrests of Chaos affiliates](https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/)
 - **DataBreaches.net** — [U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline](https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/)
 - **DataBreaches.net** — [Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers](https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/)
 - **DataBreaches.net** — [UK: Transport for London photocard breach exposes 265,000 customers](https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/)
