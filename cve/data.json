@@ -1,10 +1,23 @@
 {
-  "generated": "2026-11-20 18:14 WITA",
+  "generated": "2026-11-21 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-14914",
+      "published": "2026-11-20T14:17:53.043",
+      "lastModified": "2026-11-20T17:18:25.580",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Unrestricted upload of file with dangerous type vulnerability in Tegsoft Yönetim ve Bilişim Hizmetleri Tic. Ltd. Şti. Tegsoft Contact Center allows Upload a Web Shell to a Web Server.\n\nThis issue affects Tegsoft Contact Center: before latest-202611161510.",
+      "references": [
+        "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1588"
+      ],
+      "cve_id": "CVE-2026-14914"
+    },
     {
       "id": "CVE-2026-133493",
       "published": "2026-11-20T07:17:10.853",
-      "lastModified": "2026-11-20T07:17:14.850",
+      "lastModified": "2026-11-20T18:18:49.200",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -730,23 +743,6 @@
         "https://vuldb.com/vuln/430443/cti"
       ],
       "cve_id": "CVE-2026-121606"
-    },
-    {
-      "id": "CVE-2026-120345",
-      "published": "2026-11-02T06:17:43.410",
-      "lastModified": "2026-11-05T22:17:53.380",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This impacts the function sub_41a430 of the file /bin/ioos of the component DNS Resolution Handler. Performing a manipulation of the argument data results in os command injection. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
-      "references": [
-        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN551X3-A%20Router/WAVLINK_WN551X3-A_dns_resolution_command_injection.md",
-        "https://vuldb.com/cve/CVE-2026-120345",
-        "https://vuldb.com/submit/919579",
-        "https://vuldb.com/vuln/429670",
-        "https://vuldb.com/vuln/429670/cti"
-      ],
-      "cve_id": "CVE-2026-120345"
     }
   ]
 }

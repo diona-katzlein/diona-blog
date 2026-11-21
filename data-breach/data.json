@@ -1,7 +1,14 @@
 {
-  "generated": "2026-11-20 17:59:32 WITA",
-  "total": 1037,
+  "generated": "2026-11-21 05:59:31 WITA",
+  "total": 1038,
   "items": [
+    {
+      "name": "TooLost",
+      "title": "Too Lost",
+      "domain": "toolost.com",
+      "added_date": "2026-11-20",
+      "pwn_count": 724323
+    },
     {
       "name": "Careers360",
       "title": "Careers360",
@@ -169,16 +176,14 @@
       "domain": "golfcanada.ca",
       "added_date": "2026-08-22",
       "pwn_count": 568972
-    },
-    {
-      "name": "OzHairAndBeauty",
-      "title": "Oz Hair and Beauty",
-      "domain": "ozhairandbeauty.com",
-      "added_date": "2026-08-19",
-      "pwn_count": 1988331
     }
   ],
   "news": [
+    {
+      "source": "DataBreaches.net",
+      "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+      "url": "https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/"
+    },
     {
       "source": "DataBreaches.net",
       "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
@@ -196,6 +201,16 @@
     },
     {
       "source": "BleepingComputer",
+      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "N-able says recent security breach led to major service outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+    },
+    {
+      "source": "BleepingComputer",
       "title": "Transport for London breach exposes 265,000 Oyster card users' data",
       "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/"
     },
@@ -203,21 +218,6 @@
       "source": "BleepingComputer",
       "title": "Five warning signs of ransomware breach before encryption or data theft",
       "url": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "NVIDIA investigating Gentlemen ransomware breach claims",
-      "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
-      "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
-      "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/"
     }
   ]
 }
