@@ -66,10 +66,10 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **DataBreaches.net** — [Ransomware: What we know about the arrests of Chaos affiliates](https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/)
 - **DataBreaches.net** — [U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline](https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/)
 - **DataBreaches.net** — [Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers](https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/)
+- **BleepingComputer** — [Rackspace Spot breach let hackers access customer Kubernetes secrets](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
 - **BleepingComputer** — [FBI reportedly hacked again, this time targeting nationwide police database](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/)
 - **BleepingComputer** — [Vendor data breach exposes Chase, Visa, Mastercard customer info](https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/)
 - **BleepingComputer** — [N-able says recent security breach led to major service outage](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/)
-- **BleepingComputer** — [Transport for London breach exposes 265,000 Oyster card users' data](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/)
 
 ## Sumber & Credit / Sources & Credit
 
