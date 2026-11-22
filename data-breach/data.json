@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22 17:59:31 WITA",
+  "generated": "2026-11-23 05:59:33 WITA",
   "total": 1038,
   "items": [
     {
@@ -181,6 +181,11 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "Huge European telecom leak exposes Swedbank, SEB, airBaltic and dozens of other companies’ clients",
+      "url": "https://databreaches.net/2026/11/22/huge-european-telecom-leak-exposes-swedbank-seb-airbaltic-and-dozens-of-other-companies-clients/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "FBI hacked again; criminal information database targeted",
       "url": "https://databreaches.net/2026/11/21/fbi-hacked-again-criminal-information-database-targeted/"
     },
@@ -195,19 +200,9 @@
       "url": "https://databreaches.net/2026/11/21/cto-of-ransomwarehelp-indicted-for-wire-fraud/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Ransomware: What we know about the arrests of Chaos affiliates",
-      "url": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
-      "url": "https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-      "url": "https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/"
+      "source": "BleepingComputer",
+      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/"
     },
     {
       "source": "BleepingComputer",
