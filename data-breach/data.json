@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21 17:59:29 WITA",
+  "generated": "2026-11-22 05:59:33 WITA",
   "total": 1038,
   "items": [
     {
@@ -181,6 +181,21 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "FBI hacked again; criminal information database targeted",
+      "url": "https://databreaches.net/2026/11/21/fbi-hacked-again-criminal-information-database-targeted/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "SG: YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach",
+      "url": "https://databreaches.net/2026/11/21/sg-ymcas-youth-for-causes-portal-associated-database-hit-by-cybersecurity-breach/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "url": "https://databreaches.net/2026/11/21/cto-of-ransomwarehelp-indicted-for-wire-fraud/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Ransomware: What we know about the arrests of Chaos affiliates",
       "url": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/"
     },
@@ -195,14 +210,9 @@
       "url": "https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "UK: Transport for London photocard breach exposes 265,000 customers",
-      "url": "https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak ‘illegal’",
-      "url": "https://databreaches.net/2026/11/18/deutsche-bank-chair-backs-ceo-after-reports-expose-past-lapses-trump-calls-tax-leak-illegal/"
+      "source": "BleepingComputer",
+      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
     },
     {
       "source": "BleepingComputer",
@@ -218,11 +228,6 @@
       "source": "BleepingComputer",
       "title": "Transport for London breach exposes 265,000 Oyster card users' data",
       "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Five warning signs of ransomware breach before encryption or data theft",
-      "url": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/"
     }
   ]
 }

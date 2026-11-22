@@ -1,6 +1,23 @@
 {
-  "generated": "2026-11-21 18:14 WITA",
+  "generated": "2026-11-22 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-133993",
+      "published": "2026-11-21T18:16:54.277",
+      "lastModified": "2026-11-21T18:16:54.423",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.",
+      "references": [
+        "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/related-findings/D-Link-DIR-600L-gena-cgi-stack-overflow-review.md",
+        "https://vuldb.com/cve/CVE-2026-133993",
+        "https://vuldb.com/submit/1052046",
+        "https://vuldb.com/vuln/441598",
+        "https://vuldb.com/vuln/441598/cti"
+      ],
+      "cve_id": "CVE-2026-133993"
+    },
     {
       "id": "CVE-2026-14914",
       "published": "2026-11-20T14:17:53.043",
@@ -726,23 +743,6 @@
         "https://vuldb.com/vuln/430444/cti"
       ],
       "cve_id": "CVE-2026-121607"
-    },
-    {
-      "id": "CVE-2026-121606",
-      "published": "2026-11-04T01:17:23.880",
-      "lastModified": "2026-11-09T16:17:29.833",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability has been found in Qihoo 360 D621-2, D603-2, D600-2, D619, D606-6 and D706 up to 6.4.9. Affected by this issue is the function verify_sign of the file fs2/bin/iscm of the component Firmware Signature Verification. Such manipulation of the argument sign leads to improper verification of cryptographic signature. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://gist.github.com/gajgdm6-cpu/cf98af20ddb77f27a7c112214a6280f7",
-        "https://vuldb.com/cve/CVE-2026-121606",
-        "https://vuldb.com/submit/1023261",
-        "https://vuldb.com/vuln/430443",
-        "https://vuldb.com/vuln/430443/cti"
-      ],
-      "cve_id": "CVE-2026-121606"
     }
   ]
 }
