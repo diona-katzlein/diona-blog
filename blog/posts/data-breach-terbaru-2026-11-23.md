@@ -1,5 +1,5 @@
 ---
-title: "Data Breach Terbaru 2026-11-23: Too Lost dan 25 Breach Terkini / Latest Data Breaches"
+title: "Data Breach Terbaru 2026-11-23: Bromcom dan 25 Breach Terkini / Latest Data Breaches"
 description: "Ringkasan data breach terbaru dari katalog Have I Been Pwned per 2026-11-23 dalam Bahasa Indonesia: jumlah akun terdampak, jenis data yang bocor, breach terkait Indonesia, dan berita breach — lengkap dengan credit sumber."
 author: "Isekai ID"
 date: "2026-11-23"
@@ -11,12 +11,13 @@ slug: "data-breach-terbaru-2026-11-23"
 
 # Data Breach Terbaru — 2026-11-23 / Latest Data Breaches
 
-**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.038 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
+**Bahasa Indonesia:** Katalog yang terpantau saat ini berisi **1.039 breach** (di luar spam list), **10 di antaranya terkait Indonesia**. Tabel berikut adalah breach terbaru yang masuk katalog, diterjemahkan jenis datanya ke Bahasa Indonesia. Angka dan fakta berasal dari sumber tercantum — halaman ini adalah ringkasan/olahan, bukan salinan artikel sumber.
 
 **English summary:** Latest entries added to the Have I Been Pwned catalog, with affected-account counts and data classes translated into Indonesian. All facts are credited to the sources below; this page is a summary, not a copy of source articles.
 
 | Masuk Katalog | Breach | Domain | Akun Terdampak | Jenis Data yang Bocor (ID) | Data Classes (EN, original) |
 |---|---|---|---:|---|---|
+| 2026-11-23 | Bromcom | bromcom.com | 355.051 | Alamat email | Email addresses |
 | 2026-11-20 | Too Lost | toolost.com | 724.323 | Tanggal lahir, Driver's licenses, Alamat email, ID resmi pemerintah, +10 jenis lain | Dates of birth, Driver's licenses, Email addresses, Government issued IDs, +10 jenis lain |
 | 2026-11-20 | Careers360 | careers360.com | 3.609.421 | Academic records, Castes, Alamat email, Jenis kelamin, +2 jenis lain | Academic records, Castes, Email addresses, Genders, +2 jenis lain |
 | 2026-11-13 | CastleRAT |  | 179.745 | - |  |
@@ -41,7 +42,6 @@ slug: "data-breach-terbaru-2026-11-23"
 | 2026-09-01 | Questel | questel.com | 1.226.209 | Alamat email, Employers, Job titles, Nama, +3 jenis lain | Email addresses, Employers, Job titles, Names, +3 jenis lain |
 | 2026-08-25 | Carhartt | carhartt.com | 12.933.413 | Alamat email, Nama, Nomor telepon, Alamat fisik | Email addresses, Names, Phone numbers, Physical addresses |
 | 2026-08-23 | NIUS | nius.de | 6.090 | Nomor rekening bank, Alamat email, Nama, Data kartu kredit parsial, +2 jenis lain | Bank account numbers, Email addresses, Names, Partial credit card data, +2 jenis lain |
-| 2026-08-22 | Golf Canada | golfcanada.ca | 568.972 | Tanggal lahir, Alamat email, Jenis kelamin, Lokasi geografis, +2 jenis lain | Dates of birth, Email addresses, Genders, Geographic locations, +2 jenis lain |
 
 ## Breach Terkait Indonesia / Indonesia-related Breaches
 

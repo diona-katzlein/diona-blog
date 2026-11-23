@@ -1,7 +1,14 @@
 {
-  "generated": "2026-11-23 05:59:33 WITA",
-  "total": 1038,
+  "generated": "2026-11-23 17:59:31 WITA",
+  "total": 1039,
   "items": [
+    {
+      "name": "Bromcom",
+      "title": "Bromcom",
+      "domain": "bromcom.com",
+      "added_date": "2026-11-23",
+      "pwn_count": 355051
+    },
     {
       "name": "TooLost",
       "title": "Too Lost",
@@ -169,13 +176,6 @@
       "domain": "nius.de",
       "added_date": "2026-08-23",
       "pwn_count": 6090
-    },
-    {
-      "name": "GolfCanada",
-      "title": "Golf Canada",
-      "domain": "golfcanada.ca",
-      "added_date": "2026-08-22",
-      "pwn_count": 568972
     }
   ],
   "news": [
