@@ -1,6 +1,19 @@
 {
-  "generated": "2026-11-23 18:14 WITA",
+  "generated": "2026-11-24 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-62841",
+      "published": "2026-11-23T22:20:39.293",
+      "lastModified": "2026-11-23T22:20:39.423",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62841"
+      ],
+      "cve_id": "CVE-2026-62841"
+    },
     {
       "id": "CVE-2026-134882",
       "published": "2026-11-23T09:17:05.653",
@@ -38,7 +51,7 @@
     {
       "id": "CVE-2026-14914",
       "published": "2026-11-20T14:17:53.043",
-      "lastModified": "2026-11-20T17:18:25.580",
+      "lastModified": "2026-11-23T15:08:56.100",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -112,7 +125,7 @@
     {
       "id": "CVE-2026-130778",
       "published": "2026-11-18T19:17:53.607",
-      "lastModified": "2026-11-18T19:17:53.767",
+      "lastModified": "2026-11-23T22:20:11.480",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -726,23 +739,6 @@
         "https://vuldb.com/vuln/430463/cti"
       ],
       "cve_id": "CVE-2026-121615"
-    },
-    {
-      "id": "CVE-2026-121609",
-      "published": "2026-11-04T02:17:20.243",
-      "lastModified": "2026-11-09T17:17:15.593",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://gist.github.com/gajgdm6-cpu/c8c3bbdeb51c076317834b41c3a919f2",
-        "https://vuldb.com/cve/CVE-2026-121609",
-        "https://vuldb.com/submit/1023264",
-        "https://vuldb.com/vuln/430446",
-        "https://vuldb.com/vuln/430446/cti"
-      ],
-      "cve_id": "CVE-2026-121609"
     }
   ]
 }

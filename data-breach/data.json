@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23 17:59:31 WITA",
+  "generated": "2026-11-24 05:59:32 WITA",
   "total": 1039,
   "items": [
     {
@@ -181,23 +181,28 @@
   "news": [
     {
       "source": "DataBreaches.net",
-      "title": "Huge European telecom leak exposes Swedbank, SEB, airBaltic and dozens of other companies’ clients",
-      "url": "https://databreaches.net/2026/11/22/huge-european-telecom-leak-exposes-swedbank-seb-airbaltic-and-dozens-of-other-companies-clients/"
+      "title": "Samsung Securities Hacked: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online",
+      "url": "https://databreaches.net/2026/11/23/samsung-securities-hacked-names-addresses-and-account-details-of-thousands-of-customers-exposed-online/"
     },
     {
       "source": "DataBreaches.net",
-      "title": "FBI hacked again; criminal information database targeted",
-      "url": "https://databreaches.net/2026/11/21/fbi-hacked-again-criminal-information-database-targeted/"
+      "title": "Jpn: Tower Records Online Hit by Cyberattack, 11 Million Customer Records Potentially Leaked",
+      "url": "https://databreaches.net/2026/11/23/jpn-tower-records-online-hit-by-cyberattack-11-million-customer-records-potentially-leaked/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "SG: YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach",
-      "url": "https://databreaches.net/2026/11/21/sg-ymcas-youth-for-causes-portal-associated-database-hit-by-cybersecurity-breach/"
+      "source": "BleepingComputer",
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-      "url": "https://databreaches.net/2026/11/21/cto-of-ransomwarehelp-indicted-for-wire-fraud/"
+      "source": "BleepingComputer",
+      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/"
     },
     {
       "source": "BleepingComputer",
@@ -208,21 +213,6 @@
       "source": "BleepingComputer",
       "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
       "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "N-able says recent security breach led to major service outage",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
     }
   ]
 }
