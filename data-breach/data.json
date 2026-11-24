@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24 05:59:32 WITA",
+  "generated": "2026-11-24 17:59:32 WITA",
   "total": 1039,
   "items": [
     {
@@ -28,7 +28,7 @@
       "title": "CastleRAT",
       "domain": "",
       "added_date": "2026-11-13",
-      "pwn_count": 179745
+      "pwn_count": 430557
     },
     {
       "name": "YouHack",

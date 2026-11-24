@@ -20,7 +20,7 @@ slug: "data-breach-terbaru-2026-11-24"
 | 2026-11-23 | Bromcom | bromcom.com | 355.051 | Alamat email | Email addresses |
 | 2026-11-20 | Too Lost | toolost.com | 724.323 | Tanggal lahir, Driver's licenses, Alamat email, ID resmi pemerintah, +10 jenis lain | Dates of birth, Driver's licenses, Email addresses, Government issued IDs, +10 jenis lain |
 | 2026-11-20 | Careers360 | careers360.com | 3.609.421 | Academic records, Castes, Alamat email, Jenis kelamin, +2 jenis lain | Academic records, Castes, Email addresses, Genders, +2 jenis lain |
-| 2026-11-13 | CastleRAT |  | 179.745 | - |  |
+| 2026-11-13 | CastleRAT |  | 430.557 | - |  |
 | 2026-11-11 | YouHack | youhack.ru | 7.160.849 | Alamat email, Alamat IP, Kata sandi, Nama pengguna | Email addresses, IP addresses, Passwords, Usernames |
 | 2026-11-11 | СберСпасибо (SberSpasibo) | spasibosberbank.ru | 3.288.711 | Bank card numbers, Tanggal lahir, Alamat email, Loyalty program details, +1 jenis lain | Bank card numbers, Dates of birth, Email addresses, Loyalty program details, +1 jenis lain |
 | 2026-11-03 | Harvard | harvard.edu | 850.537 | Charitable donations, Citizenship statuses, Tanggal lahir, Education levels, +14 jenis lain | Charitable donations, Citizenship statuses, Dates of birth, Education levels, +14 jenis lain |
