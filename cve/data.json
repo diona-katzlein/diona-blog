@@ -1,16 +1,161 @@
 {
-  "generated": "2026-11-24 18:14 WITA",
+  "generated": "2026-11-25 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-136553",
+      "published": "2026-11-25T07:17:18.930",
+      "lastModified": "2026-11-25T07:17:19.113",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was detected in Tenda RX3 16.03.13.11_multi. Affected is an unknown function of the file /goform/fast_setting_wifi_set. Performing a manipulation of the argument loginPwd results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+      "references": [
+        "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/password_change_no_verify/detail.md",
+        "https://vuldb.com/cve/CVE-2026-136553",
+        "https://vuldb.com/submit/1057770",
+        "https://vuldb.com/vuln/443410",
+        "https://vuldb.com/vuln/443410/cti"
+      ],
+      "cve_id": "CVE-2026-136553"
+    },
+    {
+      "id": "CVE-2026-136549",
+      "published": "2026-11-25T06:17:15.597",
+      "lastModified": "2026-11-25T06:17:15.763",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+      "references": [
+        "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/cmd_injection_remoteIp/detail.md",
+        "https://vuldb.com/cve/CVE-2026-136549",
+        "https://vuldb.com/submit/1057767",
+        "https://vuldb.com/vuln/443407",
+        "https://vuldb.com/vuln/443407/cti"
+      ],
+      "cve_id": "CVE-2026-136549"
+    },
+    {
+      "id": "CVE-2026-136548",
+      "published": "2026-11-25T06:17:13.967",
+      "lastModified": "2026-11-25T06:17:15.307",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was identified in Tenda RX3 16.03.13.11. The affected element is an unknown function of the file /bin/auto_discover of the component GBK-to-UTF-8 Conversion. The manipulation of the argument Hostname leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+      "references": [
+        "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/dhcp_gbk_overflow/detail.md",
+        "https://vuldb.com/cve/CVE-2026-136548",
+        "https://vuldb.com/submit/1057714",
+        "https://vuldb.com/vuln/443406",
+        "https://vuldb.com/vuln/443406/cti"
+      ],
+      "cve_id": "CVE-2026-136548"
+    },
+    {
+      "id": "CVE-2026-136547",
+      "published": "2026-11-25T05:18:35.270",
+      "lastModified": "2026-11-25T05:18:35.470",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was determined in Tenda RX3 16.03.13.11_multi. Impacted is the function R7WebsSecurityHandler of the component httpd. Executing a manipulation can lead to improper authentication. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+      "references": [
+        "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/auth_bypass/detail.md",
+        "https://vuldb.com/cve/CVE-2026-136547",
+        "https://vuldb.com/submit/1057713",
+        "https://vuldb.com/vuln/443405",
+        "https://vuldb.com/vuln/443405/cti"
+      ],
+      "cve_id": "CVE-2026-136547"
+    },
+    {
+      "id": "CVE-2026-136136",
+      "published": "2026-11-25T00:17:10.560",
+      "lastModified": "2026-11-25T00:17:10.713",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authentication. The attack may be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-136136",
+        "https://vuldb.com/submit/1056731",
+        "https://vuldb.com/vuln/442884",
+        "https://vuldb.com/vuln/442884/cti"
+      ],
+      "cve_id": "CVE-2026-136136"
+    },
+    {
+      "id": "CVE-2026-135797",
+      "published": "2026-11-24T19:18:14.630",
+      "lastModified": "2026-11-24T19:18:14.780",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "references": [
+        "https://github.com/nenghun/IoT/blob/main/Volans%20NGFW%20(nf51)/Root_RCE/Volans%20NGFW%20(nf51)_rce.md",
+        "https://vuldb.com/cve/CVE-2026-135797",
+        "https://vuldb.com/submit/1055817",
+        "https://vuldb.com/vuln/442767",
+        "https://vuldb.com/vuln/442767/cti"
+      ],
+      "cve_id": "CVE-2026-135797"
+    },
+    {
+      "id": "CVE-2026-135792",
+      "published": "2026-11-24T18:19:03.150",
+      "lastModified": "2026-11-24T18:19:03.310",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the component Email Auth Code Sender. Such manipulation of the argument Username leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "references": [
+        "https://github.com/nenghun/IoT/blob/main/Panabit/rce3/Unauthenticated%20OS%20Command%20Injection.md",
+        "https://vuldb.com/cve/CVE-2026-135792",
+        "https://vuldb.com/submit/1055813",
+        "https://vuldb.com/vuln/442755",
+        "https://vuldb.com/vuln/442755/cti"
+      ],
+      "cve_id": "CVE-2026-135792"
+    },
+    {
+      "id": "CVE-2026-109484",
+      "published": "2026-11-24T18:18:45.157",
+      "lastModified": "2026-11-25T05:18:25.983",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "Failure to sanitize special elements into a different plane (special element injection) in Azure App Service allows an unauthorized attacker to elevate privileges over a network.",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109484"
+      ],
+      "cve_id": "CVE-2026-109484"
+    },
+    {
+      "id": "CVE-2026-59415",
+      "published": "2026-11-24T11:17:20.753",
+      "lastModified": "2026-11-25T05:18:37.373",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "TypesenseVectorStore is vulnerable to a document ID injection in its delete operation that can cause unintended documents to be deleted.\n\n\n\n TypesenseVectorStore.doDelete(List<String>) builds a Typesense filter_by expression by raw string concatenation of caller-supplied document IDs into the form id: [id1,id2,...] . The Typesense id field uses bare (unquoted) values in this list form with no escaping mechanism. An ID containing characters with syntactic meaning in the Typesense filter grammar — such as a comma ( , ), a closing bracket ( ] ), or operator tokens ( || , && ) — can break out of t",
+      "references": [
+        "https://spring.io/security/cve-2026-59415"
+      ],
+      "cve_id": "CVE-2026-59415"
+    },
     {
       "id": "CVE-2026-130169",
       "published": "2026-11-23T23:17:04.220",
-      "lastModified": "2026-11-23T23:17:04.347",
+      "lastModified": "2026-11-24T17:18:15.190",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
       "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key in backend/.env.default and autogpt_platform/.env.default. Because HS256 is symmetric, anyone who knows the secret can forge valid JWTs for any user or for the admin role, bypassing authentication and authorization without user interaction. This issue is fixed in version 0.8.0.",
       "references": [
         "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.8.0",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-24q6-6h89-f9p7",
         "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-24q6-6h89-f9p7"
       ],
       "cve_id": "CVE-2026-130169"
@@ -18,7 +163,7 @@
     {
       "id": "CVE-2026-62841",
       "published": "2026-11-23T22:20:39.293",
-      "lastModified": "2026-11-23T22:20:39.423",
+      "lastModified": "2026-11-25T05:18:37.710",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -277,7 +422,7 @@
     {
       "id": "CVE-2026-93664",
       "published": "2026-11-16T13:17:23.313",
-      "lastModified": "2026-11-16T15:17:34.640",
+      "lastModified": "2026-11-24T17:50:07.100",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -595,148 +740,6 @@
         "https://vuldb.com/vuln/432937"
       ],
       "cve_id": "CVE-2026-124580"
-    },
-    {
-      "id": "CVE-2026-123551",
-      "published": "2026-11-08T02:16:46.603",
-      "lastModified": "2026-11-17T21:14:31.327",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypass the agent-only check through an unvalidated internal forward on legacy Liberty ID-FF endpoints, collecting iPlanetDirectoryPro tokens to hijack user and administrator sessions.",
-      "references": [
-        "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-5c3q-hp86-xjr8",
-        "https://www.vulncheck.com/advisories/openam-14.0.0-before-16.1.4-session-token-disclosure-via-notification-websocket"
-      ],
-      "cve_id": "CVE-2026-123551"
-    },
-    {
-      "id": "CVE-2026-123966",
-      "published": "2026-11-07T14:17:01.800",
-      "lastModified": "2026-11-09T23:17:17.163",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation of the argument deviceId causes heap-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
-      "references": [
-        "https://github.com/Tmzop/Tenda-AC19-saveParentControlInfo/blob/main/report.md",
-        "https://vuldb.com/cve/CVE-2026-123966",
-        "https://vuldb.com/submit/1035173",
-        "https://vuldb.com/vuln/432038",
-        "https://vuldb.com/vuln/432038/cti"
-      ],
-      "cve_id": "CVE-2026-123966"
-    },
-    {
-      "id": "CVE-2026-109469",
-      "published": "2026-11-06T23:17:20.557",
-      "lastModified": "2026-11-11T02:17:07.633",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elevate privileges over a network.",
-      "references": [
-        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109469"
-      ],
-      "cve_id": "CVE-2026-109469"
-    },
-    {
-      "id": "CVE-2026-71495",
-      "published": "2026-11-06T19:17:56.657",
-      "lastModified": "2026-11-12T22:18:51.470",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:H",
-      "description": "Wanderer is a self-hosted trail database for saving and sharing adventures. Prior to 0.20.0, when PUBLIC_PRIVATE_INSTANCE is not set to true, the unauthenticated POST /api/v1/trail/download handler passes the attacker-controlled JSON url field directly to event.fetch() and returns the fetched response. This allows requests to internal services such as db:8090 and search:7700, cloud metadata addresses, and other network destinations, exposing returned data and permitting internal network reconnaissance or denial of service. This issue is fixed in version 0.20.0.",
-      "references": [
-        "https://github.com/open-wanderer/wanderer/commit/c371337b3db1d2895b5cad651046ef0ad4dfc802",
-        "https://github.com/open-wanderer/wanderer/pull/1104",
-        "https://github.com/open-wanderer/wanderer/releases/tag/v0.20.0",
-        "https://github.com/open-wanderer/wanderer/security/advisories/GHSA-7vqq-mjjr-h9j5",
-        "https://github.com/open-wanderer/wanderer/security/advisories/GHSA-7vqq-mjjr-h9j5"
-      ],
-      "cve_id": "CVE-2026-71495"
-    },
-    {
-      "id": "CVE-2026-118423",
-      "published": "2026-11-06T08:17:18.550",
-      "lastModified": "2026-11-06T20:09:13.780",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "The WP Libre Form WordPress plugin 1.5.0.1 does not validate the type of files uploaded through its form submissions, allowing unauthenticated attackers to upload PHP files to a web-accessible location and execute them, leading to remote code execution.",
-      "references": [
-        "https://wpscan.com/vulnerability/35149a79-aee1-4f13-ba29-583c2224c5da/"
-      ],
-      "cve_id": "CVE-2026-118423"
-    },
-    {
-      "id": "CVE-2026-122051",
-      "published": "2026-11-05T00:17:24.013",
-      "lastModified": "2026-11-05T21:18:42.360",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A flaw has been found in Edimax BR-6208AC 1.32. Affected by this vulnerability is an unknown functionality of the file /goform/mp. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://github.com/fizz-is-on-the-way/Iot_vuls/tree/main/BR-6208AC/RCE_mp",
-        "https://vuldb.com/cve/CVE-2026-122051",
-        "https://vuldb.com/submit/1025459",
-        "https://vuldb.com/vuln/431135",
-        "https://vuldb.com/vuln/431135/cti"
-      ],
-      "cve_id": "CVE-2026-122051"
-    },
-    {
-      "id": "CVE-2026-122013",
-      "published": "2026-11-04T21:18:07.540",
-      "lastModified": "2026-11-09T17:17:19.220",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was detected in Comfast CF-WR632AX 2.6.0.1. Affected by this vulnerability is an unknown functionality of the file /usr/bin/webmgnt of the component Multipart Parser. Performing a manipulation of the argument filename results in path traversal. It is possible to initiate the attack remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://github.com/FoundTL/COMFAST-CF-WR632AX-Wi-Fi-6-Router",
-        "https://vuldb.com/cve/CVE-2026-122013",
-        "https://vuldb.com/submit/1023251",
-        "https://vuldb.com/vuln/431080",
-        "https://vuldb.com/vuln/431080/cti"
-      ],
-      "cve_id": "CVE-2026-122013"
-    },
-    {
-      "id": "CVE-2026-121933",
-      "published": "2026-11-04T20:19:11.607",
-      "lastModified": "2026-11-09T17:17:18.913",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing authentication. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://github.com/Zimo-666/E5350-cves/tree/main/02-empty-admin-password-auth-bypass",
-        "https://vuldb.com/cve/CVE-2026-121933",
-        "https://vuldb.com/submit/1024276",
-        "https://vuldb.com/vuln/431045",
-        "https://vuldb.com/vuln/431045/cti"
-      ],
-      "cve_id": "CVE-2026-121933"
-    },
-    {
-      "id": "CVE-2026-121932",
-      "published": "2026-11-04T19:17:33.440",
-      "lastModified": "2026-11-09T17:17:18.757",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was detected in Linksys E5350 1.0.00.037. This affects the function system of the file /wizard/apply.cgi. Performing a manipulation of the argument ping_ip/traceroute_ip results in os command injection. The attack may be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://github.com/Zimo-666/E5350-cves/tree/main/01-wizard-preauth-command-injection",
-        "https://vuldb.com/cve/CVE-2026-121932",
-        "https://vuldb.com/submit/1024275",
-        "https://vuldb.com/submit/1024277",
-        "https://vuldb.com/vuln/431044"
-      ],
-      "cve_id": "CVE-2026-121932"
     }
   ]
 }

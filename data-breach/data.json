@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24 17:59:32 WITA",
+  "generated": "2026-11-25 17:59:34 WITA",
   "total": 1039,
   "items": [
     {
@@ -181,13 +181,58 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "CIA system breached in latest cyberattack targeting US intelligence agencies",
+      "url": "https://databreaches.net/2026/11/24/cia-system-breached-in-latest-cyberattack-targeting-us-intelligence-agencies/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.",
+      "url": "https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "HK: Gleneagles Hospital suspends app after data breach",
+      "url": "https://databreaches.net/2026/11/24/hk-gleneagles-hospital-suspends-app-after-data-breach/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Two unrelated database leaks expose 3.5 billion Uusernames, passwords, and documents",
+      "url": "https://databreaches.net/2026/11/24/two-unrelated-database-leaks-expose-3-5-billion-uusernames-passwords-and-documents/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "State shuts down myColorado app after data breach; up to 150,000 people may be affected",
+      "url": "https://databreaches.net/2026/11/24/state-shuts-down-mycolorado-app-after-data-breach-up-to-150000-people-may-be-affected/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Samsung Securities Hacked: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online",
       "url": "https://databreaches.net/2026/11/23/samsung-securities-hacked-names-addresses-and-account-details-of-thousands-of-customers-exposed-online/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Jpn: Tower Records Online Hit by Cyberattack, 11 Million Customer Records Potentially Leaked",
-      "url": "https://databreaches.net/2026/11/23/jpn-tower-records-online-hit-by-cyberattack-11-million-customer-records-potentially-leaked/"
+      "source": "BleepingComputer",
+      "title": "Hackers reportedly breached CIA intelligence analysis system",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Rackspace shuts down Spot cloud platform after security breach",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/"
+    },
+    {
+      "source": "BleepingComputer",
+      "title": "McDonald's Japan data breach exposes customer location information",
+      "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/"
     },
     {
       "source": "BleepingComputer",
@@ -198,21 +243,6 @@
       "source": "BleepingComputer",
       "title": "OpenRouter drops AI providers over leaked prompts and secrets",
       "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
-      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
     }
   ]
 }
