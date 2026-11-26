@@ -1,6 +1,40 @@
 {
-  "generated": "2026-11-25 18:14 WITA",
+  "generated": "2026-11-26 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-137043",
+      "published": "2026-11-26T03:16:39.110",
+      "lastModified": "2026-11-26T03:16:39.273",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A security vulnerability has been detected in TOTOLINK N350RT 9.3.5u.6468_B20250827/9.3.5u.6466_B20250825. The affected element is the function setLanguageCfg of the file /cgi-bin/cstecgi.cgi. Such manipulation of the argument lang leads to authorization bypass. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
+      "references": [
+        "https://gist.github.com/aslanbekthedefender/15846cb866cab1e7a1dfb197a84ee823",
+        "https://vuldb.com/cve/CVE-2026-137043",
+        "https://vuldb.com/submit/1061323",
+        "https://vuldb.com/vuln/443967",
+        "https://vuldb.com/vuln/443967/cti"
+      ],
+      "cve_id": "CVE-2026-137043"
+    },
+    {
+      "id": "CVE-2026-136823",
+      "published": "2026-11-25T22:17:20.717",
+      "lastModified": "2026-11-25T22:17:20.867",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack can be initiated remotely. The exploit has been made public and could be used.",
+      "references": [
+        "https://github.com/Zzzhangxxx/cve/blob/main/D-Link_R32_A1_1.10B02_flupl_self_fpath_OS_Command_Injection.md",
+        "https://vuldb.com/cve/CVE-2026-136823",
+        "https://vuldb.com/submit/1059269",
+        "https://vuldb.com/vuln/443782",
+        "https://vuldb.com/vuln/443782/cti"
+      ],
+      "cve_id": "CVE-2026-136823"
+    },
     {
       "id": "CVE-2026-136553",
       "published": "2026-11-25T07:17:18.930",
@@ -55,7 +89,7 @@
     {
       "id": "CVE-2026-136547",
       "published": "2026-11-25T05:18:35.270",
-      "lastModified": "2026-11-25T05:18:35.470",
+      "lastModified": "2026-11-25T13:17:28.680",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -135,7 +169,7 @@
     {
       "id": "CVE-2026-59415",
       "published": "2026-11-24T11:17:20.753",
-      "lastModified": "2026-11-25T05:18:37.373",
+      "lastModified": "2026-11-25T14:17:09.333",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -163,7 +197,7 @@
     {
       "id": "CVE-2026-62841",
       "published": "2026-11-23T22:20:39.293",
-      "lastModified": "2026-11-25T05:18:37.710",
+      "lastModified": "2026-11-25T14:46:21.683",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -193,7 +227,7 @@
     {
       "id": "CVE-2026-133993",
       "published": "2026-11-21T18:16:54.277",
-      "lastModified": "2026-11-21T18:16:54.423",
+      "lastModified": "2026-11-26T03:16:35.940",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -257,13 +291,15 @@
     {
       "id": "CVE-2026-133323",
       "published": "2026-11-19T17:18:52.880",
-      "lastModified": "2026-11-19T18:18:13.373",
+      "lastModified": "2026-11-26T05:18:21.963",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
       "description": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to conduct a blind command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. This is MTLVULN-1864.",
       "references": [
-        "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012"
+        "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012",
+        "https://accenture.github.io/cyber-intelligence/micollab-exploitation/",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133323"
       ],
       "cve_id": "CVE-2026-133323"
     },
@@ -710,36 +746,6 @@
         "https://url.sap/sapsecuritypatchday"
       ],
       "cve_id": "CVE-2026-120017"
-    },
-    {
-      "id": "CVE-2026-115252",
-      "published": "2026-11-09T11:17:21.143",
-      "lastModified": "2026-11-10T16:28:46.510",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "The Confection WordPress Cable WordPress plugin from 0.4.0 to 0.4.7 does not perform any capability or nonce checks before saving its settings and writing one of them, unmodified, into a standalone PHP file that it then serves, allowing unauthenticated users to execute arbitrary PHP code on the server.",
-      "references": [
-        "https://wpscan.com/vulnerability/aebe20c3-bc02-4082-bda8-bbaa01550925/"
-      ],
-      "cve_id": "CVE-2026-115252"
-    },
-    {
-      "id": "CVE-2026-124580",
-      "published": "2026-11-09T08:17:02.923",
-      "lastModified": "2026-11-12T20:18:29.310",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the component Weixin Auth Endpoint. The manipulation of the argument extend results in os command injection. The attack can be executed remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "references": [
-        "https://github.com/Walnut1337/Feiyuxing_VROS_command_injection/blob/main/README.md",
-        "https://github.com/Walnut1337/Feiyuxing_VROS_command_injection/blob/main/poc_weixin_auth.py",
-        "https://vuldb.com/cve/CVE-2026-124580",
-        "https://vuldb.com/submit/1038438",
-        "https://vuldb.com/vuln/432937"
-      ],
-      "cve_id": "CVE-2026-124580"
     }
   ]
 }

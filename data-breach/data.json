@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25 17:59:34 WITA",
+  "generated": "2026-11-26 17:59:29 WITA",
   "total": 1039,
   "items": [
     {
@@ -205,9 +205,9 @@
       "url": "https://databreaches.net/2026/11/24/state-shuts-down-mycolorado-app-after-data-breach-up-to-150000-people-may-be-affected/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "Samsung Securities Hacked: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online",
-      "url": "https://databreaches.net/2026/11/23/samsung-securities-hacked-names-addresses-and-account-details-of-thousands-of-customers-exposed-online/"
+      "source": "BleepingComputer",
+      "title": "1Password customer data stolen after employee GitHub account breach",
+      "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
     },
     {
       "source": "BleepingComputer",
@@ -223,26 +223,6 @@
       "source": "BleepingComputer",
       "title": "Radware discloses breach exposing customer cloud access keys",
       "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "European Commission confirms data theft in EU Academy breach",
-      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "McDonald's Japan data breach exposes customer location information",
-      "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
-      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
-      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/"
     }
   ]
 }
