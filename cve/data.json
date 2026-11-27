@@ -1,6 +1,37 @@
 {
-  "generated": "2026-11-26 18:14 WITA",
+  "generated": "2026-11-27 06:24 WITA",
   "items": [
+    {
+      "id": "CVE-2026-137498",
+      "published": "2026-11-26T16:18:01.000",
+      "lastModified": "2026-11-26T16:18:01.000",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "Budibase Server from 3.39.18 before 4.0.0 contains a prototype pollution vulnerability that allows unauthenticated attackers to erase MongoDB query filters by supplying __proto__ as a dynamic JSON key in PUBLIC queries. Attackers can send a single request to the query execution endpoint, reducing the filter to {} to read, update, or delete every document in the collection.",
+      "references": [
+        "https://github.com/Budibase/budibase/security/advisories/GHSA-x4w8-596q-fmh7",
+        "https://www.vulncheck.com/advisories/budibase-server-3.39.18-before-4.0.0-mongodb-filter-erasure-via-proto-keys"
+      ],
+      "cve_id": "CVE-2026-137498"
+    },
+    {
+      "id": "CVE-2026-126984",
+      "published": "2026-11-26T16:17:50.623",
+      "lastModified": "2026-11-26T18:17:17.380",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "description": "A **server-side request forgery** flaw has been found in the get_remote_artifact_url() function in pulp_python/app/models.py of the pull-through caching feature in the **pulp_python** package. The function uses the redirect query parameter from the client request as the URL to download. A network attacker or user who can reach the content app of a Python distribution that has a remote can choose that URL. The content app downloads it and returns the response. When the remote has a username and password, the download sends those credentials to the host in the URL. When the remote policy is imme",
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-126984",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2584205",
+        "https://github.com/pulp/pulp_python/pull/1429",
+        "https://github.com/pulp/pulp_python/pull/1484",
+        "https://redhat.atlassian.net/browse/PULP-2578"
+      ],
+      "cve_id": "CVE-2026-126984"
+    },
     {
       "id": "CVE-2026-137043",
       "published": "2026-11-26T03:16:39.110",
@@ -715,37 +746,6 @@
         "https://url.sap/sapsecuritypatchday"
       ],
       "cve_id": "CVE-2026-76964"
-    },
-    {
-      "id": "CVE-2026-125086",
-      "published": "2026-11-10T01:17:19.640",
-      "lastModified": "2026-11-13T15:17:37.987",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "A vulnerability has been found in D-Link M60 1.12.B01. Impacted is the function system of the file /etc/emDaemon/mosquitto.conf of the component emDaemon MQTT Broker. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.",
-      "references": [
-        "https://github.com/XueDugu/dlink-m60-easymesh-mqtt-credential-evidence",
-        "https://vuldb.com/cve/CVE-2026-125086",
-        "https://vuldb.com/submit/1042370",
-        "https://vuldb.com/vuln/433197",
-        "https://vuldb.com/vuln/433197/cti"
-      ],
-      "cve_id": "CVE-2026-125086"
-    },
-    {
-      "id": "CVE-2026-120017",
-      "published": "2026-11-10T01:17:16.803",
-      "lastModified": "2026-11-11T05:19:29.113",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate arbitrary users, including privileged accounts. Successful exploitation could cause a full system compromise, with the impact potentially extending to connected components and systems beyond the affected system. This results in a high impact on confidentiality, integrity, and availability of the application.",
-      "references": [
-        "https://me.sap.com/notes/3849308",
-        "https://url.sap/sapsecuritypatchday"
-      ],
-      "cve_id": "CVE-2026-120017"
     }
   ]
 }
