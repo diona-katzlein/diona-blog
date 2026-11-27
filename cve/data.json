@@ -1,6 +1,32 @@
 {
-  "generated": "2026-11-27 06:24 WITA",
+  "generated": "2026-11-27 18:14 WITA",
   "items": [
+    {
+      "id": "CVE-2026-137724",
+      "published": "2026-11-27T06:17:09.727",
+      "lastModified": "2026-11-27T06:17:09.727",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability in the Platform component of Mitel OpenScape 4000, and OpenScape 4000 Manager could allow an unauthenticated attacker to conduct an unauthorized access attack due to improper authentication mechanisms. A successful exploit could allow an attacker to obtain sensitive information and gain unauthorized access to system. This vulnerability affects OpenScape 4000, versions V11 R0.22 through V11 R2.11 and V10 R1.68 and earlier, and OpenScape 4000 Manager, versions V11 R0.22 through V11 R2.11 and V10 R1.34 through V10 R1.68. This is MTLVULN-1785.",
+      "references": [
+        "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0013"
+      ],
+      "cve_id": "CVE-2026-137724"
+    },
+    {
+      "id": "CVE-2026-137721",
+      "published": "2026-11-27T06:17:09.443",
+      "lastModified": "2026-11-27T06:17:09.443",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "description": "A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. This vulnerability affects OpenScape 4000, versions V11 R0.22 through V11 R2.11 and V10 R1.68 and earlier, and OpenScape 4000 Manager, versions V11 R0.22 through V11 R2.11 and V10 R1.34 through V10 R1.68. This is MTLVULN-1786.",
+      "references": [
+        "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0013"
+      ],
+      "cve_id": "CVE-2026-137721"
+    },
     {
       "id": "CVE-2026-137498",
       "published": "2026-11-26T16:18:01.000",
@@ -718,34 +744,6 @@
         "https://url.sap/sapsecuritypatchday"
       ],
       "cve_id": "CVE-2026-89126"
-    },
-    {
-      "id": "CVE-2026-89103",
-      "published": "2026-11-10T01:17:21.013",
-      "lastModified": "2026-11-11T11:17:21.927",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness to potentially perform unauthorized actions within the application environment, resulting in a high impact on the confidentiality, integrity, and availability of the affected system.",
-      "references": [
-        "https://me.sap.com/notes/3798345",
-        "https://url.sap/sapsecuritypatchday"
-      ],
-      "cve_id": "CVE-2026-89103"
-    },
-    {
-      "id": "CVE-2026-76964",
-      "published": "2026-11-10T01:17:20.240",
-      "lastModified": "2026-11-11T11:17:20.903",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "description": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confidentiality, integrity and availability of the system.",
-      "references": [
-        "https://me.sap.com/notes/3778530",
-        "https://url.sap/sapsecuritypatchday"
-      ],
-      "cve_id": "CVE-2026-76964"
     }
   ]
 }

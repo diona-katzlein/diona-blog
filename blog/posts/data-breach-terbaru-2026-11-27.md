@@ -64,7 +64,6 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **DataBreaches.net** — [CIA system breached in latest cyberattack targeting US intelligence agencies](https://databreaches.net/2026/11/24/cia-system-breached-in-latest-cyberattack-targeting-us-intelligence-agencies/)
 - **DataBreaches.net** — [Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.](https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/)
 - **BleepingComputer** — [1Password customer data stolen after employee GitHub account breach](https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/)
-- **BleepingComputer** — [Hackers reportedly breached CIA intelligence analysis system](https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/)
 
 ## Sumber & Credit / Sources & Credit
 

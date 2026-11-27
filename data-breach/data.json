@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27 05:59:32 WITA",
+  "generated": "2026-11-27 17:59:47 WITA",
   "total": 1039,
   "items": [
     {
@@ -198,11 +198,6 @@
       "source": "BleepingComputer",
       "title": "1Password customer data stolen after employee GitHub account breach",
       "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
-    },
-    {
-      "source": "BleepingComputer",
-      "title": "Hackers reportedly breached CIA intelligence analysis system",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
     }
   ]
 }
