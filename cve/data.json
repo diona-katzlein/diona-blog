@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27 18:14 WITA",
+  "generated": "2026-11-28 06:24 WITA",
   "items": [
     {
       "id": "CVE-2026-137724",
@@ -17,7 +17,7 @@
     {
       "id": "CVE-2026-137721",
       "published": "2026-11-27T06:17:09.443",
-      "lastModified": "2026-11-27T06:17:09.443",
+      "lastModified": "2026-11-27T16:18:06.850",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -61,7 +61,7 @@
     {
       "id": "CVE-2026-137043",
       "published": "2026-11-26T03:16:39.110",
-      "lastModified": "2026-11-26T03:16:39.273",
+      "lastModified": "2026-11-27T17:17:47.150",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -95,7 +95,7 @@
     {
       "id": "CVE-2026-136553",
       "published": "2026-11-25T07:17:18.930",
-      "lastModified": "2026-11-25T07:17:19.113",
+      "lastModified": "2026-11-27T17:17:44.703",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -129,7 +129,7 @@
     {
       "id": "CVE-2026-136548",
       "published": "2026-11-25T06:17:13.967",
-      "lastModified": "2026-11-25T06:17:15.307",
+      "lastModified": "2026-11-27T17:17:44.180",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -348,7 +348,7 @@
     {
       "id": "CVE-2026-133323",
       "published": "2026-11-19T17:18:52.880",
-      "lastModified": "2026-11-26T05:18:21.963",
+      "lastModified": "2026-11-27T13:33:49.180",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",

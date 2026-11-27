@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27 17:59:47 WITA",
+  "generated": "2026-11-28 05:59:37 WITA",
   "total": 1039,
   "items": [
     {
@@ -181,23 +181,38 @@
   "news": [
     {
       "source": "DataBreaches.net",
+      "title": "The Biggest Data Breach Settlements of 2026",
+      "url": "https://databreaches.net/2026/11/27/the-biggest-data-breach-settlements-of-2026/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Hackers breach US Air Force Cloud One platform, putting military data at risk",
+      "url": "https://databreaches.net/2026/11/27/hackers-breach-us-air-force-cloud-one-platform-putting-military-data-at-risk/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Barclays’ US banking arm confirms data breach",
+      "url": "https://databreaches.net/2026/11/27/barclays-us-banking-arm-confirms-data-breach/"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Korea Scientists and Engineers Mutual-aid Association Hit by Hack, 210,000 Records Leaked",
+      "url": "https://databreaches.net/2026/11/27/korea-scientists-and-engineers-mutual-aid-association-hit-by-hack-210000-records-leaked/"
+    },
+    {
+      "source": "DataBreaches.net",
       "title": "Australia’s Flight Centre Data Breach Exposes Customer Records and Passport Details",
       "url": "https://databreaches.net/2026/11/26/australias-flight-centre-data-breach-exposes-customer-records-and-passport-details/"
     },
     {
-      "source": "DataBreaches.net",
-      "title": "CIA system breached in latest cyberattack targeting US intelligence agencies",
-      "url": "https://databreaches.net/2026/11/24/cia-system-breached-in-latest-cyberattack-targeting-us-intelligence-agencies/"
-    },
-    {
-      "source": "DataBreaches.net",
-      "title": "Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.",
-      "url": "https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/"
+      "source": "BleepingComputer",
+      "title": "New Boston Scientific data breach exposes personal, medical info",
+      "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/"
     },
     {
       "source": "BleepingComputer",
-      "title": "1Password customer data stolen after employee GitHub account breach",
-      "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+      "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+      "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/"
     }
   ]
 }
