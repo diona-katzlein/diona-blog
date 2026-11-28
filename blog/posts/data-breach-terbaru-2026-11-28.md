@@ -64,7 +64,6 @@ Judul asli ditampilkan apa adanya; buka link untuk artikel lengkap di situs pene
 - **DataBreaches.net** — [Hackers breach US Air Force Cloud One platform, putting military data at risk](https://databreaches.net/2026/11/27/hackers-breach-us-air-force-cloud-one-platform-putting-military-data-at-risk/)
 - **DataBreaches.net** — [Barclays’ US banking arm confirms data breach](https://databreaches.net/2026/11/27/barclays-us-banking-arm-confirms-data-breach/)
 - **DataBreaches.net** — [Korea Scientists and Engineers Mutual-aid Association Hit by Hack, 210,000 Records Leaked](https://databreaches.net/2026/11/27/korea-scientists-and-engineers-mutual-aid-association-hit-by-hack-210000-records-leaked/)
-- **DataBreaches.net** — [Australia’s Flight Centre Data Breach Exposes Customer Records and Passport Details](https://databreaches.net/2026/11/26/australias-flight-centre-data-breach-exposes-customer-records-and-passport-details/)
 - **BleepingComputer** — [New Boston Scientific data breach exposes personal, medical info](https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/)
 - **BleepingComputer** — [US Air Force cloud platform reportedly hacked in latest federal breach](https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/)
 
